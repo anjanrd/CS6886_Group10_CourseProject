@@ -1,0 +1,10 @@
+{"argv": ["C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe", "-B", "-m", "execution.gpu_job", "profile", "--onnx", "C:\\Users\\HP\\Desktop\\LC0\\models\\s1sp.onnx", "--trtexec", "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe", "--int8", "--large-only", "--session", "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json", "--out", "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s1sp-dense\\attempt-001/work"], "cwd": "C:\\Users\\HP\\Desktop\\LC0"}
+C:\Users\HP\Desktop\LC0\.runtime\tools\TensorRT-10.12.0.36\bin\trtexec.exe --onnx=C:\Users\HP\Desktop\LC0\models\s1sp.onnx --fp16 --builderOptimizationLevel=5 --minShapes=/input/planes:4x112x8x8 --optShapes=/input/planes:256x112x8x8 --maxShapes=/input/planes:1024x112x8x8 --shapes=/input/planes:256x112x8x8 --profilingVerbosity=detailed --exportLayerInfo=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s1sp-dense\attempt-001\work\build_b256_layers.json --exportProfile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s1sp-dense\attempt-001\work\build_b256_profile.json --exportTimes=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s1sp-dense\attempt-001\work\build_b256_times.json --separateProfileRun --saveEngine=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s1sp-dense\attempt-001\work\build_b256.engine --timingCacheFile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s1sp-dense\attempt-001\work\timing.cache --useCudaGraph --noDataTransfers --int8 --layerPrecisions=*/ln*:fp32 --precisionConstraints=prefer
+{"onnx": "C:\\Users\\HP\\Desktop\\LC0\\models\\s1sp.onnx", "int8": true, "sparsity": false, "batch": 256, "returncode": 0, "qps": 17.4076, "gpu_ms_mean": 57.4444, "positions_per_s": 4456.3456}
+# TensorRT layer precision
+
+GEMM/conv-like layers: 169 of 367 engine layers
+count by precision: fp16=4, fp32=1, int8=164
+time: all 60.231 ms, gemm-like 26.234 ms; fp16 1.0%, fp32 0.2%, int8 98.8%
+
+4 Myelin ForeignNode layer(s): fused regions whose per-op precision is not visible here; use `kernels` on an nsys capture.

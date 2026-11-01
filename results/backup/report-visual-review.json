@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "pdf": {
+    "path": "reports/ultimate/report/report.pdf",
+    "bytes": 1132432,
+    "sha256": "8cb927997fbf3b7f724787bb6150503f87c7bb92fbc5b86c0a6744bd911b78df"
+  },
+  "reviewed_IST": "2026-11-01 02:27:15 IST",
+  "pages_reviewed": 12,
+  "reviewer_note": "Rendered and visually inspected all12 final pages at100dpi after preserving first reviewed render; charts/tables legible, repeated headers, corrected orphan heading and text spacing, labelled symlog and observed-range energy error bars. Counts, paired intervals, Holm p, match43/3 win margins and references checked against verified outputs; pending full evaluator coverage explicit. No clipped/overlapping text or replacement glyphs observed. Poppler emitted Symbol font lookup advisory but output inspection shows intact content.",
+  "actual_inspection_attested": true
+}

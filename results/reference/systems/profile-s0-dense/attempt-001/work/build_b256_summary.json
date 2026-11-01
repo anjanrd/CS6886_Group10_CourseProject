@@ -1,0 +1,10 @@
+{
+ "onnx": "C:\\Users\\HP\\Desktop\\LC0\\models\\s0.onnx",
+ "int8": true,
+ "sparsity": false,
+ "batch": 256,
+ "returncode": 0,
+ "qps": 17.2515,
+ "gpu_ms_mean": 57.9641,
+ "positions_per_s": 4416.384
+}

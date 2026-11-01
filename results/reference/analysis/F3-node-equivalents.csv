@@ -1,0 +1,39 @@
+model,budget,n,reference_nodes_low,reference_nodes_high,ratio_low,ratio_high,scope
+fp16,100,6720,188.80089285714286,188.80089285714286,1.0,1.0,observed point
+s1,100,6720,78.82609937331299,78.82609937331299,0.4191779381103951,0.4191779381103951,interpolated on observed log-node envelope
+s2,100,6720,323.1519435308906,323.1519435308906,1.7007624053729906,1.7007624053729906,interpolated on observed log-node envelope
+s3,100,6720,323.1519435308906,323.1519435308906,1.7043450822886461,1.7043450822886461,interpolated on observed log-node envelope
+s4,100,6720,188.80089285714286,188.80089285714286,0.970043343530162,0.970043343530162,observed point
+s4aa,100,6720,323.1519435308906,323.1519435308906,1.6728739236519943,1.6728739236519943,interpolated on observed log-node envelope
+s0,100,6720,,,,,below reference range
+s1sp,100,6720,,,,,below reference range
+swap_pol8,100,6720,188.80089285714286,188.80089285714286,1.0729709410151913,1.0729709410151913,observed point
+swap_val8,100,6720,188.80089285714286,188.80089285714286,1.0699315914104717,1.0699315914104717,observed point
+fp16,400,6720,553.1074404761905,,1.0,,flat/endpoint interval; no precise node-equivalent
+s1,400,6720,323.1519435308906,323.1519435308906,0.6074677166046031,0.6074677166046031,interpolated on observed log-node envelope
+s2,400,6720,553.1074404761905,,1.039667788044252,,flat/endpoint interval; no precise node-equivalent
+s3,400,6720,323.1519435308906,323.1519435308906,0.6025141953947563,0.6025141953947563,interpolated on observed log-node envelope
+s4,400,6720,553.1074404761905,,1.0361481384841873,,flat/endpoint interval; no precise node-equivalent
+s4aa,400,6720,553.1074404761905,,1.0310621136861822,,flat/endpoint interval; no precise node-equivalent
+s0,400,6720,,,,,below reference range
+s1sp,400,6720,,,,,below reference range
+swap_pol8,400,6720,553.1074404761905,,1.0500253969007307,,flat/endpoint interval; no precise node-equivalent
+swap_val8,400,6720,553.1074404761905,,1.0477719691662803,,flat/endpoint interval; no precise node-equivalent
+fp16,800,6720,553.1074404761905,,0.5786162366707386,,flat/endpoint interval; no precise node-equivalent
+s1,800,6720,553.1074404761905,,0.5619399320510355,,flat/endpoint interval; no precise node-equivalent
+s2,800,6720,553.1074404761905,,0.5636886823127469,,flat/endpoint interval; no precise node-equivalent
+s3,800,6720,323.1519435308906,323.1519435308906,0.32939196051624176,0.32939196051624176,interpolated on observed log-node envelope
+s4,800,6720,553.1074404761905,,0.5796344272922447,,flat/endpoint interval; no precise node-equivalent
+s4aa,800,6720,553.1074404761905,,0.579870536711635,,flat/endpoint interval; no precise node-equivalent
+s1sp,800,6720,,,,,below reference range
+swap_pol8,800,6720,553.1074404761905,,0.5937135606118207,,flat/endpoint interval; no precise node-equivalent
+swap_val8,800,6720,553.1074404761905,,0.5938929504729964,,flat/endpoint interval; no precise node-equivalent
+fp16,1600,6720,553.1074404761905,,0.3093683832121415,,flat/endpoint interval; no precise node-equivalent
+s1,1600,6720,553.1074404761905,,0.3037224132520984,,flat/endpoint interval; no precise node-equivalent
+s2,1600,6720,553.1074404761905,,0.3041864321833407,,flat/endpoint interval; no precise node-equivalent
+s3,1600,6720,553.1074404761905,,0.30390662828561954,,flat/endpoint interval; no precise node-equivalent
+s4,1600,6720,553.1074404761905,,0.3056590830051526,,flat/endpoint interval; no precise node-equivalent
+s4aa,1600,6720,553.1074404761905,,0.30613943121161347,,flat/endpoint interval; no precise node-equivalent
+s1sp,1600,6720,,,,,below reference range
+swap_pol8,1600,6720,553.1074404761905,,0.314473277764189,,flat/endpoint interval; no precise node-equivalent
+swap_val8,1600,6720,553.1074404761905,,0.31411266734826576,,flat/endpoint interval; no precise node-equivalent

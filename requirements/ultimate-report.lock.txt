@@ -1,0 +1,5 @@
+# Exact tested Windows preparation stack plus portable report generation.
+-r windows-prep.lock.txt
+charset-normalizer==3.5.2
+pypdf==6.21.4
+reportlab==5.1.0

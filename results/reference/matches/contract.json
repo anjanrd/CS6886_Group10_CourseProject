@@ -1,0 +1,2370 @@
+{
+  "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829",
+  "settings": {
+    "budgets_ms": [
+      100,
+      200
+    ],
+    "pairs_per_budget": 250,
+    "distinct_openings": 250,
+    "opening_plies": 6,
+    "MinibatchSize": 64,
+    "MoveOverheadMs": 20,
+    "Ponder": false,
+    "Threads": "default",
+    "SmartPruningFactor": "default",
+    "tb_men": 5,
+    "resign_cp": 1000,
+    "draw_cp": 10,
+    "draw_after": 80,
+    "max_plies": 400,
+    "watchdog_seconds": 30,
+    "pair_batch": 5,
+    "pilot_pairs_per_budget": 1,
+    "pilot_mean_median_extra_ms": 10,
+    "pilot_p95_extra_ms": 25,
+    "time_forfeits": false
+  },
+  "engine_contracts": [
+    {
+      "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829",
+      "model": "fp16",
+      "study": "C",
+      "budget": 100,
+      "backend": "onnx-trt",
+      "backend_opts": "optimize=6",
+      "weights": {
+        "path": "models/fp16.pb.gz",
+        "bytes": 294605128,
+        "sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135"
+      },
+      "roots": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ids": [],
+      "sources": [
+        {
+          "path": "common.py",
+          "bytes": 5314,
+          "sha256": "3371debc4cfcab5656c7cdfcd18ffcab2c7bbd2f94fbaf57f3b545ec81b71a4b"
+        },
+        {
+          "path": "eval/lc0uci.py",
+          "bytes": 8619,
+          "sha256": "160265fc12d2e8219a2c89ce0de937c99fcca58362989cf6855174942aaf7ccd"
+        },
+        {
+          "path": "eval/run_study.py",
+          "bytes": 9360,
+          "sha256": "651650030b856d7ebb4a383ef84ecbc87bf6af9ad3121810cb9df0bdf76ea1e3"
+        },
+        {
+          "path": "execution/ultimate_study.py",
+          "bytes": 12679,
+          "sha256": "227aa0786f7eb8ea898986692bbced67354604a625a499ea2aa3b0d63609cdfb"
+        },
+        {
+          "path": "execution/ultimate_contract.py",
+          "bytes": 9513,
+          "sha256": "d7da82a3942c14af0d0867a7486efcbe2980f8dcab1a6b7c3f967f0d18ba6cb5"
+        },
+        {
+          "path": "execution/support.py",
+          "bytes": 4915,
+          "sha256": "feabad3f52a6ac2ac84327fd0b2ea74cb047d3525e20b003c24d0f52740b1b61"
+        },
+        {
+          "path": "execution/resources.py",
+          "bytes": 6535,
+          "sha256": "f9f38c5ab4e97e14375ef39f8cb203ba4090d993312a3858c0f5d8b4c7b4c2fc"
+        },
+        {
+          "path": "hw/energy.py",
+          "bytes": 5603,
+          "sha256": "fd3cf8ba572f5238736093edf1ccc5936c597f00dadba4beb848b9b33fc6efc0"
+        }
+      ],
+      "runtime": [
+        {
+          "path": ".runtime/tools/lc0/lc0.exe",
+          "bytes": 1796096,
+          "sha256": "3a437bdcb353fc264df317b9308ba589d29294695521909b459fbb72e918af50"
+        },
+        {
+          "path": ".runtime/tools/lc0/cublas64_12.dll",
+          "bytes": 102518272,
+          "sha256": "90052a83efd1b57a8e3616a6590b335855f81b814a4f16eecb7b5bf6d1b1d4eb"
+        },
+        {
+          "path": ".runtime/tools/lc0/cublasLt64_12.dll",
+          "bytes": 668669952,
+          "sha256": "c3a05ea244c937314afec09f87b91f814c7e27977681f6c67eb51bb06ced3a4a"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudart64_12.dll",
+          "bytes": 583680,
+          "sha256": "760c38928bbe5759f7b31ed6692599eb7ec83cedd5702e84c2b72028a89837e1"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudnn64_9.dll",
+          "bytes": 266352,
+          "sha256": "98461c2e24270b75c6d4767ff469c244d7f7c91cb3d9c9ac76d497510d7d9c5f"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudnn_graph64_9.dll",
+          "bytes": 2441248,
+          "sha256": "41f57d2b475bbe5bd10095c9529bbd58711c71cca984bf13bfe813ee89d9b949"
+        },
+        {
+          "path": ".runtime/tools/lc0/cufft64_11.dll",
+          "bytes": 287136768,
+          "sha256": "5b90655ca9cdf5d91cbdf2c72b995ec937eed0aef2d6954370c711b45c929b35"
+        },
+        {
+          "path": ".runtime/tools/lc0/mimalloc-override.dll",
+          "bytes": 108032,
+          "sha256": "c3538d9e1804c6d9a8780360f3d68e062d6151166fbfb65c4cdd76004fc40bb3"
+        },
+        {
+          "path": ".runtime/tools/lc0/mimalloc-redirect.dll",
+          "bytes": 68096,
+          "sha256": "63dc4f158fd76940ec018b42f83d92d8ceec70043b1ac2a8455fb0d67e1feebf"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_10.dll",
+          "bytes": 471953952,
+          "sha256": "324727055c3698c875de5462f0a3bb2f45a739903ae65ab4480c92e98935587f"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_builder_resource_10.dll",
+          "bytes": 1791236128,
+          "sha256": "1afb85570dc76408b08dbaf774243e0d8d90558fa302242ccbfb714c23348b92"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_plugin_10.dll",
+          "bytes": 52735520,
+          "sha256": "db63b4f6be909c27929f36f93eae91a999ddacea4fba761e70d4465a4d8d87a5"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvonnxparser_10.dll",
+          "bytes": 2960928,
+          "sha256": "ba0f2387e2ffa2a54d609161ddd676bb9ded97ca498798dfc311abfb89b9889e"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime.dll",
+          "bytes": 16468024,
+          "sha256": "f722dd91a311b9fa4b7f2341d22c379a72fb7bc5b639df18b64821f23cdde14b"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_cuda.dll",
+          "bytes": 322615840,
+          "sha256": "2baf389c51fb3996bee2eb94126a7b0f36a6871053501fe8b38222504560c0f8"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_shared.dll",
+          "bytes": 22048,
+          "sha256": "7de6659e55a0e02a8e7ca94ab2864d0e6ea59add87c3e947e8990229ae7f5e3a"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_tensorrt.dll",
+          "bytes": 799792,
+          "sha256": "eef5eb5fd81a0397dc09281623fc8c77906e8d6dd6d6a9bcb2db5d1afd7042c7"
+        }
+      ],
+      "runtime_observation": {
+        "path": "reports/ultimate/runtime-identity.json",
+        "bytes": 270,
+        "sha256": "fc7e59bdac95081d5a69fca5967bd728ad0718aa417e6f9e7efabb5844f895b3"
+      },
+      "search_options": {
+        "budgets_ms": [
+          100,
+          200,
+          400,
+          800
+        ],
+        "MinibatchSize": 256,
+        "MoveOverheadMs": 20,
+        "Threads": "default",
+        "SmartPruningFactor": "default"
+      }
+    },
+    {
+      "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829",
+      "model": "s4",
+      "study": "C",
+      "budget": 100,
+      "backend": "onnx-trt",
+      "backend_opts": "optimize=8",
+      "weights": {
+        "path": "models/s4.pb.gz",
+        "bytes": 90915493,
+        "sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb"
+      },
+      "roots": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ids": [],
+      "sources": [
+        {
+          "path": "common.py",
+          "bytes": 5314,
+          "sha256": "3371debc4cfcab5656c7cdfcd18ffcab2c7bbd2f94fbaf57f3b545ec81b71a4b"
+        },
+        {
+          "path": "eval/lc0uci.py",
+          "bytes": 8619,
+          "sha256": "160265fc12d2e8219a2c89ce0de937c99fcca58362989cf6855174942aaf7ccd"
+        },
+        {
+          "path": "eval/run_study.py",
+          "bytes": 9360,
+          "sha256": "651650030b856d7ebb4a383ef84ecbc87bf6af9ad3121810cb9df0bdf76ea1e3"
+        },
+        {
+          "path": "execution/ultimate_study.py",
+          "bytes": 12679,
+          "sha256": "227aa0786f7eb8ea898986692bbced67354604a625a499ea2aa3b0d63609cdfb"
+        },
+        {
+          "path": "execution/ultimate_contract.py",
+          "bytes": 9513,
+          "sha256": "d7da82a3942c14af0d0867a7486efcbe2980f8dcab1a6b7c3f967f0d18ba6cb5"
+        },
+        {
+          "path": "execution/support.py",
+          "bytes": 4915,
+          "sha256": "feabad3f52a6ac2ac84327fd0b2ea74cb047d3525e20b003c24d0f52740b1b61"
+        },
+        {
+          "path": "execution/resources.py",
+          "bytes": 6535,
+          "sha256": "f9f38c5ab4e97e14375ef39f8cb203ba4090d993312a3858c0f5d8b4c7b4c2fc"
+        },
+        {
+          "path": "hw/energy.py",
+          "bytes": 5603,
+          "sha256": "fd3cf8ba572f5238736093edf1ccc5936c597f00dadba4beb848b9b33fc6efc0"
+        }
+      ],
+      "runtime": [
+        {
+          "path": ".runtime/tools/lc0/lc0.exe",
+          "bytes": 1796096,
+          "sha256": "3a437bdcb353fc264df317b9308ba589d29294695521909b459fbb72e918af50"
+        },
+        {
+          "path": ".runtime/tools/lc0/cublas64_12.dll",
+          "bytes": 102518272,
+          "sha256": "90052a83efd1b57a8e3616a6590b335855f81b814a4f16eecb7b5bf6d1b1d4eb"
+        },
+        {
+          "path": ".runtime/tools/lc0/cublasLt64_12.dll",
+          "bytes": 668669952,
+          "sha256": "c3a05ea244c937314afec09f87b91f814c7e27977681f6c67eb51bb06ced3a4a"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudart64_12.dll",
+          "bytes": 583680,
+          "sha256": "760c38928bbe5759f7b31ed6692599eb7ec83cedd5702e84c2b72028a89837e1"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudnn64_9.dll",
+          "bytes": 266352,
+          "sha256": "98461c2e24270b75c6d4767ff469c244d7f7c91cb3d9c9ac76d497510d7d9c5f"
+        },
+        {
+          "path": ".runtime/tools/lc0/cudnn_graph64_9.dll",
+          "bytes": 2441248,
+          "sha256": "41f57d2b475bbe5bd10095c9529bbd58711c71cca984bf13bfe813ee89d9b949"
+        },
+        {
+          "path": ".runtime/tools/lc0/cufft64_11.dll",
+          "bytes": 287136768,
+          "sha256": "5b90655ca9cdf5d91cbdf2c72b995ec937eed0aef2d6954370c711b45c929b35"
+        },
+        {
+          "path": ".runtime/tools/lc0/mimalloc-override.dll",
+          "bytes": 108032,
+          "sha256": "c3538d9e1804c6d9a8780360f3d68e062d6151166fbfb65c4cdd76004fc40bb3"
+        },
+        {
+          "path": ".runtime/tools/lc0/mimalloc-redirect.dll",
+          "bytes": 68096,
+          "sha256": "63dc4f158fd76940ec018b42f83d92d8ceec70043b1ac2a8455fb0d67e1feebf"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_10.dll",
+          "bytes": 471953952,
+          "sha256": "324727055c3698c875de5462f0a3bb2f45a739903ae65ab4480c92e98935587f"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_builder_resource_10.dll",
+          "bytes": 1791236128,
+          "sha256": "1afb85570dc76408b08dbaf774243e0d8d90558fa302242ccbfb714c23348b92"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvinfer_plugin_10.dll",
+          "bytes": 52735520,
+          "sha256": "db63b4f6be909c27929f36f93eae91a999ddacea4fba761e70d4465a4d8d87a5"
+        },
+        {
+          "path": ".runtime/tools/lc0/nvonnxparser_10.dll",
+          "bytes": 2960928,
+          "sha256": "ba0f2387e2ffa2a54d609161ddd676bb9ded97ca498798dfc311abfb89b9889e"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime.dll",
+          "bytes": 16468024,
+          "sha256": "f722dd91a311b9fa4b7f2341d22c379a72fb7bc5b639df18b64821f23cdde14b"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_cuda.dll",
+          "bytes": 322615840,
+          "sha256": "2baf389c51fb3996bee2eb94126a7b0f36a6871053501fe8b38222504560c0f8"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_shared.dll",
+          "bytes": 22048,
+          "sha256": "7de6659e55a0e02a8e7ca94ab2864d0e6ea59add87c3e947e8990229ae7f5e3a"
+        },
+        {
+          "path": ".runtime/tools/lc0/onnxruntime_providers_tensorrt.dll",
+          "bytes": 799792,
+          "sha256": "eef5eb5fd81a0397dc09281623fc8c77906e8d6dd6d6a9bcb2db5d1afd7042c7"
+        }
+      ],
+      "runtime_observation": {
+        "path": "reports/ultimate/runtime-identity.json",
+        "bytes": 270,
+        "sha256": "fc7e59bdac95081d5a69fca5967bd728ad0718aa417e6f9e7efabb5844f895b3"
+      },
+      "search_options": {
+        "budgets_ms": [
+          100,
+          200,
+          400,
+          800
+        ],
+        "MinibatchSize": 256,
+        "MoveOverheadMs": 20,
+        "Threads": "default",
+        "SmartPruningFactor": "default"
+      }
+    }
+  ],
+  "rules_source": {
+    "path": "eval/match.py",
+    "bytes": 13921,
+    "sha256": "4a8e209bf47d8663a5db0ef10d88e11b4f4f03ecfc1539bf3c813a788b6d0cf3"
+  },
+  "extension_source": {
+    "path": "execution/ultimate_match.py",
+    "bytes": 9700,
+    "sha256": "dfbeee278b871ad2f7d18b5e3daadc88c91212d2055465addbdd8edac9adea9a"
+  },
+  "book": {
+    "path": "data/ultimate/book.json",
+    "bytes": 24922,
+    "sha256": "abb1d2226a63c6ad66881b0e5a7f33e3390282176b76e7c9c795f0db208258d8"
+  },
+  "openings": [
+    [
+      "e2e4",
+      "e7e6",
+      "d2d3",
+      "e6e5",
+      "b1c3",
+      "b8c6"
+    ],
+    [
+      "g1f3",
+      "e7e6",
+      "d2d3",
+      "c7c5",
+      "g2g3",
+      "b7b6"
+    ],
+    [
+      "c2c4",
+      "c7c6",
+      "g2g3",
+      "b8a6",
+      "f1g2",
+      "a6c7"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "g8f6",
+      "e2e3",
+      "d8e7"
+    ],
+    [
+      "a2a3",
+      "d7d5",
+      "g1f3",
+      "b8d7",
+      "d2d4",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "b1c3",
+      "e7e6",
+      "g1e2",
+      "d7d5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1g5",
+      "b7b6",
+      "f2f4",
+      "f6e4"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "e2e4",
+      "b7b6",
+      "b2b3",
+      "g7g6"
+    ],
+    [
+      "d2d4",
+      "f7f5",
+      "c2c3",
+      "g8f6",
+      "e2e3",
+      "e7e6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "c7c6",
+      "c1f4",
+      "f6h5"
+    ],
+    [
+      "g2g3",
+      "e7e5",
+      "f1g2",
+      "d7d6",
+      "c2c3",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "c1g5",
+      "c7c6",
+      "b1d2",
+      "d8b6"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "e2e3",
+      "g7g6",
+      "f1e2",
+      "f8g7"
+    ],
+    [
+      "b2b4",
+      "d7d5",
+      "c1b2",
+      "c8g4",
+      "d2d4",
+      "e7e6"
+    ],
+    [
+      "e2e4",
+      "g8f6",
+      "e4e5",
+      "f6g8",
+      "b1c3",
+      "d7d6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d4",
+      "d7d5",
+      "f2f3",
+      "c7c5"
+    ],
+    [
+      "e2e4",
+      "d7d5",
+      "b1c3",
+      "d5d4",
+      "c3b5",
+      "a7a6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "b1c3",
+      "d7d5",
+      "f2f3",
+      "g7g6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "g1f3",
+      "e7e6",
+      "c1f4",
+      "b7b5"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "d2d4",
+      "g8f6",
+      "f2f3",
+      "c7c5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1f4",
+      "d7d5",
+      "h2h3",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "g7g6",
+      "d2d4",
+      "f8g7",
+      "f1c4",
+      "a7a6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "g1e2",
+      "g8f6",
+      "b1c3",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "a2a3",
+      "d7d6",
+      "b2b4",
+      "b8d7"
+    ],
+    [
+      "b1c3",
+      "d7d5",
+      "f2f4",
+      "c8g4",
+      "d2d3",
+      "e7e6"
+    ],
+    [
+      "g1f3",
+      "c7c5",
+      "b2b4",
+      "c5b4",
+      "a2a3",
+      "b8c6"
+    ],
+    [
+      "g2g4",
+      "e7e5",
+      "h2h3",
+      "g8e7",
+      "d2d4",
+      "e5d4"
+    ],
+    [
+      "b2b4",
+      "e7e5",
+      "a2a3",
+      "d7d5",
+      "c1b2",
+      "b8d7"
+    ],
+    [
+      "b2b3",
+      "e7e5",
+      "c1b2",
+      "d7d6",
+      "e2e3",
+      "b8d7"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "a2a3",
+      "d7d5",
+      "e4e5",
+      "d5d4"
+    ],
+    [
+      "c2c4",
+      "c7c5",
+      "g2g3",
+      "b8a6",
+      "f1g2",
+      "e7e5"
+    ],
+    [
+      "d2d4",
+      "c7c6",
+      "g1f3",
+      "d7d6",
+      "c2c3",
+      "d8c7"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "a7a6",
+      "a2a4",
+      "d7d6"
+    ],
+    [
+      "d2d4",
+      "c7c6",
+      "c2c4",
+      "b7b5",
+      "e2e3",
+      "b5c4"
+    ],
+    [
+      "a2a3",
+      "g7g6",
+      "g1f3",
+      "f8g7",
+      "c2c4",
+      "f7f5"
+    ],
+    [
+      "d2d4",
+      "c7c5",
+      "e2e3",
+      "g7g6",
+      "f2f4",
+      "f8g7"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "d1d3",
+      "e7e6",
+      "b1d2",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "d7d5",
+      "e4e5",
+      "d5d4",
+      "g1f3",
+      "c8f5"
+    ],
+    [
+      "d2d4",
+      "b8c6",
+      "g2g3",
+      "e7e5",
+      "c2c3",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "b1a3",
+      "g7g6",
+      "d2d4",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "f2f4",
+      "g8f6",
+      "e4e5",
+      "f6d7"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "b1c3",
+      "f8c5",
+      "d1g4",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "b1c3",
+      "d7d6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "f2f3",
+      "b8c6",
+      "e2e4",
+      "e7e6"
+    ],
+    [
+      "g1f3",
+      "e7e6",
+      "c2c4",
+      "f7f5",
+      "b2b3",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "e2e4",
+      "e7e5",
+      "d4d5",
+      "f7f5"
+    ],
+    [
+      "e2e3",
+      "g7g6",
+      "h2h4",
+      "g8f6",
+      "g2g4",
+      "h7h5"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "b1c3",
+      "b7b6",
+      "g2g3",
+      "b8c6"
+    ],
+    [
+      "b2b4",
+      "e7e5",
+      "c1b2",
+      "d7d6",
+      "e2e3",
+      "g8e7"
+    ],
+    [
+      "h2h3",
+      "b7b6",
+      "e2e4",
+      "c8b7",
+      "b1c3",
+      "e7e6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "c1g5",
+      "b8c6",
+      "e2e3",
+      "h7h6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "e2e3",
+      "a7a6",
+      "f1d3",
+      "b7b5"
+    ],
+    [
+      "b2b4",
+      "d7d5",
+      "c1b2",
+      "c8f5",
+      "e2e3",
+      "b8d7"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "b1c3",
+      "d7d5",
+      "d2d3",
+      "f8b4"
+    ],
+    [
+      "d2d4",
+      "b7b5",
+      "g1f3",
+      "e7e6",
+      "c1g5",
+      "f8e7"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "e2e4",
+      "e7e6",
+      "c1e3",
+      "b8d7"
+    ],
+    [
+      "c2c4",
+      "f7f5",
+      "g1f3",
+      "g8f6",
+      "g2g3",
+      "b7b6"
+    ],
+    [
+      "c2c4",
+      "a7a6",
+      "g2g3",
+      "h7h5",
+      "h2h4",
+      "e7e5"
+    ],
+    [
+      "a2a3",
+      "d7d5",
+      "g1f3",
+      "c7c5",
+      "g2g3",
+      "c8f5"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "g1e2",
+      "g8f6",
+      "f2f3",
+      "b8c6"
+    ],
+    [
+      "e2e3",
+      "d7d5",
+      "d2d3",
+      "c7c5",
+      "b2b3",
+      "b8c6"
+    ],
+    [
+      "c2c4",
+      "c7c5",
+      "g2g3",
+      "b8c6",
+      "f1g2",
+      "e7e5"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "b1a3",
+      "g7g6",
+      "f2f4",
+      "f8g7"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "e2e3",
+      "d7d6",
+      "f1d3",
+      "b8c6"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "g2g3",
+      "c7c6",
+      "b2b3",
+      "g8f6"
+    ],
+    [
+      "b2b3",
+      "d7d5",
+      "c1b2",
+      "c7c5",
+      "g2g3",
+      "b8c6"
+    ],
+    [
+      "c2c4",
+      "b7b6",
+      "d2d3",
+      "c8b7",
+      "b1d2",
+      "e7e6"
+    ],
+    [
+      "a2a4",
+      "g8f6",
+      "g1f3",
+      "d7d6",
+      "g2g3",
+      "b8d7"
+    ],
+    [
+      "e2e4",
+      "c7c6",
+      "c2c3",
+      "d7d5",
+      "e4e5",
+      "c8f5"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d4",
+      "a7a6",
+      "b1c3",
+      "b7b5"
+    ],
+    [
+      "b2b3",
+      "e7e5",
+      "c1b2",
+      "d7d6",
+      "g2g3",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "d2d3",
+      "f8c5",
+      "d1g4",
+      "d8f6"
+    ],
+    [
+      "b1c3",
+      "d7d5",
+      "h2h4",
+      "d5d4",
+      "c3e4",
+      "e7e5"
+    ],
+    [
+      "d2d3",
+      "g8f6",
+      "e2e4",
+      "d7d6",
+      "f1e2",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "g7g6",
+      "b1c3",
+      "f8g7",
+      "f1e2",
+      "c7c5"
+    ],
+    [
+      "f2f4",
+      "g8f6",
+      "g1f3",
+      "e7e6",
+      "b2b3",
+      "b8c6"
+    ],
+    [
+      "e2e4",
+      "d7d5",
+      "e4e5",
+      "c7c5",
+      "d2d4",
+      "b8c6"
+    ],
+    [
+      "g2g3",
+      "g8f6",
+      "f1g2",
+      "d7d5",
+      "g1h3",
+      "c7c5"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "g2g3",
+      "h7h5",
+      "h2h4",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "d7d5",
+      "e4e5",
+      "d5d4",
+      "d2d3",
+      "c7c5"
+    ],
+    [
+      "e2e4",
+      "g7g6",
+      "f1c4",
+      "f8g7",
+      "d2d3",
+      "b8c6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "d1h5",
+      "e7e6",
+      "g1f3",
+      "b8c6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "f2f4",
+      "b8c6",
+      "g2g3",
+      "d7d6"
+    ],
+    [
+      "d2d4",
+      "f7f5",
+      "g1h3",
+      "d7d5",
+      "g2g3",
+      "g8f6"
+    ],
+    [
+      "g2g3",
+      "g8f6",
+      "f2f4",
+      "h7h5",
+      "g1f3",
+      "b7b6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "c2c4",
+      "b8c6",
+      "e2e3",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "f7f5",
+      "b1c3",
+      "e7e6",
+      "h2h3",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "d2d3",
+      "g7g6",
+      "c1d2",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d1e2",
+      "f8e7",
+      "g1f3",
+      "g8f6"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "d2d3",
+      "f8b4",
+      "b1d2",
+      "b4a5"
+    ],
+    [
+      "c2c4",
+      "e7e6",
+      "b1c3",
+      "f8b4",
+      "d1b3",
+      "a7a5"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "d2d3",
+      "d7d6",
+      "g2g3",
+      "g7g6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "h2h3",
+      "c7c5",
+      "e2e3",
+      "d8d6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "g1f3",
+      "b8c6",
+      "c2c4",
+      "c6d4"
+    ],
+    [
+      "c2c4",
+      "g7g6",
+      "b1c3",
+      "c7c5",
+      "a1b1",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "d2d3",
+      "f8c5",
+      "f2f4",
+      "e5f4"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "g8f6",
+      "e2e3",
+      "c7c5"
+    ],
+    [
+      "a2a3",
+      "d7d5",
+      "d2d4",
+      "g8f6",
+      "c1f4",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "c7c6",
+      "d2d4",
+      "d7d5",
+      "b1d2",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "c7c6",
+      "g1f3",
+      "d7d5",
+      "e4e5",
+      "c8f5"
+    ],
+    [
+      "f2f4",
+      "g8f6",
+      "g1f3",
+      "e7e6",
+      "e2e3",
+      "f6e4"
+    ],
+    [
+      "g1f3",
+      "g8f6",
+      "g2g3",
+      "d7d6",
+      "d2d4",
+      "d6d5"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "f1d3",
+      "d7d5",
+      "g1e2",
+      "f8c5"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "d2d4",
+      "d7d5",
+      "d1f3",
+      "d8f6"
+    ],
+    [
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "g2g3",
+      "d7d6"
+    ],
+    [
+      "g1f3",
+      "b7b5",
+      "c2c3",
+      "c8b7",
+      "a2a4",
+      "a7a6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "f2f3",
+      "e7e6",
+      "e2e4",
+      "c7c6"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "c2c4",
+      "b8d7",
+      "e2e4",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d3",
+      "g7g6",
+      "f2f4",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "c2c4",
+      "g8f6",
+      "d2d3",
+      "h7h6"
+    ],
+    [
+      "g1f3",
+      "g8f6",
+      "b1c3",
+      "c7c5",
+      "d2d3",
+      "e7e6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "f2f4",
+      "f8c5",
+      "d1f3",
+      "b8c6"
+    ],
+    [
+      "b1c3",
+      "d7d5",
+      "e2e4",
+      "d5e4",
+      "c3e4",
+      "b8c6"
+    ],
+    [
+      "c2c4",
+      "g8f6",
+      "g2g3",
+      "b7b6",
+      "f1g2",
+      "b8c6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d3",
+      "d7d5",
+      "b1d2",
+      "e6e5"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "e2e3",
+      "g7g6",
+      "b2b3",
+      "f8g7"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "b2b3",
+      "c8g4",
+      "e2e3",
+      "b8c6"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "d2d3",
+      "d7d6",
+      "e2e3",
+      "f7f5"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "f2f4",
+      "e5f4",
+      "d1f3",
+      "c7c6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "e2e3",
+      "b8c6",
+      "c2c3",
+      "g8f6"
+    ],
+    [
+      "c2c4",
+      "e7e6",
+      "d2d3",
+      "d7d5",
+      "b1d2",
+      "g8f6"
+    ],
+    [
+      "b2b3",
+      "e7e5",
+      "c1b2",
+      "f7f6",
+      "c2c4",
+      "c7c5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "e2e4",
+      "f6e4",
+      "g1f3",
+      "d7d5"
+    ],
+    [
+      "h2h3",
+      "e7e5",
+      "g1f3",
+      "b8c6",
+      "g2g3",
+      "d7d5"
+    ],
+    [
+      "e2e4",
+      "b7b6",
+      "g1f3",
+      "c8b7",
+      "d2d3",
+      "b8c6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "c2c4",
+      "f8c5",
+      "b1c3",
+      "a7a6"
+    ],
+    [
+      "b2b3",
+      "d7d6",
+      "c1b2",
+      "b8d7",
+      "e2e4",
+      "e7e5"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "g1f3",
+      "b8c6",
+      "f1e2",
+      "d7d6"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "d2d3",
+      "g8f6",
+      "b1d2",
+      "b8d7"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "d7d6",
+      "f2f4",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d3",
+      "d7d5",
+      "d1e2",
+      "g8e7"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "d7d6",
+      "d2d3",
+      "d8e7"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "e2e3",
+      "g7g6",
+      "b1d2",
+      "f8g7"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "e2e3",
+      "g8f6",
+      "f1d3",
+      "c8d7"
+    ],
+    [
+      "g1f3",
+      "d7d6",
+      "c2c4",
+      "c8g4",
+      "d1b3",
+      "d8c8"
+    ],
+    [
+      "c2c3",
+      "g7g6",
+      "d1c2",
+      "f8g7",
+      "d2d3",
+      "e7e5"
+    ],
+    [
+      "b1c3",
+      "c7c5",
+      "g2g4",
+      "d7d5",
+      "f1g2",
+      "d5d4"
+    ],
+    [
+      "g1f3",
+      "e7e6",
+      "g2g3",
+      "f8e7",
+      "f1g2",
+      "f7f5"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "f2f4",
+      "c7c6",
+      "g1f3",
+      "d7d5"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "c1f4",
+      "b8d7",
+      "e2e3",
+      "e7e5"
+    ],
+    [
+      "g1f3",
+      "c7c5",
+      "b2b3",
+      "d7d6",
+      "g2g3",
+      "b8c6"
+    ],
+    [
+      "d2d4",
+      "f7f5",
+      "c1g5",
+      "c7c6",
+      "b1c3",
+      "d8b6"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "g8f6",
+      "e2e3",
+      "d7d5"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "d2d4",
+      "g8f6",
+      "f3d2",
+      "c8f5"
+    ],
+    [
+      "g1f3",
+      "c7c5",
+      "b2b3",
+      "b8c6",
+      "c1b2",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "c7c5",
+      "g1f3",
+      "c5d4",
+      "f3d4",
+      "b8c6"
+    ],
+    [
+      "g1f3",
+      "b7b5",
+      "c2c3",
+      "c8b7",
+      "a2a4",
+      "b5b4"
+    ],
+    [
+      "e2e3",
+      "g7g6",
+      "b2b3",
+      "f8g7",
+      "c2c3",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "f7f5",
+      "g2g4",
+      "f5g4",
+      "e2e4",
+      "b8c6"
+    ],
+    [
+      "b2b4",
+      "e7e5",
+      "c1b2",
+      "f7f6",
+      "b4b5",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d4",
+      "b7b6",
+      "f2f4",
+      "c8b7"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d1e2",
+      "b7b6",
+      "g1f3",
+      "g8e7"
+    ],
+    [
+      "d2d4",
+      "c7c5",
+      "d4d5",
+      "e7e5",
+      "d5e6",
+      "d7e6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "g1f3",
+      "g7g6",
+      "g2g3",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d1e2",
+      "f8e7",
+      "f2f4",
+      "d7d5"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "d7d6",
+      "e2e4",
+      "g7g6"
+    ],
+    [
+      "e2e3",
+      "b7b6",
+      "d2d3",
+      "c8b7",
+      "g1f3",
+      "g8f6"
+    ],
+    [
+      "b2b3",
+      "f7f5",
+      "c1b2",
+      "g8f6",
+      "f2f4",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "h2h3",
+      "e7e5",
+      "c2c4",
+      "g8f6"
+    ],
+    [
+      "c2c4",
+      "g8f6",
+      "b1c3",
+      "e7e6",
+      "b2b3",
+      "d7d5"
+    ],
+    [
+      "f2f4",
+      "f7f5",
+      "g1f3",
+      "b8c6",
+      "c2c3",
+      "b7b6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "b1c3",
+      "d7d6",
+      "d1d3",
+      "a7a6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1g5",
+      "d7d6",
+      "e2e3",
+      "g7g6"
+    ],
+    [
+      "d2d4",
+      "b7b6",
+      "a2a4",
+      "c8b7",
+      "a4a5",
+      "e7e6"
+    ],
+    [
+      "a2a3",
+      "g7g6",
+      "g1f3",
+      "a7a6",
+      "g2g3",
+      "g8f6"
+    ],
+    [
+      "c2c4",
+      "g7g6",
+      "b1c3",
+      "f8g7",
+      "f2f4",
+      "c7c5"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "g2g3",
+      "c7c6",
+      "g1f3",
+      "d8c7"
+    ],
+    [
+      "f2f4",
+      "f7f5",
+      "d2d4",
+      "g7g6",
+      "c2c4",
+      "f8g7"
+    ],
+    [
+      "e2e3",
+      "g7g6",
+      "h2h4",
+      "f8g7",
+      "h4h5",
+      "d7d5"
+    ],
+    [
+      "f2f4",
+      "d7d5",
+      "e2e3",
+      "g7g6",
+      "g2g3",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "g7g6",
+      "b1c3",
+      "f8g7",
+      "g1f3",
+      "a7a6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "d4d5",
+      "d7d6",
+      "e2e3",
+      "c7c5"
+    ],
+    [
+      "e2e3",
+      "g7g6",
+      "d2d3",
+      "f8g7",
+      "g2g3",
+      "d7d5"
+    ],
+    [
+      "c2c4",
+      "d7d5",
+      "c4d5",
+      "d8d5",
+      "b1c3",
+      "d5a5"
+    ],
+    [
+      "d2d4",
+      "e7e6",
+      "c2c4",
+      "f8b4",
+      "b1c3",
+      "f7f5"
+    ],
+    [
+      "c2c3",
+      "b7b6",
+      "d1c2",
+      "c8b7",
+      "d2d3",
+      "g7g6"
+    ],
+    [
+      "b1c3",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "g2g3",
+      "g7g6"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "d7d6",
+      "g2g3",
+      "g8e7"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "d2d3",
+      "g7g6",
+      "g2g4",
+      "b8c6"
+    ],
+    [
+      "b2b4",
+      "e7e5",
+      "a2a3",
+      "g8f6",
+      "e2e3",
+      "d7d6"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "b1c3",
+      "f8c5",
+      "g2g3",
+      "d7d6"
+    ],
+    [
+      "b2b4",
+      "d7d5",
+      "c1b2",
+      "g8f6",
+      "g1f3",
+      "c8g4"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "b2b3",
+      "b7b6",
+      "f1e2",
+      "e7e6"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "b1c3",
+      "a7a6",
+      "g1e2",
+      "g8f6"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "f1c4",
+      "g8f6",
+      "b1c3",
+      "c8g4"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "d2d3",
+      "b8c6",
+      "g2g3",
+      "f8b4"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "c1g5",
+      "c8f5",
+      "g1f3",
+      "d8c8"
+    ],
+    [
+      "c2c4",
+      "g7g6",
+      "d2d4",
+      "c7c5",
+      "d4c5",
+      "f8g7"
+    ],
+    [
+      "g1f3",
+      "g8f6",
+      "b2b4",
+      "e7e6",
+      "b4b5",
+      "c7c6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "a2a3",
+      "g8f6",
+      "b1c3",
+      "d7d6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "g1f3",
+      "c7c5",
+      "g2g3",
+      "c5d4"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "g1f3",
+      "b7b6",
+      "c1g5",
+      "c8b7"
+    ],
+    [
+      "b1c3",
+      "f7f5",
+      "e2e3",
+      "g8f6",
+      "f1c4",
+      "e7e6"
+    ],
+    [
+      "g1f3",
+      "g8f6",
+      "b2b4",
+      "d7d6",
+      "d2d4",
+      "b8d7"
+    ],
+    [
+      "f2f4",
+      "g8f6",
+      "g1f3",
+      "e7e6",
+      "e2e3",
+      "d7d6"
+    ],
+    [
+      "g2g4",
+      "e7e5",
+      "f1g2",
+      "g8e7",
+      "d2d4",
+      "e7g6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "b1c3",
+      "g7g6",
+      "c1e3",
+      "f8g7"
+    ],
+    [
+      "c2c4",
+      "f7f5",
+      "g2g4",
+      "e7e6",
+      "g4f5",
+      "e6f5"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "h2h3",
+      "e7e6",
+      "c2c3",
+      "f8d6"
+    ],
+    [
+      "f2f4",
+      "d7d5",
+      "d2d4",
+      "g8f6",
+      "b1c3",
+      "c8f5"
+    ],
+    [
+      "e2e4",
+      "g7g6",
+      "h2h4",
+      "d7d5",
+      "e4e5",
+      "f8g7"
+    ],
+    [
+      "g1f3",
+      "b8c6",
+      "d2d3",
+      "e7e5",
+      "b1d2",
+      "g7g6"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "d2d4",
+      "g8f6",
+      "a2a4",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "b1c3",
+      "b8c6",
+      "b2b3",
+      "f8d6"
+    ],
+    [
+      "c2c4",
+      "c7c6",
+      "b1c3",
+      "d7d5",
+      "g2g3",
+      "d5d4"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "g1f3",
+      "d8c7",
+      "c2c3",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "e7e6",
+      "g1f3",
+      "f7f5",
+      "b2b3",
+      "c7c6"
+    ],
+    [
+      "h2h4",
+      "e7e5",
+      "e2e3",
+      "g8f6",
+      "d2d4",
+      "e5d4"
+    ],
+    [
+      "d2d4",
+      "e7e6",
+      "c2c4",
+      "f7f5",
+      "g2g3",
+      "d7d6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "g1f3",
+      "g8f6",
+      "g2g3",
+      "c8f5"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "g2g3",
+      "e7e5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "b7b6",
+      "b1c3",
+      "d7d5"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "g1f3",
+      "g8f6",
+      "e2e3",
+      "c7c5"
+    ],
+    [
+      "g1f3",
+      "d7d5",
+      "c2c4",
+      "g8f6",
+      "b2b3",
+      "c8g4"
+    ],
+    [
+      "e2e4",
+      "d7d6",
+      "b1c3",
+      "g8f6",
+      "f2f4",
+      "d6d5"
+    ],
+    [
+      "d2d4",
+      "g7g6",
+      "b1c3",
+      "f8g7",
+      "h2h4",
+      "c7c5"
+    ],
+    [
+      "d2d4",
+      "e7e6",
+      "c2c4",
+      "b7b6",
+      "e2e4",
+      "f8b4"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "d2d4",
+      "d7d5",
+      "f1d3",
+      "d5e4"
+    ],
+    [
+      "e2e4",
+      "c7c5",
+      "f1c4",
+      "e7e6",
+      "g1f3",
+      "a7a6"
+    ],
+    [
+      "c2c3",
+      "f7f5",
+      "g1f3",
+      "g8f6",
+      "g2g3",
+      "d7d6"
+    ],
+    [
+      "g1f3",
+      "c7c5",
+      "g2g3",
+      "d7d6",
+      "f1g2",
+      "g8f6"
+    ],
+    [
+      "g1f3",
+      "e7e6",
+      "g2g3",
+      "g8e7",
+      "b2b3",
+      "c7c5"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "c1g5",
+      "c8f5",
+      "b1c3",
+      "d6d5"
+    ],
+    [
+      "d2d3",
+      "g7g6",
+      "b1c3",
+      "f8g7",
+      "c1d2",
+      "g8f6"
+    ],
+    [
+      "d2d4",
+      "d7d5",
+      "h2h3",
+      "c8f5",
+      "c1f4",
+      "e7e6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1g5",
+      "c7c5",
+      "d4c5",
+      "e7e6"
+    ],
+    [
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "d7d6",
+      "e2e3",
+      "g8f6"
+    ],
+    [
+      "b1c3",
+      "g8f6",
+      "f2f4",
+      "d7d5",
+      "d2d4",
+      "e7e6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1f4",
+      "f6h5",
+      "f4g3",
+      "e7e6"
+    ],
+    [
+      "g1f3",
+      "g8f6",
+      "d2d3",
+      "d7d5",
+      "e2e3",
+      "c8f5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c1f4",
+      "e7e6",
+      "a2a3",
+      "b7b6"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "f2f4",
+      "c7c6",
+      "d2d4",
+      "g8f6"
+    ],
+    [
+      "f2f4",
+      "b7b5",
+      "b2b3",
+      "e7e5",
+      "e2e4",
+      "e5f4"
+    ],
+    [
+      "c2c4",
+      "g8f6",
+      "b1c3",
+      "d7d6",
+      "d2d3",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "g8f6",
+      "f1c4",
+      "c7c6",
+      "c4b3",
+      "g7g6"
+    ],
+    [
+      "e2e4",
+      "a7a5",
+      "b1c3",
+      "e7e6",
+      "g2g3",
+      "d7d5"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "e2e3",
+      "d7d6",
+      "f2f4",
+      "d6d5"
+    ],
+    [
+      "c2c4",
+      "e7e5",
+      "e2e3",
+      "g7g6",
+      "b1c3",
+      "f8g7"
+    ],
+    [
+      "b2b4",
+      "g8f6",
+      "c1b2",
+      "d7d5",
+      "a2a3",
+      "b8d7"
+    ],
+    [
+      "e2e4",
+      "e7e5",
+      "d2d3",
+      "f8c5",
+      "d1f3",
+      "d8f6"
+    ],
+    [
+      "g1f3",
+      "c7c5",
+      "b2b3",
+      "d7d6",
+      "g2g3",
+      "e7e5"
+    ],
+    [
+      "d2d4",
+      "e7e6",
+      "c2c3",
+      "b7b6",
+      "c1f4",
+      "c8b7"
+    ],
+    [
+      "b1a3",
+      "d7d5",
+      "f2f4",
+      "g7g6",
+      "g1f3",
+      "f8g7"
+    ],
+    [
+      "e2e4",
+      "a7a6",
+      "d2d4",
+      "b7b5",
+      "f2f4",
+      "c8b7"
+    ],
+    [
+      "g2g3",
+      "g7g6",
+      "f1g2",
+      "f8g7",
+      "f2f4",
+      "c7c6"
+    ],
+    [
+      "d2d4",
+      "d7d6",
+      "c2c4",
+      "e7e5",
+      "d4d5",
+      "g7g6"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "b8c6",
+      "a2a3",
+      "e7e5"
+    ],
+    [
+      "e2e4",
+      "e7e6",
+      "c2c4",
+      "g8e7",
+      "b1c3",
+      "d7d5"
+    ],
+    [
+      "c2c3",
+      "b7b6",
+      "a2a4",
+      "c7c5",
+      "e2e4",
+      "c8b7"
+    ],
+    [
+      "d2d4",
+      "g8f6",
+      "c2c4",
+      "c7c5",
+      "g1f3",
+      "c5d4"
+    ]
+  ],
+  "kind": "production"
+}

@@ -1,0 +1,169 @@
+E        _
+E |   _ | |
+E |_ |_ |_| v0.33.0-rc0 built Sep  5 2026
+E Search algorithm: classic
+O id name Lc0 v0.33.0-rc0
+O id author The LCZero Authors.
+O option name LogFile type string default 
+O option name ConfigFile type string default lc0.config
+O option name Ponder type check default false
+O option name SyzygyPath type string default 
+O option name Threads type spin default 0 min 0 max 128
+O option name MinibatchSize type spin default 0 min 0 max 1024
+O option name CPuct type string default 1.745000
+O option name CPuctBase type string default 38739.000000
+O option name CPuctFactor type string default 3.894000
+O option name TwoFoldDraws type check default true
+O option name VerboseMoveStats type check default false
+O option name FpuStrategy type combo default reduction var reduction var absolute
+O option name FpuValue type string default 0.330000
+O option name CacheHistoryLength type spin default 0 min 0 max 7
+O option name MaxCollisionEvents type spin default 917 min 1 max 65536
+O option name MaxCollisionVisits type spin default 80000 min 1 max 100000000
+O option name MaxCollisionVisitsScalingStart type spin default 28 min 1 max 100000
+O option name MaxCollisionVisitsScalingEnd type spin default 145000 min 0 max 100000000
+O option name MaxCollisionVisitsScalingPower type string default 1.250000
+O option name OutOfOrderEval type check default true
+O option name MaxOutOfOrderEvalsFactor type string default 2.400000
+O option name StickyEndgames type check default true
+O option name SyzygyFastPlay type check default false
+O option name MultiPV type spin default 1 min 1 max 500
+O option name PerPVCounters type check default false
+O option name ScoreType type combo default WDL_mu var centipawn var centipawn_with_drawscore var centipawn_2019 var centipawn_2018 var win_percentage var Q var W-L var WDL_mu
+O option name MovesLeftMaxEffect type string default 0.034500
+O option name MovesLeftThreshold type string default 0.800000
+O option name MovesLeftSlope type string default 0.002700
+O option name MovesLeftConstantFactor type string default 0.000000
+O option name MovesLeftScaledFactor type string default 1.652100
+O option name MovesLeftQuadraticFactor type string default -0.652100
+O option name MaxConcurrentSearchers type spin default 1 min 0 max 128
+O option name DrawScore type string default 0.000000
+O option name ContemptMode type combo default play var play var white_side_analysis var black_side_analysis var disable
+O option name Contempt type string default 
+O option name WDLCalibrationElo type string default 0.000000
+O option name WDLEvalObjectivity type string default 1.000000
+O option name WDLDrawRateReference type string default 0.500000
+O option name NodesPerSecondLimit type string default 0.000000
+O option name TaskWorkers type spin default -1 min -1 max 128
+O option name MinimumProcessingWork type spin default 20 min 2 max 100000
+O option name MinimumPickingWork type spin default 1 min 1 max 100000
+O option name MinimumRemainingPickingWork type spin default 20 min 0 max 100000
+O option name MinimumPerTaskProcessing type spin default 8 min 1 max 100000
+O option name IdlingMinimumWork type spin default 0 min 0 max 10000
+O option name ThreadIdlingThreshold type spin default 1 min 0 max 128
+O option name UCI_Opponent type string default 
+O option name UCI_RatingAdv type string default 0.000000
+O option name SearchSpinBackoff type check default false
+O option name GarbageCollectionDelay type string default 10.000000
+O option name MaxPrefetch type spin default 32 min 0 max 1024
+O option name SolidTreeThreshold type spin default 100 min 1 max 2000000000
+O option name SmartPruningFactor type string default 1.330000
+O option name SmartPruningMinimumBatches type spin default 0 min 0 max 10000
+O option name RamLimitMb type spin default 0 min 0 max 100000000
+O option name MoveOverheadMs type spin default 200 min 0 max 100000000
+O option name TimeManager type string default legacy
+O option name UCI_Chess960 type check default false
+O option name UCI_ShowWDL type check default false
+O option name UCI_ShowEPS type check default false
+O option name UCI_ShowMovesLeft type check default false
+O option name PolicyTemperature type string default 1.359000
+O option name HistoryFill type combo default fen_only var no var fen_only var always
+O option name WeightsFile type string default C:\Users\HP\AppData\Local\LC0-BT3-Evaluator\backup-20261031T210343Z\extracted\CS6886_Group10_CourseProject\models\fp16.pb.gz
+O option name Backend type combo default onnx-trt var onnx-trt var onnx-dml var onnx-cpu var onnx-cuda var onnx-coreml var trivial var random var check var roundrobin var recordreplay var multiplexing var demux
+O option name BackendOptions type string default optimize=6
+O option name NNCacheSize type spin default 2000000 min 0 max 999999999
+O uciok
+O readyok
+E Loading weights file from: C:\Users\HP\AppData\Local\LC0-BT3-Evaluator\backup-20261031T210343Z\extracted\CS6886_Group10_CourseProject\models\fp16.pb.gz
+E CUDA runtime version: 12.9.0
+E Latest version of CUDA supported by the driver: 13.1.0
+E GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+E GPU memory: 7.99561 Gb
+E GPU clock frequency: 2250 MHz
+E GPU device ID: 10de:28a0
+E GPU subsystem ID: 103c:8bcd
+O info depth 1 seldepth 2 time 68 nodes 2 score cp 20 nps 222 tbhits 0 pv b1c3 b8c6
+O info depth 2 seldepth 3 time 73 nodes 3 score cp 16 nps 214 tbhits 0 pv b1c3 b8c6 f1b5
+O info depth 2 seldepth 4 time 77 nodes 4 score cp 14 nps 222 tbhits 0 pv b1c3 b8c6 f1b5 c8d7
+O info depth 3 seldepth 5 time 81 nodes 5 score cp 15 nps 217 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5
+O info depth 3 seldepth 6 time 85 nodes 7 score cp 14 nps 259 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4
+O info depth 3 seldepth 7 time 99 nodes 15 score cp 12 nps 375 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3
+O info depth 3 seldepth 8 time 112 nodes 20 score cp 16 nps 370 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6
+O info depth 4 seldepth 8 time 114 nodes 22 score cp 15 nps 392 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6
+O info depth 4 seldepth 9 time 126 nodes 39 score cp 19 nps 573 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4
+O info depth 4 seldepth 10 time 140 nodes 60 score cp 19 nps 731 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4
+O info depth 5 seldepth 11 time 159 nodes 96 score cp 18 nps 950 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4
+O info depth 5 seldepth 12 time 178 nodes 155 score cp 17 nps 1302 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4
+O info depth 6 seldepth 13 time 196 nodes 202 score cp 17 nps 1463 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4
+O info depth 6 seldepth 14 time 224 nodes 298 score cp 16 nps 1795 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4 e7e6
+O info depth 7 seldepth 14 time 274 nodes 509 score cp 15 nps 2356 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4 e7e6
+O info depth 7 seldepth 15 time 378 nodes 985 score cp 15 nps 3078 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 g2g4 e7e6 d2d3 a7a6 b5c6
+O info depth 7 seldepth 16 time 445 nodes 1290 score cp 16 nps 3333 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 g2g4 e7e6 d2d3 a7a6 b5c6 d7c6
+O info depth 8 seldepth 16 time 478 nodes 1448 score cp 16 nps 3447 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 g2g4 e7e6 d2d3 a7a6 b5c6 d7c6
+O info depth 8 seldepth 17 time 495 nodes 1518 score cp 16 nps 3473 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4 e7e6 b5c6 d7c6
+O info depth 8 seldepth 18 time 746 nodes 2687 score cp 13 nps 3905 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 g2g4 e7e6 d2d3 h6g8 d1e2 h7h5 h1f1
+O info depth 9 seldepth 18 time 915 nodes 3490 score cp 13 nps 4077 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 g2g4 e7e6 d2d3 h6g8 d1e2 h7h5 h1f1
+O info depth 9 seldepth 19 time 1016 nodes 3995 score cp 13 nps 4174 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 d1e2 e7e6 h2h3 g4h6 g2g4 c6d4 f3d4 c5d4 c3e4 a8c8 b2b3 d6e5
+O info depth 9 seldepth 20 time 1100 nodes 4399 score cp 13 nps 4225 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 d1e2 e7e6 h2h3 g4h6 g2g4 c6d4 f3d4 c5d4 c3e4 a8c8 e5d6 d7b5 e2b5
+O info depth 9 seldepth 20 time 1217 nodes 4990 score cp 13 nps 4305 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 d1e2 e7e6 h2h3 g4h6 g2g4 c6d4 f3d4 c5d4 c3e4 a8c8 e5d6 d7b5 e2b5 d8d7
+O bestmove b1c3 ponder b8c6
+O readyok
+O info depth 1 seldepth 2 time 14 nodes 2 score cp 20 nps 222 tbhits 0 pv b1c3 b8c6
+O info depth 2 seldepth 3 time 20 nodes 3 score cp 16 nps 214 tbhits 0 pv b1c3 b8c6 f1b5
+O info depth 2 seldepth 4 time 24 nodes 4 score cp 14 nps 222 tbhits 0 pv b1c3 b8c6 f1b5 c8d7
+O info depth 2 seldepth 5 time 29 nodes 6 score cp 15 nps 260 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5
+O info depth 3 seldepth 6 time 33 nodes 7 score cp 14 nps 259 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4
+O info depth 3 seldepth 7 time 41 nodes 12 score cp 14 nps 342 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3
+O info depth 3 seldepth 8 time 55 nodes 22 score cp 17 nps 448 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6
+O info depth 4 seldepth 8 time 59 nodes 25 score cp 15 nps 471 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6
+O info depth 4 seldepth 9 time 77 nodes 39 score cp 17 nps 549 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4
+O info depth 4 seldepth 9 time 87 nodes 46 score cp 17 nps 560 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4
+O bestmove b1c3 ponder b8c6
+O readyok
+O info depth 1 seldepth 2 time 13 nodes 2 score cp 35 nps 250 tbhits 0 pv d2d4 f8b4
+O info depth 2 seldepth 3 time 25 nodes 5 score cp 37 nps 250 tbhits 0 pv d2d4 f8b4 c1d2
+O info depth 2 seldepth 4 time 43 nodes 7 score cp 39 nps 189 tbhits 0 pv d2d4 f8b4 c1d2 d8e7
+O info depth 3 seldepth 5 time 57 nodes 10 score cp 39 nps 196 tbhits 0 pv d2d4 f8b4 c1d2 d8e7
+O info depth 3 seldepth 6 time 61 nodes 16 score cp 33 nps 285 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3
+O info depth 4 seldepth 6 time 74 nodes 20 score cp 37 nps 289 tbhits 0 pv d2d4 f7f5 b1c3 f8b4 e4f5 g8h6
+O info depth 4 seldepth 7 time 84 nodes 31 score cp 40 nps 392 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5
+O bestmove d2d4 ponder f8b4
+O readyok
+O info depth 1 seldepth 2 time 14 nodes 2 score cp 20 nps 222 tbhits 0 pv b1c3 b8c6
+O info depth 2 seldepth 3 time 19 nodes 3 score cp 16 nps 214 tbhits 0 pv b1c3 b8c6 f1b5
+O info depth 2 seldepth 4 time 23 nodes 4 score cp 14 nps 222 tbhits 0 pv b1c3 b8c6 f1b5 c8d7
+O info depth 2 seldepth 5 time 28 nodes 6 score cp 15 nps 260 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5
+O info depth 3 seldepth 6 time 33 nodes 7 score cp 14 nps 250 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4
+O info depth 3 seldepth 7 time 41 nodes 12 score cp 14 nps 342 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3
+O info depth 4 seldepth 8 time 55 nodes 19 score cp 16 nps 380 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6
+O info depth 4 seldepth 9 time 69 nodes 39 score cp 19 nps 619 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4
+O info depth 4 seldepth 10 time 79 nodes 60 score cp 17 nps 810 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4
+O info depth 5 seldepth 10 time 87 nodes 73 score cp 17 nps 901 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4
+O info depth 5 seldepth 11 time 99 nodes 97 score cp 17 nps 1031 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4
+O info depth 5 seldepth 12 time 117 nodes 161 score cp 17 nps 1450 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4
+O info depth 6 seldepth 12 time 125 nodes 186 score cp 17 nps 1550 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4
+O info depth 6 seldepth 13 time 140 nodes 240 score cp 16 nps 1791 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4
+O info depth 6 seldepth 14 time 181 nodes 400 score cp 15 nps 2285 tbhits 0 pv b1c3 b8c6 f1b5 c8d7 e4e5 f6g4 h2h3 g4h6 d2d4 c5d4 f3d4 e7e6
+O bestmove b1c3 ponder b8c6
+O readyok
+O info depth 1 seldepth 2 time 14 nodes 2 score cp 35 nps 250 tbhits 0 pv d2d4 f8b4
+O info depth 2 seldepth 3 time 23 nodes 4 score cp 35 nps 235 tbhits 0 pv d2d4 f8b4 c1d2
+O info depth 2 seldepth 4 time 27 nodes 7 score cp 39 nps 318 tbhits 0 pv d2d4 f8b4 c1d2 d8e7
+O info depth 3 seldepth 5 time 43 nodes 11 score cp 39 nps 289 tbhits 0 pv d2d4 f8b4 c1d2 d8e7
+O info depth 3 seldepth 6 time 55 nodes 19 score cp 36 nps 387 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3
+O info depth 4 seldepth 6 time 63 nodes 22 score cp 38 nps 385 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3
+O info depth 4 seldepth 7 time 77 nodes 29 score cp 40 nps 408 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5
+O info depth 4 seldepth 8 time 81 nodes 31 score cp 43 nps 413 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5
+O info depth 4 seldepth 9 time 84 nodes 35 score cp 41 nps 448 tbhits 0 pv d2d4 f7f5 b1c3 f8b4 e4f5 g8h6 f5e6 h6f5 c1f4
+O info depth 5 seldepth 10 time 93 nodes 45 score cp 43 nps 517 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5
+O info depth 5 seldepth 11 time 105 nodes 52 score cp 44 nps 525 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5
+O info depth 5 seldepth 12 time 113 nodes 56 score cp 45 nps 523 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5
+O info depth 5 seldepth 13 time 122 nodes 69 score cp 44 nps 594 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6
+O info depth 5 seldepth 14 time 131 nodes 78 score cp 43 nps 619 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6
+O info depth 6 seldepth 15 time 145 nodes 99 score cp 44 nps 712 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6
+O info depth 6 seldepth 16 time 151 nodes 103 score cp 45 nps 710 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6
+O info depth 6 seldepth 17 time 155 nodes 127 score cp 46 nps 852 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6 a2a3
+O info depth 6 seldepth 18 time 171 nodes 166 score cp 47 nps 1006 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6 a2a3
+O info depth 7 seldepth 18 time 179 nodes 204 score cp 48 nps 1172 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6 a2a3 b4d6
+O info depth 7 seldepth 19 time 187 nodes 227 score cp 48 nps 1254 tbhits 0 pv d2d4 f8b4 c1d2 d8e7 b1c3 f7f5 e4f5 b8c6 a2a3 b4d6
+O bestmove d2d4 ponder f8b4

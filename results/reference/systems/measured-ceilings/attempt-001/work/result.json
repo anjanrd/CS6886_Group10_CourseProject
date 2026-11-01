@@ -1,0 +1,66 @@
+{
+  "fp16": {
+    "shape": [
+      8192,
+      4096,
+      4096
+    ],
+    "latency_ms": 7.10444,
+    "arithmetic_ops": 274877906944,
+    "model": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16.onnx",
+      "bytes": 67108969,
+      "sha256": "779fb20e7f7130e850d7a87199d9a9bcc71abf1aff6b25d089a8657a19197c4c"
+    },
+    "layer_info": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16_layers.json",
+      "bytes": 1828,
+      "sha256": "57a0cbe91ba37b7eb3991845063bba82ddf74985e01db5989da89f6c50e171b7"
+    },
+    "precision_requires_review": "Inspect real tactic/operand formats before assigning a compute roof"
+  },
+  "int8": {
+    "shape": [
+      8192,
+      4096,
+      4096
+    ],
+    "latency_ms": 3.24828,
+    "arithmetic_ops": 274877906944,
+    "model": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8.onnx",
+      "bytes": 67129672,
+      "sha256": "98c4ca0263dc4cf982362e55b090af00f94dcdd86249bd63c54254f0af848206"
+    },
+    "layer_info": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8_layers.json",
+      "bytes": 1029,
+      "sha256": "75e68ebd916d7787f8c554dccf11cec8174c3ce057a8ed8504869221ba55fdad"
+    },
+    "precision_requires_review": "Inspect real tactic/operand formats before assigning a compute roof"
+  },
+  "bandwidth": {
+    "shape": [
+      8,
+      16384,
+      16384
+    ],
+    "latency_ms": 2.22534,
+    "arithmetic_ops": 4294967296,
+    "model": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth.onnx",
+      "bytes": 1073741934,
+      "sha256": "7537d618619f25d6fac2869ada3968f8dca90c199dc212ec4e0cc8fc97abcf1b"
+    },
+    "layer_info": {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth_layers.json",
+      "bytes": 1839,
+      "sha256": "cebf2bab07feefba0751c0d6bd78169b1dbafa28329a166fb4b128a7c4a17a3f"
+    },
+    "precision_requires_review": "Inspect real tactic/operand formats before assigning a compute roof"
+  },
+  "fp16_candidate_tflops": 38.69100266087123,
+  "int8_candidate_tops": 84.6226024061965,
+  "bandwidth_modelled_weight_gbs": 241.2534318351353,
+  "scope": "Measured microbenchmark ceilings; review precision. Bandwidth is effective modeled traffic, not measured DRAM bytes."
+}

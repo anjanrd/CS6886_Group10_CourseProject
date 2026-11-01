@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-B",
+    "-m",
+    "execution.ultimate_backup",
+    "--config",
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject\\config.json",
+    "--plan",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\ultimate\\backup\\plan.json",
+    "--output",
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\smoke"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480737.6580143,
+  "pid": 13412,
+  "exit_code": 1,
+  "elapsed_seconds": 3.0139150619506836,
+  "error": "RuntimeError('Pipeline command exited 1; see C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\LC0-BT3-Evaluator\\\\backup-20261031T210343Z\\\\checks\\\\smoke\\\\command.log')"
+}

@@ -1,0 +1,162 @@
+{
+  "status": "verified",
+  "models": [
+    {
+      "model": "fp16",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s1",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s2",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s3",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s4",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s4aa",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s0",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "s1sp",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "swap_pol8",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    },
+    {
+      "model": "swap_val8",
+      "positions": 32,
+      "max_numeric_absolute": {
+        "wl": 0,
+        "d": 0,
+        "v": 0,
+        "m": 0
+      },
+      "normalized_policy_max_absolute": 0,
+      "raw_outcome_changes": [],
+      "search_outcome_changes_descriptive": [],
+      "search_exact_moves_not_required": true
+    }
+  ],
+  "failures": [],
+  "tolerances_frozen_before_execution": {
+    "value_absolute": {
+      "wl": 0.005,
+      "d": 0.005,
+      "v": 0.005,
+      "m": 0.25
+    },
+    "normalized_policy_max_absolute": 0.005,
+    "raw_tablebase_outcome_vector_must_match_reference": true,
+    "search_exact_moves_required": false,
+    "performance_ratio_review_band": [
+      0.8,
+      1.2
+    ]
+  },
+  "scope": "same frozen models/inputs; numerical/function reproduction, not a new accuracy study"
+}

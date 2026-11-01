@@ -1,0 +1,1495 @@
+{
+  "sources": [
+    {
+      "model": "fp16",
+      "study": "A",
+      "input": {
+        "path": "results/fp16/study_a.jsonl",
+        "bytes": 919000,
+        "sha256": "a2a77665c40506f86a911cc2f26904bab7f3e739496838b0b3d5cf16ed08e353"
+      },
+      "metadata": [
+        {
+          "path": "results/fp16/meta.json",
+          "bytes": 373,
+          "sha256": "aebce00a1038c90d1cac43a4ccb58ba62e4d865bd660963df86de9559f24ac6c"
+        },
+        {
+          "path": "results/fp16/meta.jsonl",
+          "bytes": 1034,
+          "sha256": "1b61a7fcab1ca31a96599769ebcaf6f615d8d8a00c74de3a240fd7752027614c"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2637,
+      "settings": [
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "dev",
+          "n_positions": 200,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:04:04",
+          "warnings": [],
+          "finished": "2026-10-28 00:05:58"
+        },
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 50,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:42:57",
+          "warnings": [],
+          "finished": "2026-10-28 00:43:51"
+        },
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 05:38:17",
+          "warnings": [],
+          "finished": "2026-10-28 06:10:32"
+        }
+      ],
+      "model_sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "fp16",
+      "study": "B",
+      "input": {
+        "path": "results/fp16/study_b.jsonl",
+        "bytes": 1174714,
+        "sha256": "9b58a6b670019392894c43c82fd212a69ef7362eab559e47f5200ca124919456"
+      },
+      "metadata": [
+        {
+          "path": "results/fp16/meta.json",
+          "bytes": 373,
+          "sha256": "aebce00a1038c90d1cac43a4ccb58ba62e4d865bd660963df86de9559f24ac6c"
+        },
+        {
+          "path": "results/fp16/meta.jsonl",
+          "bytes": 1034,
+          "sha256": "1b61a7fcab1ca31a96599769ebcaf6f615d8d8a00c74de3a240fd7752027614c"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "dev",
+          "n_positions": 200,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:04:04",
+          "warnings": [],
+          "finished": "2026-10-28 00:05:58"
+        },
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 50,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:42:57",
+          "warnings": [],
+          "finished": "2026-10-28 00:43:51"
+        },
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 05:38:17",
+          "warnings": [],
+          "finished": "2026-10-28 06:10:32"
+        }
+      ],
+      "model_sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "fp16",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/fp16/study_b.jsonl",
+        "bytes": 25284,
+        "sha256": "69998e14661098e7bb598c615dee4eb8ac5351d6edfecab2d87cb3fe634cf661"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/fp16/meta.json",
+          "bytes": 371,
+          "sha256": "b41d621cb87ef8910b799623745d72677e9b0726c13118b6908ca4270605a23e"
+        },
+        {
+          "path": "results/hard_lowbudget/fp16/meta.jsonl",
+          "bytes": 344,
+          "sha256": "89891f19b3be4181f4de258c90c6330e6d7170ccf69481a9e8031229b33d1df6"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:57:46",
+          "warnings": [],
+          "finished": "2026-10-28 12:58:07"
+        }
+      ],
+      "model_sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "fp16",
+      "study": "C",
+      "input": {
+        "path": "results/studyc/fp16/study_c.jsonl",
+        "bytes": 1142537,
+        "sha256": "affe278c6facf2e179178316cc37bfab39e20a67bac1ed71214ef3cf4bdb54af"
+      },
+      "metadata": [
+        {
+          "path": "results/studyc/fp16/meta.json",
+          "bytes": 405,
+          "sha256": "5ce5d88c37240a042ed8e2a947583e623a6682b4692d850bdad06d84af0a142b"
+        },
+        {
+          "path": "results/studyc/fp16/meta.jsonl",
+          "bytes": 378,
+          "sha256": "39f3850c40b309eafb9e607d07a4403d454ebff6b9ff0094c06c04935cd707f8"
+        }
+      ],
+      "test_counts": {
+        "200": 6720,
+        "800": 4119
+      },
+      "all_rows": 10839,
+      "settings": [
+        {
+          "name": "fp16",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\models\\fp16.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=6",
+          "threads": 0,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 14:08:01",
+          "warnings": [],
+          "finished": "2026-10-28 14:24:09"
+        }
+      ],
+      "model_sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s1",
+      "study": "A",
+      "input": {
+        "path": "results/s1/study_a.jsonl",
+        "bytes": 851486,
+        "sha256": "65a875b8dcc29a834a1871c43645c733810f2db634d207a2dbbdf6f2351e9caf"
+      },
+      "metadata": [
+        {
+          "path": "results/s1/meta.json",
+          "bytes": 369,
+          "sha256": "18c96544850fbe460968e004c577ab94e035a71bce0917b8504b5f8dfb110644"
+        },
+        {
+          "path": "results/s1/meta.jsonl",
+          "bytes": 342,
+          "sha256": "a0087144318515142e706da798ceebf25e105f0be5c920832cb1ab79d46caa5f"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s1",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 06:10:32",
+          "warnings": [],
+          "finished": "2026-10-28 06:42:50"
+        }
+      ],
+      "model_sha256": "9d714319f799ae8a19b0809d6380f3ec819e02704af52587dbbdc1fdc3e08b1f",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s1",
+      "study": "B",
+      "input": {
+        "path": "results/s1/study_b.jsonl",
+        "bytes": 1173799,
+        "sha256": "c65d780697fd3841bed9b3ef60f40caffae61c19a717a1077f2be0766f6d266a"
+      },
+      "metadata": [
+        {
+          "path": "results/s1/meta.json",
+          "bytes": 369,
+          "sha256": "18c96544850fbe460968e004c577ab94e035a71bce0917b8504b5f8dfb110644"
+        },
+        {
+          "path": "results/s1/meta.jsonl",
+          "bytes": 342,
+          "sha256": "a0087144318515142e706da798ceebf25e105f0be5c920832cb1ab79d46caa5f"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s1",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 06:10:32",
+          "warnings": [],
+          "finished": "2026-10-28 06:42:50"
+        }
+      ],
+      "model_sha256": "9d714319f799ae8a19b0809d6380f3ec819e02704af52587dbbdc1fdc3e08b1f",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s1",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/s1/study_b.jsonl",
+        "bytes": 25257,
+        "sha256": "17d8ae238232fab1b81e6fc98d15f1028861d3a1ed566808628b761417fb95fa"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/s1/meta.json",
+          "bytes": 367,
+          "sha256": "99d7bc0323038482031dd3054062ba48919bb3e78a86a65612f5118a2b757ff0"
+        },
+        {
+          "path": "results/hard_lowbudget/s1/meta.jsonl",
+          "bytes": 340,
+          "sha256": "6016238f1ef4d10c38b82c2cb2aa376f3bfa3d02eadb86637f27f21bf8349eac"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "s1",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:58:08",
+          "warnings": [],
+          "finished": "2026-10-28 12:58:25"
+        }
+      ],
+      "model_sha256": "9d714319f799ae8a19b0809d6380f3ec819e02704af52587dbbdc1fdc3e08b1f",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s2",
+      "study": "A",
+      "input": {
+        "path": "results/s2/study_a.jsonl",
+        "bytes": 921698,
+        "sha256": "781f161427cb8376af0c5f769faa7acae01d2124c684572f55052d29ae3185b5"
+      },
+      "metadata": [
+        {
+          "path": "results/s2/meta.json",
+          "bytes": 369,
+          "sha256": "f4bb6d43d0d125cf4a5521f33ad0e69b30ae1ef1a833c7f4ed257c7036e95adf"
+        },
+        {
+          "path": "results/s2/meta.jsonl",
+          "bytes": 682,
+          "sha256": "722d3af99ee6246de9f9f0d89b5c39e81f977af68702f53862b01b4fe239cd2c"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2637,
+      "settings": [
+        {
+          "name": "s2",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s2.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "dev",
+          "n_positions": 200,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:05:59",
+          "warnings": [],
+          "finished": "2026-10-28 00:09:59"
+        },
+        {
+          "name": "s2",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s2.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 06:42:50",
+          "warnings": [],
+          "finished": "2026-10-28 07:09:03"
+        }
+      ],
+      "model_sha256": "b99af74303433a86d15ae39b6a805a2b8f156e2c59edf906bed70e7ad6bc97ab",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s2",
+      "study": "B",
+      "input": {
+        "path": "results/s2/study_b.jsonl",
+        "bytes": 1174004,
+        "sha256": "8df7cd227a9791af8e9e91f07796f14aebe4bed769dc3542942cfff39df02ec9"
+      },
+      "metadata": [
+        {
+          "path": "results/s2/meta.json",
+          "bytes": 369,
+          "sha256": "f4bb6d43d0d125cf4a5521f33ad0e69b30ae1ef1a833c7f4ed257c7036e95adf"
+        },
+        {
+          "path": "results/s2/meta.jsonl",
+          "bytes": 682,
+          "sha256": "722d3af99ee6246de9f9f0d89b5c39e81f977af68702f53862b01b4fe239cd2c"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s2",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s2.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "dev",
+          "n_positions": 200,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 00:05:59",
+          "warnings": [],
+          "finished": "2026-10-28 00:09:59"
+        },
+        {
+          "name": "s2",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s2.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 06:42:50",
+          "warnings": [],
+          "finished": "2026-10-28 07:09:03"
+        }
+      ],
+      "model_sha256": "b99af74303433a86d15ae39b6a805a2b8f156e2c59edf906bed70e7ad6bc97ab",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s2",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/s2/study_b.jsonl",
+        "bytes": 25268,
+        "sha256": "fde86ec39c211e42d1e4ae831b1d59557414190b0dd20e257ecefe9e502c555a"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/s2/meta.json",
+          "bytes": 367,
+          "sha256": "da9b29bf2626769d250be67f882d5e2a27f477281cb89c596c12977377032b8c"
+        },
+        {
+          "path": "results/hard_lowbudget/s2/meta.jsonl",
+          "bytes": 340,
+          "sha256": "1195938577c5914488dff444a899680593c2392c2dacaecdb228c89a9a978d64"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "s2",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s2.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:58:26",
+          "warnings": [],
+          "finished": "2026-10-28 12:58:43"
+        }
+      ],
+      "model_sha256": "b99af74303433a86d15ae39b6a805a2b8f156e2c59edf906bed70e7ad6bc97ab",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s3",
+      "study": "A",
+      "input": {
+        "path": "results/s3/study_a.jsonl",
+        "bytes": 850442,
+        "sha256": "17c26511d56f02c5e363552130654dd48ed64a7266f5f61ed15f33588767d414"
+      },
+      "metadata": [
+        {
+          "path": "results/s3/meta.json",
+          "bytes": 369,
+          "sha256": "03f1e869f4cbb81df283c6c5cfd914b35275fdff92a6d6f97ac3300ae7f5bcca"
+        },
+        {
+          "path": "results/s3/meta.jsonl",
+          "bytes": 342,
+          "sha256": "3709d98114d7f52973cd40f43c57c0b11c0b66bb9cb817a05e97f21880ea7cad"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s3",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s3.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 07:09:04",
+          "warnings": [],
+          "finished": "2026-10-28 07:37:38"
+        }
+      ],
+      "model_sha256": "d43dba92a9ac11da200b823ac8eb8ba9fb9ce3ecb31ada99d5561b100bd78364",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s3",
+      "study": "B",
+      "input": {
+        "path": "results/s3/study_b.jsonl",
+        "bytes": 1174052,
+        "sha256": "ef6243de39691b90cb601dc10c3f49ff79ab132099bb2e20567f9758b27b1124"
+      },
+      "metadata": [
+        {
+          "path": "results/s3/meta.json",
+          "bytes": 369,
+          "sha256": "03f1e869f4cbb81df283c6c5cfd914b35275fdff92a6d6f97ac3300ae7f5bcca"
+        },
+        {
+          "path": "results/s3/meta.jsonl",
+          "bytes": 342,
+          "sha256": "3709d98114d7f52973cd40f43c57c0b11c0b66bb9cb817a05e97f21880ea7cad"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s3",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s3.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 07:09:04",
+          "warnings": [],
+          "finished": "2026-10-28 07:37:38"
+        }
+      ],
+      "model_sha256": "d43dba92a9ac11da200b823ac8eb8ba9fb9ce3ecb31ada99d5561b100bd78364",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s3",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/s3/study_b.jsonl",
+        "bytes": 25248,
+        "sha256": "0f05a9c04f099f839639fbc9cf03c1ccda9230636bb9383709e7abe94d55402a"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/s3/meta.json",
+          "bytes": 367,
+          "sha256": "dac712c0cc1a604048d72e1f88b41ba5c7e08fd7d7b7e18bfdeff567f1eb990e"
+        },
+        {
+          "path": "results/hard_lowbudget/s3/meta.jsonl",
+          "bytes": 340,
+          "sha256": "4bb120be578dc49ee5511886f32c3adf6b8ad59b3bbb20a68c8088c0e41b91a4"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "s3",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s3.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:58:44",
+          "warnings": [],
+          "finished": "2026-10-28 12:59:01"
+        }
+      ],
+      "model_sha256": "d43dba92a9ac11da200b823ac8eb8ba9fb9ce3ecb31ada99d5561b100bd78364",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4",
+      "study": "A",
+      "input": {
+        "path": "results/s4/study_a.jsonl",
+        "bytes": 848795,
+        "sha256": "9c6b1582498b874f7fb3e8dc5d2fb3ea65e070a3ceaf73d73c0e5135e88a2303"
+      },
+      "metadata": [
+        {
+          "path": "results/s4/meta.json",
+          "bytes": 369,
+          "sha256": "65f4e2707b18f785301b08ba5083b465b96d1e146cbd5bd47e99d4dda1b00ebb"
+        },
+        {
+          "path": "results/s4/meta.jsonl",
+          "bytes": 342,
+          "sha256": "98b50a1db5276ba2be6e22825dda01515cc0b322a3a248e2b3cbeb43895d0955"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s4",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 07:37:39",
+          "warnings": [],
+          "finished": "2026-10-28 08:07:34"
+        }
+      ],
+      "model_sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4",
+      "study": "B",
+      "input": {
+        "path": "results/s4/study_b.jsonl",
+        "bytes": 1174229,
+        "sha256": "2e20d8fb5e99d0e51c7a760818e155bdb01e5d42b4494c6385a1215247c50f12"
+      },
+      "metadata": [
+        {
+          "path": "results/s4/meta.json",
+          "bytes": 369,
+          "sha256": "65f4e2707b18f785301b08ba5083b465b96d1e146cbd5bd47e99d4dda1b00ebb"
+        },
+        {
+          "path": "results/s4/meta.jsonl",
+          "bytes": 342,
+          "sha256": "98b50a1db5276ba2be6e22825dda01515cc0b322a3a248e2b3cbeb43895d0955"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s4",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 07:37:39",
+          "warnings": [],
+          "finished": "2026-10-28 08:07:34"
+        }
+      ],
+      "model_sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/s4/study_b.jsonl",
+        "bytes": 25253,
+        "sha256": "f63b8af12115c5410a9a0353b6c7e92e7f9363aa66e4eef672eb28b2f293e54f"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/s4/meta.json",
+          "bytes": 367,
+          "sha256": "caf7fe1be15c870c361a0b38adc1d7da033be216f79d3053d25f9b937e4749ab"
+        },
+        {
+          "path": "results/hard_lowbudget/s4/meta.jsonl",
+          "bytes": 340,
+          "sha256": "00d8ad20b9da2e49cb332f829d2d55c7533ed3b684b49a729b6a0529ee375ea8"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "s4",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:59:02",
+          "warnings": [],
+          "finished": "2026-10-28 12:59:19"
+        }
+      ],
+      "model_sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4",
+      "study": "C",
+      "input": {
+        "path": "results/studyc/s4/study_c.jsonl",
+        "bytes": 514600,
+        "sha256": "9c2b54746112f375ef6b7167c877421f70dd3a9060146fc503ed8589817ee3ea"
+      },
+      "metadata": [
+        {
+          "path": "results/studyc/s4/meta.json",
+          "bytes": 401,
+          "sha256": "aee166f5fa738b7accd74312cd0be1b0fce972db76913d02ce455e4422b9aca8"
+        },
+        {
+          "path": "results/studyc/s4/meta.jsonl",
+          "bytes": 374,
+          "sha256": "302619530ebb531275647e7672b09d2c3e5112aee10d34f38e334a58ae373001"
+        }
+      ],
+      "test_counts": {
+        "200": 2437,
+        "800": 2437
+      },
+      "all_rows": 4874,
+      "settings": [
+        {
+          "name": "s4",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\models\\s4.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 0,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 14:24:09",
+          "warnings": [],
+          "finished": "2026-10-28 15:01:32"
+        }
+      ],
+      "model_sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4aa",
+      "study": "A",
+      "input": {
+        "path": "results/s4aa/study_a.jsonl",
+        "bytes": 849309,
+        "sha256": "f80bec845210887d4f6d019bf9c6607c2cbb8ae5d9840571f5116362d886880f"
+      },
+      "metadata": [
+        {
+          "path": "results/s4aa/meta.json",
+          "bytes": 373,
+          "sha256": "c20c487b80be64d6349b22bf339965d587edc66e4d04eccee5412ad2e03d38f8"
+        },
+        {
+          "path": "results/s4aa/meta.jsonl",
+          "bytes": 346,
+          "sha256": "4a363c03b85a2172085558054dd02cf573e4ed69fd28d586cce35ff0fbe00070"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s4aa",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4aa.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 08:07:34",
+          "warnings": [],
+          "finished": "2026-10-28 08:39:47"
+        }
+      ],
+      "model_sha256": "6445a8bdf4fde85121c2c1dcef3babd9e62b23858444be3ac9c9d6b36b9bb284",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4aa",
+      "study": "B",
+      "input": {
+        "path": "results/s4aa/study_b.jsonl",
+        "bytes": 1174362,
+        "sha256": "9d71d1d64a586d79e8c2388667c5cacb3d3ef8908b2e8a7c14fbe190990c693c"
+      },
+      "metadata": [
+        {
+          "path": "results/s4aa/meta.json",
+          "bytes": 373,
+          "sha256": "c20c487b80be64d6349b22bf339965d587edc66e4d04eccee5412ad2e03d38f8"
+        },
+        {
+          "path": "results/s4aa/meta.jsonl",
+          "bytes": 346,
+          "sha256": "4a363c03b85a2172085558054dd02cf573e4ed69fd28d586cce35ff0fbe00070"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s4aa",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4aa.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 08:07:34",
+          "warnings": [],
+          "finished": "2026-10-28 08:39:47"
+        }
+      ],
+      "model_sha256": "6445a8bdf4fde85121c2c1dcef3babd9e62b23858444be3ac9c9d6b36b9bb284",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s4aa",
+      "study": "B",
+      "input": {
+        "path": "results/hard_lowbudget/s4aa/study_b.jsonl",
+        "bytes": 25275,
+        "sha256": "f9a9f811d4817b7c9b1bbaa3ae85c27cd0fc6efc4a164c69562d5475b5d02ebc"
+      },
+      "metadata": [
+        {
+          "path": "results/hard_lowbudget/s4aa/meta.json",
+          "bytes": 371,
+          "sha256": "9b967c9657cf55c5ddd4de87eeb4642abb73ea0b3ce43c6e98c2275d9c76561c"
+        },
+        {
+          "path": "results/hard_lowbudget/s4aa/meta.jsonl",
+          "bytes": 344,
+          "sha256": "7b2df3fecac62a410a2d9a59a9148625320ca821d10325ed1d6f269772b16ac3"
+        }
+      ],
+      "test_counts": {
+        "10": 43,
+        "25": 43,
+        "50": 43,
+        "100": 43,
+        "200": 43
+      },
+      "all_rows": 215,
+      "settings": [
+        {
+          "name": "s4aa",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4aa.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 43,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:59:21",
+          "warnings": [],
+          "finished": "2026-10-28 12:59:39"
+        }
+      ],
+      "model_sha256": "6445a8bdf4fde85121c2c1dcef3babd9e62b23858444be3ac9c9d6b36b9bb284",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s0",
+      "study": "A",
+      "input": {
+        "path": "results/s0/study_a.jsonl",
+        "bytes": 867476,
+        "sha256": "64cbcd8e94400f45bd5e386fb4ae43197994bf2ca9dc95386848ccf9de43bac9"
+      },
+      "metadata": [
+        {
+          "path": "results/s0/meta.json",
+          "bytes": 369,
+          "sha256": "7a5c8fda4928d548da423f3f7ceb3c2a6a8147bde111ff918cca1310e2ba988a"
+        },
+        {
+          "path": "results/s0/meta.jsonl",
+          "bytes": 342,
+          "sha256": "0e7e852b0910b3452433431f06f9027371818f8f2a121e95892e21fb87fab055"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s0",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s0.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 11:24:38",
+          "warnings": [],
+          "finished": "2026-10-28 11:26:29"
+        }
+      ],
+      "model_sha256": "01976840b4de5de2a9299ecfda97fc9c56c626eb7e6a79c48f64aaf526d3afd4",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s0",
+      "study": "B",
+      "input": {
+        "path": "results/s0_search/s0/study_b.jsonl",
+        "bytes": 581828,
+        "sha256": "acf91e36283d1b94a2d2f9add724681b454a23d826ffb078baa2def03b8cf756"
+      },
+      "metadata": [
+        {
+          "path": "results/s0_search/s0/meta.json",
+          "bytes": 369,
+          "sha256": "8f451e755b5a71401ca4bbbcdfaa4cf653c86d3e3056607bf12f195317fdf287"
+        },
+        {
+          "path": "results/s0_search/s0/meta.jsonl",
+          "bytes": 342,
+          "sha256": "9e72974bc77de7e82d17bf8122597d0881a36695585d3c1f2f785b6f1bc046ee"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437
+      },
+      "all_rows": 4874,
+      "settings": [
+        {
+          "name": "s0",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s0.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 12:51:01",
+          "warnings": [],
+          "finished": "2026-10-28 12:57:45"
+        }
+      ],
+      "model_sha256": "01976840b4de5de2a9299ecfda97fc9c56c626eb7e6a79c48f64aaf526d3afd4",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s1sp",
+      "study": "A",
+      "input": {
+        "path": "results/s1sp/study_a.jsonl",
+        "bytes": 850329,
+        "sha256": "67be1701d6de8047f27ea11670b6ea4e6848a91fcef2667b6d52a4faeb0e4b2c"
+      },
+      "metadata": [
+        {
+          "path": "results/s1sp/meta.json",
+          "bytes": 373,
+          "sha256": "9c53396d5e42027a8ca7ca6c39925236d6eaf61aa42a48ac9b76d308b713355a"
+        },
+        {
+          "path": "results/s1sp/meta.jsonl",
+          "bytes": 346,
+          "sha256": "c0896bb7156e017c8f59f0bf1c5036ca68735014213af9edbf9296e2e06f0ea9"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "s1sp",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1sp.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 10:55:12",
+          "warnings": [],
+          "finished": "2026-10-28 11:24:37"
+        }
+      ],
+      "model_sha256": "b3a020e0fda20925744f35b2540872f54deeec31dcb9f7229c67db80399d5ec9",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "s1sp",
+      "study": "B",
+      "input": {
+        "path": "results/s1sp/study_b.jsonl",
+        "bytes": 1168565,
+        "sha256": "3ced360561343bfd52a56f16a97dd378672439fad6accd52bedd03338ecaffb4"
+      },
+      "metadata": [
+        {
+          "path": "results/s1sp/meta.json",
+          "bytes": 373,
+          "sha256": "9c53396d5e42027a8ca7ca6c39925236d6eaf61aa42a48ac9b76d308b713355a"
+        },
+        {
+          "path": "results/s1sp/meta.jsonl",
+          "bytes": 346,
+          "sha256": "c0896bb7156e017c8f59f0bf1c5036ca68735014213af9edbf9296e2e06f0ea9"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "s1sp",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1sp.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 10:55:12",
+          "warnings": [],
+          "finished": "2026-10-28 11:24:37"
+        }
+      ],
+      "model_sha256": "b3a020e0fda20925744f35b2540872f54deeec31dcb9f7229c67db80399d5ec9",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "swap_pol8",
+      "study": "A",
+      "input": {
+        "path": "results/swap_pol8/study_a.jsonl",
+        "bytes": 848162,
+        "sha256": "f68542aa75e86451dc70f510217730d6557571e790bac52cd9cef59917b5713a"
+      },
+      "metadata": [
+        {
+          "path": "results/swap_pol8/meta.json",
+          "bytes": 383,
+          "sha256": "9b7e7cf2585bd2d6f318f9c8fc8b55a951c8d2c0c0e712350fb573da5354e516"
+        },
+        {
+          "path": "results/swap_pol8/meta.jsonl",
+          "bytes": 356,
+          "sha256": "685534d988ec1e8c18cf9b786116aa4eef3b8dafce820f84718f241bf4d3f049"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "swap_pol8",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\swap_pol8.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 08:39:48",
+          "warnings": [],
+          "finished": "2026-10-28 09:49:26"
+        }
+      ],
+      "model_sha256": "82d2f082d33c41fd3bd06280d99a6f35850e94f3fd4dc314d7fe234c60c24319",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "swap_pol8",
+      "study": "B",
+      "input": {
+        "path": "results/swap_pol8/study_b.jsonl",
+        "bytes": 1175935,
+        "sha256": "8595796359a1031f9ade28370cf06790ed63457a5a595cd1cd1bd2e7c8be00b3"
+      },
+      "metadata": [
+        {
+          "path": "results/swap_pol8/meta.json",
+          "bytes": 383,
+          "sha256": "9b7e7cf2585bd2d6f318f9c8fc8b55a951c8d2c0c0e712350fb573da5354e516"
+        },
+        {
+          "path": "results/swap_pol8/meta.jsonl",
+          "bytes": 356,
+          "sha256": "685534d988ec1e8c18cf9b786116aa4eef3b8dafce820f84718f241bf4d3f049"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "swap_pol8",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\swap_pol8.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 08:39:48",
+          "warnings": [],
+          "finished": "2026-10-28 09:49:26"
+        }
+      ],
+      "model_sha256": "82d2f082d33c41fd3bd06280d99a6f35850e94f3fd4dc314d7fe234c60c24319",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "swap_val8",
+      "study": "A",
+      "input": {
+        "path": "results/swap_val8/study_a.jsonl",
+        "bytes": 848688,
+        "sha256": "a088266cea0e9179de4ce7c9b485679a3a7f5c1a8e8b575dfdc818c9476167e9"
+      },
+      "metadata": [
+        {
+          "path": "results/swap_val8/meta.json",
+          "bytes": 383,
+          "sha256": "a5d97463f9fc1c2b257ce632f212202ff466d64d63273a825cd5ea681804afc8"
+        },
+        {
+          "path": "results/swap_val8/meta.jsonl",
+          "bytes": 356,
+          "sha256": "5e35e23ee874abe712617c207ca839927b8755c033bdfd935e22186facc9b55c"
+        }
+      ],
+      "test_counts": {
+        "0": 2437
+      },
+      "all_rows": 2437,
+      "settings": [
+        {
+          "name": "swap_val8",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\swap_val8.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 09:49:27",
+          "warnings": [],
+          "finished": "2026-10-28 10:55:12"
+        }
+      ],
+      "model_sha256": "f59515059aa106615ba0cfc188cff8317a7ca6b1e6eebbfa2a2367a41f210fe5",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    },
+    {
+      "model": "swap_val8",
+      "study": "B",
+      "input": {
+        "path": "results/swap_val8/study_b.jsonl",
+        "bytes": 1176107,
+        "sha256": "f41bde3f8eff982f8f4074ccc4df6f8c4c975e5af6090f1eae5466224672f91f"
+      },
+      "metadata": [
+        {
+          "path": "results/swap_val8/meta.json",
+          "bytes": 383,
+          "sha256": "a5d97463f9fc1c2b257ce632f212202ff466d64d63273a825cd5ea681804afc8"
+        },
+        {
+          "path": "results/swap_val8/meta.jsonl",
+          "bytes": 356,
+          "sha256": "5e35e23ee874abe712617c207ca839927b8755c033bdfd935e22186facc9b55c"
+        }
+      ],
+      "test_counts": {
+        "100": 2437,
+        "400": 2437,
+        "800": 2437,
+        "1600": 2437
+      },
+      "all_rows": 9748,
+      "settings": [
+        {
+          "name": "swap_val8",
+          "weights": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\swap_val8.pb.gz",
+          "backend": "onnx-trt",
+          "backend_opts": "optimize=8",
+          "threads": 1,
+          "minibatch": 256,
+          "split": "test",
+          "n_positions": 2437,
+          "move_overhead": 20,
+          "host": "Anjans-Omen",
+          "started": "2026-10-28 09:49:27",
+          "warnings": [],
+          "finished": "2026-10-28 10:55:12"
+        }
+      ],
+      "model_sha256": "f59515059aa106615ba0cfc188cff8317a7ca6b1e6eebbfa2a2367a41f210fe5",
+      "root_source": {
+        "path": "data/tbset.jsonl",
+        "bytes": 6694891,
+        "sha256": "dd128f99f7b4bc5fc3bb884ae88c995cf1368d92e69dc491e662f3ef63d0288c"
+      }
+    }
+  ],
+  "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829",
+  "priority": "main results before hard100 repeats; distinct observations never pooled",
+  "lineage": "unchanged imported study implementation and preservation/model inventories; historical runtime C1/Run2 evidence"
+}

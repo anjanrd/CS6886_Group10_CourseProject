@@ -1,0 +1,17 @@
+{
+ "source": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\bt3_fp32.onnx",
+ "calib": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\data\\calib.npz",
+ "n_calib": 512,
+ "granularity": "per-tensor",
+ "method": "minmax",
+ "percentile": null,
+ "smoothquant": null,
+ "act_act_matmul": false,
+ "exclude": null,
+ "n_weight_nodes": 164,
+ "n_act_act": 0,
+ "n_quantize_linear": 280,
+ "smoothed_groups": {},
+ "activation_clip": {},
+ "seconds": 21.3
+}

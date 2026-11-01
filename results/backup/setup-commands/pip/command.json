@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject\\requirements\\ultimate-report.lock.txt"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480678.4560113,
+  "pid": 3800,
+  "exit_code": 0,
+  "elapsed_seconds": 36.02943825721741
+}

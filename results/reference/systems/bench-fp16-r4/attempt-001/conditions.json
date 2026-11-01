@@ -1,0 +1,20 @@
+{
+  "samples": 92,
+  "period_seconds": 2,
+  "flags": [],
+  "monitor_errors": [],
+  "gpu_process_visibility": "NVML compute process query; WDDM graphics activity may not be fully visible",
+  "rules": "5% total-machine CPU for 3 consecutive samples; nonessential app presence; external compute PID; AC disconnect",
+  "raw_log": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-fp16-r4\\attempt-001\\activity.log",
+  "enforcement": {
+    "version": "run2-background-monitor-only-v2",
+    "authorization": "User explicitly disabled interference blocking and resumed Codex orchestration",
+    "background_interference_blocks": false,
+    "activity_logging": true,
+    "AC_loss_blocks": true,
+    "monitor_error_blocks": true,
+    "command_and_output_validation": true,
+    "single_GPU_workload": true,
+    "limits": "Codex spikes are not assumed equal across trials; review session/thermal variability"
+  }
+}

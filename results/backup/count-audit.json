@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "quality": {
+    "path": "results/reference/analysis/quality.json",
+    "bytes": 313738,
+    "sha256": "7fc3edcdc4a9bc93abd1782084c3698a114222d09f906f7e3cc9a3c4b3eed98a"
+  },
+  "observation_manifest": {
+    "path": "results/reference/observations/manifest.json",
+    "bytes": 9254,
+    "sha256": "241e68e525d7f14bff7590b4a9458c72e52b3d9745d1523cb1adfc094fdcccf4"
+  },
+  "unique_records": 444332,
+  "quality_rows": 240,
+  "graded_rows": 160,
+  "cohorts": {
+    "M": 6720,
+    "M_sensitivity": 6715,
+    "HM": 99,
+    "HN": 632
+  },
+  "scope": "All supplied unique keys, cohort counts, correctness/discordances/DTZ, mean actual work/time and graded point estimates independently reconciled. Confidence bounds checked for validity; no bootstrap recomputation or new inference."
+}

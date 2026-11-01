@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "venv",
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv"
+  ],
+  "cwd": "C:\\Users\\HP\\Desktop\\LC0",
+  "started_unix": 1793480668.3973432,
+  "pid": 2488,
+  "exit_code": 0,
+  "elapsed_seconds": 10.047739267349243
+}

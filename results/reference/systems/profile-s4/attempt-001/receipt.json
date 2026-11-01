@@ -1,0 +1,124 @@
+{
+  "status": "verified",
+  "manifest": "9300e77242ed09d7a3f7fbd270512a6a2d24830ae39bb783139ce213ac4a1fea",
+  "job": "202a9f5661c6d0dc3ccd36c4813c0d94ef16130453f9fda43b7691a732930d12",
+  "runtime": "3e66d867667cac116a9c9082fa3f824fac6a6e74d0367f3d50eacf8503f14ff3",
+  "session": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "bytes": 1062,
+    "sha256": "97ce3badd097f7cd8c9f10b0561d1fdcd8b8c3239ce8e8d098ae1887bd25c5dd"
+  },
+  "attempt": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001",
+  "command": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "execution.gpu_job",
+    "profile",
+    "--onnx",
+    "C:\\Users\\HP\\Desktop\\LC0\\models\\s4.onnx",
+    "--trtexec",
+    "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe",
+    "--int8",
+    "--session",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "--out",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001/work"
+  ],
+  "started_unix": 1793339407.1056235,
+  "conditions": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\conditions.json",
+    "bytes": 432,
+    "sha256": "90d5715dc4945fe40918c8e1e10b7978978aa0dd646394d64408f2cfabf01180"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 314.3431499004364,
+  "outputs": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\activity.log",
+      "bytes": 3856632,
+      "sha256": "902eae1e5534410aabde3095039f617d5245eadd27e7cf0689257d5580581b22"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\command.log",
+      "bytes": 2016,
+      "sha256": "c1c9e5da03aa6a9a614715ba930e795a0ee36d7573eea2b247174121cd3d4e9a"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\conditions.json",
+      "bytes": 432,
+      "sha256": "90d5715dc4945fe40918c8e1e10b7978978aa0dd646394d64408f2cfabf01180"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64.engine",
+      "bytes": 110079676,
+      "sha256": "0f5d69a0bc0c517816dd8b4498de3911f2f473c87b278187b8e3464c4f96fde3"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_layers.json",
+      "bytes": 280524,
+      "sha256": "4ebb7982fa4e8a4906b59751b61e07142554cf49db842322e7651b48ff87b1af"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_layers.md",
+      "bytes": 4676,
+      "sha256": "11256f5585da50fb9f968718646cc28dfbce913bf29815fee70136e675d8440b"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_profile.json",
+      "bytes": 58364,
+      "sha256": "a4396dd373edbeb416b2c1fa6ea29df5579fa15066446c6aa678124486733e04"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_summary.json",
+      "bytes": 208,
+      "sha256": "71828591d1fcae5e32dc535477a5082df85750ad1f2b609e11c4c2eba28a0454"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_times.json",
+      "bytes": 67214,
+      "sha256": "1b00202f9813397fb92886ae082629220763389362fa2ab7d4677d64ef1b2d74"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_trtexec.log",
+      "bytes": 21259,
+      "sha256": "8136d3d89863806aad26370733099e8a87574f960f8eeaedab8be71aa9164d9f"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256.log",
+      "bytes": 9454,
+      "sha256": "d14097e42e00d38678fe4e706d7d7340a581d156a58d62494ec365c3b875c339"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256_layers.json",
+      "bytes": 280532,
+      "sha256": "f574beb4595f1cd72702554f06265723dd71f0b9a9b72d874ad53a0e9e41f04b"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256_profile.json",
+      "bytes": 58294,
+      "sha256": "429a0c6fba8a9d8346f47eb4f4f08846c869147845951f0295314ad058ad8ddb"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256_times.json",
+      "bytes": 14225,
+      "sha256": "f892948f2c13dea770a49064d0f95e61d504e12b67938d419d4a6b504c45df13"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\result.json",
+      "bytes": 1857,
+      "sha256": "3cac5f1a8977c600019885c3538a5d171321f3d6d05f70037087f42258d70c5a"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\timing.cache",
+      "bytes": 9052941,
+      "sha256": "c81ea1c5faf49dde787472a3e88a9aa4ef8b427a8cd26b3cc7dd86f5b2eabb4c"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\timing.cache.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "verification_scope": "exit status, structured outputs, identities and resource flags; scientific interpretation/precision mapping requires Run 3"
+}

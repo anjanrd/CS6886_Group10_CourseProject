@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "contract": "bd5aacdc726e53c4654509d404f446cc94065225715e1f4ab8bb113517d2c0aa",
+  "rows": [
+    {
+      "id": 160,
+      "best": "f7e6",
+      "nodes": 176,
+      "movetime": 100,
+      "time_ms": 106,
+      "wall": 0.1085,
+      "depth": 3
+    },
+    {
+      "id": 161,
+      "best": "g7g5",
+      "nodes": 303,
+      "movetime": 100,
+      "time_ms": 99,
+      "wall": 0.1002,
+      "depth": 3
+    },
+    {
+      "id": 560,
+      "best": "c5c6",
+      "nodes": 16,
+      "movetime": 100,
+      "time_ms": 30,
+      "wall": 0.0316,
+      "depth": 2
+    },
+    {
+      "id": 561,
+      "best": "f6f5",
+      "nodes": 36810,
+      "movetime": 100,
+      "time_ms": 81,
+      "wall": 0.0815,
+      "depth": 2
+    }
+  ]
+}

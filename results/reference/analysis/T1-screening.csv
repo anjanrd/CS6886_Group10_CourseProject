@@ -1,0 +1,2 @@
+N,fp16_correct,fp16_errors,HN_frozen,HN_fresh_rule,scope
+24000,23923,77,632,632,"FP16-only full N screening; other models evaluated on frozen HN, not all N"

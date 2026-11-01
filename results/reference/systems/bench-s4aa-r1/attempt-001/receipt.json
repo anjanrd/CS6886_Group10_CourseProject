@@ -1,0 +1,123 @@
+{
+  "status": "verified",
+  "manifest": "9300e77242ed09d7a3f7fbd270512a6a2d24830ae39bb783139ce213ac4a1fea",
+  "job": "5572419862ff06581cb13afec83bab0c2fd94d35b5464cf72770dcf8fb32effd",
+  "runtime": "3e66d867667cac116a9c9082fa3f824fac6a6e74d0367f3d50eacf8503f14ff3",
+  "session": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "bytes": 1062,
+    "sha256": "97ce3badd097f7cd8c9f10b0561d1fdcd8b8c3239ce8e8d098ae1887bd25c5dd"
+  },
+  "attempt": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001",
+  "command": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "execution.benchmark",
+    "--name",
+    "s4aa",
+    "--lc0",
+    "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\lc0.exe",
+    "--weights",
+    "C:\\Users\\HP\\Desktop\\LC0\\models\\s4aa.pb.gz",
+    "--backend-opts",
+    "optimize=8",
+    "--session",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "--out",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001/work",
+    "--positions",
+    "10",
+    "--movetime",
+    "10000",
+    "--threads",
+    "0",
+    "--minibatch",
+    "64",
+    "--batches",
+    "200",
+    "--conditioning-seconds",
+    "30"
+  ],
+  "started_unix": 1793342613.1071336,
+  "conditions": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\conditions.json",
+    "bytes": 434,
+    "sha256": "a567a6de3adb166f4d3e5be9176502f3a66304ace07900aae175df474cfb5dca"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 160.4507975578308,
+  "outputs": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\activity.log",
+      "bytes": 1979216,
+      "sha256": "eb1ac3a75132861f0e6722e5999970559ad369776f2491e5f946fb6c41075036"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\command.log",
+      "bytes": 693,
+      "sha256": "688d58c167740df24a100e13cad3d02f792a8fda1ca56a1ef697849154e2356b"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\conditions.json",
+      "bytes": 434,
+      "sha256": "a567a6de3adb166f4d3e5be9176502f3a66304ace07900aae175df474cfb5dca"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\backend-b128.log",
+      "bytes": 877,
+      "sha256": "e8b3e379069452ed4a081bf2e0c6d5650a91320be737f6b20efae754311da35d"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\backend-b256.log",
+      "bytes": 877,
+      "sha256": "903b327f7246b530314cf43a3abdb8981d69b8fcfb1c8896b44bbbc203d19d89"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\backend-b32.log",
+      "bytes": 875,
+      "sha256": "36cf21d6a5b2a488acde0cfff681b9bd7212e3a37be556d9adc61807cedab5a7"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\backend-b64.log",
+      "bytes": 875,
+      "sha256": "f7614ebdf5350db3aef09c0fffb39b3e917a54ca28a183f0b5f74988f66b6043"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\conditioning-000.log",
+      "bytes": 856,
+      "sha256": "b41110c5919dadf1af5a179c8d58c05728aad90ab12c7adbf5115e0d06ea03be"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\conditioning-001.log",
+      "bytes": 856,
+      "sha256": "dbaa6fa6e05755e86affa6b1477a1c47d976114b8fe21ccd592768ea7f25a00c"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\conditioning-002.log",
+      "bytes": 856,
+      "sha256": "5281e116e35ec1832125cfeb6af7fb0ec540918664468d667ce45dac2fc863f1"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\conditioning-003.log",
+      "bytes": 856,
+      "sha256": "3bc76cb669cc56b87957486a2aae3f76810a6ce3da4c6b57ad2640d23284444d"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\result.json",
+      "bytes": 5126,
+      "sha256": "0dfd3ee98fa34953b5bb656b7b45c11fd3b6f6db4bb7659b973fb20aca3d3539"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\search.lc0.log",
+      "bytes": 72169,
+      "sha256": "1681cb3cfebe03e2bc9260391d0e5479483cb094c9f6e7da8c685da1cbbecb92"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\bench-s4aa-r1\\attempt-001\\work\\warmup.log",
+      "bytes": 854,
+      "sha256": "4c8ff9e3bfd04f04f403450756853a1d1c1add8704bb655dbbc7c2cf9dcfa27e"
+    }
+  ],
+  "verification_scope": "exit status, structured outputs, identities and resource flags; scientific interpretation/precision mapping requires Run 3"
+}

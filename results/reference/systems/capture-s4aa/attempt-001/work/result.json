@@ -1,0 +1,33 @@
+{
+  "model": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\models\\s4aa.pb.gz",
+    "bytes": 90921041,
+    "sha256": "6445a8bdf4fde85121c2c1dcef3babd9e62b23858444be3ac9c9d6b36b9bb284"
+  },
+  "backend_opts": "optimize=8",
+  "requested_nodes": 20000,
+  "positions": [
+    {
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "nodes": 12638,
+      "time_ms": 1770,
+      "wall": 1.7729425000143237,
+      "bestmove": "d2d4"
+    },
+    {
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 10",
+      "nodes": 9260,
+      "time_ms": 1876,
+      "wall": 1.8933347999991383,
+      "bestmove": "e2a6"
+    },
+    {
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 11",
+      "nodes": 9319,
+      "time_ms": 1248,
+      "wall": 1.2922091000073124,
+      "bestmove": "b4f4"
+    }
+  ],
+  "scope": "Instrumented precision evidence; excluded from headline timing"
+}

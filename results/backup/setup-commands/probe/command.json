@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-c",
+    "import json,sys\nfrom pathlib import Path\nfrom importlib.metadata import version\nimport common\nfrom execution.support import ROOT\nexpected={}\nfor name in ('windows-prep.lock.txt','ultimate-report.lock.txt'):\n for line in (ROOT/'requirements'/name).read_text().splitlines():\n  if '==' in line and not line.lstrip().startswith('#'):\n   key,value=line.strip().split('==',1);expected[key]=value\nactual={key:version(key) for key in expected}\nassert actual==expected\nassert Path(common.__file__).resolve()==ROOT/'common.py'\nprint(json.dumps({'prefix':sys.prefix,'executable':sys.executable,'source_root':str(ROOT),'packages':actual}))\n"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480726.599428,
+  "pid": 5424,
+  "exit_code": 0,
+  "elapsed_seconds": 1.0127623081207275
+}

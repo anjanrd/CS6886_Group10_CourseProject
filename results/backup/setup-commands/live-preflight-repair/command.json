@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-c",
+    "import json\nfrom pathlib import Path\nfrom execution.ultimate import config\nfrom execution.ultimate_study import preflight\nfrom execution.ultimate_contract import ROOT,atomic_json,portable_identity\np=preflight(config('config.json'))\nassert p['snapshot']['ac_line']==1\nrecord=ROOT/'reports/ultimate/runtime-identity.json'\nassert record.is_file()\natomic_json(r\"C:/Users/HP/Desktop/LC0/reports/ultimate/backup/preflight-repair.json\",{'preflight':p,'runtime':portable_identity(record),'source_root':str(ROOT)})\nprint(json.dumps({'status':'verified','source_root':str(ROOT),'runtime':portable_identity(record),'gpu':p['gpu']}))\n"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480811.612882,
+  "pid": 8424,
+  "exit_code": 0,
+  "elapsed_seconds": 2.0102646350860596
+}

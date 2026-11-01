@@ -1,0 +1,1894 @@
+{
+ "source": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s1sp_fp32.onnx",
+ "calib": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\data\\calib.npz",
+ "n_calib": 512,
+ "granularity": "per-channel",
+ "method": "percentile",
+ "percentile": 99.999,
+ "smoothquant": 0.7,
+ "act_act_matmul": false,
+ "exclude": null,
+ "n_weight_nodes": 164,
+ "n_act_act": 0,
+ "n_quantize_linear": 280,
+ "smoothed_groups": {
+  "/attn_body/embedding/reshape": {
+   "consumers": [
+    "/attn_body/embedding/preprocess/matmul"
+   ],
+   "outlier_before": 1.0,
+   "outlier_after": 1.2492963982398235
+  },
+  "/attn_body/embedding/out/reshape": {
+   "consumers": [
+    "/attn_body/matmul"
+   ],
+   "outlier_before": 10.961683766649227,
+   "outlier_after": 1.6511132266562167
+  },
+  "/attn_body/rehape": {
+   "consumers": [
+    "/attn_body/ffn/dense1/w"
+   ],
+   "outlier_before": 489.9384942272019,
+   "outlier_after": 5.484783416835751
+  },
+  "/attn_body/ffn/dense1/mish": {
+   "consumers": [
+    "/attn_body/ffn/dense2/w"
+   ],
+   "outlier_before": 3.2537319147764134,
+   "outlier_after": 1.5849368398536923
+  },
+  "/attn_body/ln2": {
+   "consumers": [
+    "/encoder0/mha/Q/w",
+    "/encoder0/mha/K/w",
+    "/encoder0/mha/V/w",
+    "/encoder0/smolgen/compress"
+   ],
+   "outlier_before": 22.161398328731345,
+   "outlier_after": 2.4767257235599787
+  },
+  "/encoder0/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder0/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.5164942539809725,
+   "outlier_after": 1.420449354607786
+  },
+  "/encoder0/smolgen/ln1": {
+   "consumers": [
+    "/encoder0/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.577759270121204,
+   "outlier_after": 1.6881052648067754
+  },
+  "/encoder0/mha/out/reshape": {
+   "consumers": [
+    "/encoder0/mha/out/dense/w"
+   ],
+   "outlier_before": 2.95696983712961,
+   "outlier_after": 1.8921331546142819
+  },
+  "/encoder0/ln1": {
+   "consumers": [
+    "/encoder0/ffn/dense1/w"
+   ],
+   "outlier_before": 77.0215876575415,
+   "outlier_after": 2.583031269643005
+  },
+  "/encoder0/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder0/ffn/dense2/w"
+   ],
+   "outlier_before": 2.740175624472403,
+   "outlier_after": 1.78938739705342
+  },
+  "/encoder0/ln2": {
+   "consumers": [
+    "/encoder1/mha/Q/w",
+    "/encoder1/mha/K/w",
+    "/encoder1/mha/V/w",
+    "/encoder1/smolgen/compress"
+   ],
+   "outlier_before": 10.305466308531095,
+   "outlier_after": 2.492365926511599
+  },
+  "/encoder1/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder1/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.7609294364379457,
+   "outlier_after": 1.3638944446799555
+  },
+  "/encoder1/smolgen/ln1": {
+   "consumers": [
+    "/encoder1/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.1474047244501744,
+   "outlier_after": 1.7450851311745343
+  },
+  "/encoder1/mha/out/reshape": {
+   "consumers": [
+    "/encoder1/mha/out/dense/w"
+   ],
+   "outlier_before": 3.4350248013881286,
+   "outlier_after": 1.8429289592533682
+  },
+  "/encoder1/ln1": {
+   "consumers": [
+    "/encoder1/ffn/dense1/w"
+   ],
+   "outlier_before": 58.880331949820714,
+   "outlier_after": 2.808147923661815
+  },
+  "/encoder1/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder1/ffn/dense2/w"
+   ],
+   "outlier_before": 4.077279080288372,
+   "outlier_after": 2.096670695755472
+  },
+  "/encoder1/ln2": {
+   "consumers": [
+    "/encoder2/mha/Q/w",
+    "/encoder2/mha/K/w",
+    "/encoder2/mha/V/w",
+    "/encoder2/smolgen/compress"
+   ],
+   "outlier_before": 9.071762796870416,
+   "outlier_after": 2.3819553577756225
+  },
+  "/encoder2/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder2/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.7957566598074477,
+   "outlier_after": 1.4574505339329644
+  },
+  "/encoder2/smolgen/ln1": {
+   "consumers": [
+    "/encoder2/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.752562693350493,
+   "outlier_after": 1.8707143091792573
+  },
+  "/encoder2/mha/out/reshape": {
+   "consumers": [
+    "/encoder2/mha/out/dense/w"
+   ],
+   "outlier_before": 3.3968091425288884,
+   "outlier_after": 1.795970502588237
+  },
+  "/encoder2/ln1": {
+   "consumers": [
+    "/encoder2/ffn/dense1/w"
+   ],
+   "outlier_before": 53.9952539146404,
+   "outlier_after": 2.583174288054841
+  },
+  "/encoder2/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder2/ffn/dense2/w"
+   ],
+   "outlier_before": 2.687077675569923,
+   "outlier_after": 1.7910034443997107
+  },
+  "/encoder2/ln2": {
+   "consumers": [
+    "/encoder3/mha/Q/w",
+    "/encoder3/mha/K/w",
+    "/encoder3/mha/V/w",
+    "/encoder3/smolgen/compress"
+   ],
+   "outlier_before": 7.353091692881697,
+   "outlier_after": 2.4355934122781893
+  },
+  "/encoder3/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder3/smolgen/dense1/w"
+   ],
+   "outlier_before": 1.9663063012497866,
+   "outlier_after": 1.524514065026192
+  },
+  "/encoder3/smolgen/ln1": {
+   "consumers": [
+    "/encoder3/smolgen/dense2/w"
+   ],
+   "outlier_before": 5.614194681159651,
+   "outlier_after": 2.573445205454213
+  },
+  "/encoder3/mha/out/reshape": {
+   "consumers": [
+    "/encoder3/mha/out/dense/w"
+   ],
+   "outlier_before": 3.6267703937346867,
+   "outlier_after": 1.9850957213550045
+  },
+  "/encoder3/ln1": {
+   "consumers": [
+    "/encoder3/ffn/dense1/w"
+   ],
+   "outlier_before": 50.41238333143342,
+   "outlier_after": 2.5720467643659677
+  },
+  "/encoder3/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder3/ffn/dense2/w"
+   ],
+   "outlier_before": 3.638922188801117,
+   "outlier_after": 1.8256899862707034
+  },
+  "/encoder3/ln2": {
+   "consumers": [
+    "/encoder4/mha/Q/w",
+    "/encoder4/mha/K/w",
+    "/encoder4/mha/V/w",
+    "/encoder4/smolgen/compress"
+   ],
+   "outlier_before": 6.564942071601677,
+   "outlier_after": 2.4368736348124136
+  },
+  "/encoder4/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder4/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.1254418307457503,
+   "outlier_after": 1.382122777624615
+  },
+  "/encoder4/smolgen/ln1": {
+   "consumers": [
+    "/encoder4/smolgen/dense2/w"
+   ],
+   "outlier_before": 5.4897773713835765,
+   "outlier_after": 2.483612576351719
+  },
+  "/encoder4/mha/out/reshape": {
+   "consumers": [
+    "/encoder4/mha/out/dense/w"
+   ],
+   "outlier_before": 3.3150359339046167,
+   "outlier_after": 1.9842775581864986
+  },
+  "/encoder4/ln1": {
+   "consumers": [
+    "/encoder4/ffn/dense1/w"
+   ],
+   "outlier_before": 45.34479415002742,
+   "outlier_after": 2.453553149173746
+  },
+  "/encoder4/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder4/ffn/dense2/w"
+   ],
+   "outlier_before": 3.268850501422654,
+   "outlier_after": 1.9760316792184676
+  },
+  "/encoder4/ln2": {
+   "consumers": [
+    "/encoder5/mha/Q/w",
+    "/encoder5/mha/K/w",
+    "/encoder5/mha/V/w",
+    "/encoder5/smolgen/compress"
+   ],
+   "outlier_before": 5.925829007906311,
+   "outlier_after": 2.305958825389119
+  },
+  "/encoder5/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder5/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.7908023230642613,
+   "outlier_after": 1.4496009784552903
+  },
+  "/encoder5/smolgen/ln1": {
+   "consumers": [
+    "/encoder5/smolgen/dense2/w"
+   ],
+   "outlier_before": 3.0400460351193734,
+   "outlier_after": 2.039720401102027
+  },
+  "/encoder5/mha/out/reshape": {
+   "consumers": [
+    "/encoder5/mha/out/dense/w"
+   ],
+   "outlier_before": 3.661306407793607,
+   "outlier_after": 1.933362302541125
+  },
+  "/encoder5/ln1": {
+   "consumers": [
+    "/encoder5/ffn/dense1/w"
+   ],
+   "outlier_before": 40.72531137011855,
+   "outlier_after": 2.422296399772633
+  },
+  "/encoder5/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder5/ffn/dense2/w"
+   ],
+   "outlier_before": 3.6829521126268765,
+   "outlier_after": 1.9469522555733376
+  },
+  "/encoder5/ln2": {
+   "consumers": [
+    "/encoder6/mha/Q/w",
+    "/encoder6/mha/K/w",
+    "/encoder6/mha/V/w",
+    "/encoder6/smolgen/compress"
+   ],
+   "outlier_before": 5.159554858938575,
+   "outlier_after": 2.259669169309719
+  },
+  "/encoder6/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder6/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.821436892317224,
+   "outlier_after": 1.4428939686714175
+  },
+  "/encoder6/smolgen/ln1": {
+   "consumers": [
+    "/encoder6/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.7670113479492633,
+   "outlier_after": 2.001683550081424
+  },
+  "/encoder6/mha/out/reshape": {
+   "consumers": [
+    "/encoder6/mha/out/dense/w"
+   ],
+   "outlier_before": 3.741565597742062,
+   "outlier_after": 1.8689788623253223
+  },
+  "/encoder6/ln1": {
+   "consumers": [
+    "/encoder6/ffn/dense1/w"
+   ],
+   "outlier_before": 38.12321434872287,
+   "outlier_after": 2.4127008710253524
+  },
+  "/encoder6/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder6/ffn/dense2/w"
+   ],
+   "outlier_before": 3.9052064114814575,
+   "outlier_after": 2.4234083950894587
+  },
+  "/encoder6/ln2": {
+   "consumers": [
+    "/encoder7/mha/Q/w",
+    "/encoder7/mha/K/w",
+    "/encoder7/mha/V/w",
+    "/encoder7/smolgen/compress"
+   ],
+   "outlier_before": 5.34174311962093,
+   "outlier_after": 2.4859673946798284
+  },
+  "/encoder7/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder7/smolgen/dense1/w"
+   ],
+   "outlier_before": 3.1270024756613317,
+   "outlier_after": 1.4628790929080675
+  },
+  "/encoder7/smolgen/ln1": {
+   "consumers": [
+    "/encoder7/smolgen/dense2/w"
+   ],
+   "outlier_before": 3.5203844387918455,
+   "outlier_after": 2.298928827531714
+  },
+  "/encoder7/mha/out/reshape": {
+   "consumers": [
+    "/encoder7/mha/out/dense/w"
+   ],
+   "outlier_before": 3.1893971091063746,
+   "outlier_after": 1.9204622781696976
+  },
+  "/encoder7/ln1": {
+   "consumers": [
+    "/encoder7/ffn/dense1/w"
+   ],
+   "outlier_before": 36.11772907785537,
+   "outlier_after": 2.2664554396044636
+  },
+  "/encoder7/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder7/ffn/dense2/w"
+   ],
+   "outlier_before": 3.843165387764314,
+   "outlier_after": 2.2872082684741852
+  },
+  "/encoder7/ln2": {
+   "consumers": [
+    "/encoder8/mha/Q/w",
+    "/encoder8/mha/K/w",
+    "/encoder8/mha/V/w",
+    "/encoder8/smolgen/compress"
+   ],
+   "outlier_before": 5.447333928686986,
+   "outlier_after": 2.269066713924988
+  },
+  "/encoder8/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder8/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.6712448109027136,
+   "outlier_after": 1.3910496390395906
+  },
+  "/encoder8/smolgen/ln1": {
+   "consumers": [
+    "/encoder8/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.5631725044883225,
+   "outlier_after": 1.9587766701896767
+  },
+  "/encoder8/mha/out/reshape": {
+   "consumers": [
+    "/encoder8/mha/out/dense/w"
+   ],
+   "outlier_before": 3.4945066792017836,
+   "outlier_after": 1.9063692862808208
+  },
+  "/encoder8/ln1": {
+   "consumers": [
+    "/encoder8/ffn/dense1/w"
+   ],
+   "outlier_before": 37.224859376168446,
+   "outlier_after": 2.4770920612265668
+  },
+  "/encoder8/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder8/ffn/dense2/w"
+   ],
+   "outlier_before": 2.9854774112930085,
+   "outlier_after": 2.178544763486161
+  },
+  "/encoder8/ln2": {
+   "consumers": [
+    "/encoder9/mha/Q/w",
+    "/encoder9/mha/K/w",
+    "/encoder9/mha/V/w",
+    "/encoder9/smolgen/compress"
+   ],
+   "outlier_before": 6.450449978610171,
+   "outlier_after": 2.4104075454173604
+  },
+  "/encoder9/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder9/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.8294253327227894,
+   "outlier_after": 1.4138513656385063
+  },
+  "/encoder9/smolgen/ln1": {
+   "consumers": [
+    "/encoder9/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.363247222276499,
+   "outlier_after": 1.7235874226795989
+  },
+  "/encoder9/mha/out/reshape": {
+   "consumers": [
+    "/encoder9/mha/out/dense/w"
+   ],
+   "outlier_before": 3.7964517238947115,
+   "outlier_after": 1.8974765540574512
+  },
+  "/encoder9/ln1": {
+   "consumers": [
+    "/encoder9/ffn/dense1/w"
+   ],
+   "outlier_before": 36.78875228855145,
+   "outlier_after": 2.292164691712876
+  },
+  "/encoder9/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder9/ffn/dense2/w"
+   ],
+   "outlier_before": 3.8430073467843013,
+   "outlier_after": 2.408131693328154
+  },
+  "/encoder9/ln2": {
+   "consumers": [
+    "/encoder10/mha/Q/w",
+    "/encoder10/mha/K/w",
+    "/encoder10/mha/V/w",
+    "/encoder10/smolgen/compress"
+   ],
+   "outlier_before": 6.884718724626106,
+   "outlier_after": 2.322731127192853
+  },
+  "/encoder10/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder10/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.0679962457788927,
+   "outlier_after": 1.3859665692531373
+  },
+  "/encoder10/smolgen/ln1": {
+   "consumers": [
+    "/encoder10/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.4952786500997175,
+   "outlier_after": 1.9897445060159658
+  },
+  "/encoder10/mha/out/reshape": {
+   "consumers": [
+    "/encoder10/mha/out/dense/w"
+   ],
+   "outlier_before": 3.664038369839709,
+   "outlier_after": 2.0509062742718367
+  },
+  "/encoder10/ln1": {
+   "consumers": [
+    "/encoder10/ffn/dense1/w"
+   ],
+   "outlier_before": 33.595087713240446,
+   "outlier_after": 2.4196626544246143
+  },
+  "/encoder10/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder10/ffn/dense2/w"
+   ],
+   "outlier_before": 3.379342250454189,
+   "outlier_after": 2.896532326928887
+  },
+  "/encoder10/ln2": {
+   "consumers": [
+    "/encoder11/mha/Q/w",
+    "/encoder11/mha/K/w",
+    "/encoder11/mha/V/w",
+    "/encoder11/smolgen/compress"
+   ],
+   "outlier_before": 6.835218675161013,
+   "outlier_after": 2.21060363193346
+  },
+  "/encoder11/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder11/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.132162238959694,
+   "outlier_after": 1.318116043031112
+  },
+  "/encoder11/smolgen/ln1": {
+   "consumers": [
+    "/encoder11/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.658898406140389,
+   "outlier_after": 1.887258311634865
+  },
+  "/encoder11/mha/out/reshape": {
+   "consumers": [
+    "/encoder11/mha/out/dense/w"
+   ],
+   "outlier_before": 3.0078333286461554,
+   "outlier_after": 1.845088461263661
+  },
+  "/encoder11/ln1": {
+   "consumers": [
+    "/encoder11/ffn/dense1/w"
+   ],
+   "outlier_before": 31.470558206994376,
+   "outlier_after": 2.242284286856892
+  },
+  "/encoder11/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder11/ffn/dense2/w"
+   ],
+   "outlier_before": 4.672746733634331,
+   "outlier_after": 3.1525373231007405
+  },
+  "/encoder11/ln2": {
+   "consumers": [
+    "/encoder12/mha/Q/w",
+    "/encoder12/mha/K/w",
+    "/encoder12/mha/V/w",
+    "/encoder12/smolgen/compress"
+   ],
+   "outlier_before": 7.663172159362688,
+   "outlier_after": 2.2323181242454804
+  },
+  "/encoder12/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder12/smolgen/dense1/w"
+   ],
+   "outlier_before": 3.0402587050200536,
+   "outlier_after": 1.451739762186224
+  },
+  "/encoder12/smolgen/ln1": {
+   "consumers": [
+    "/encoder12/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.6178794127121376,
+   "outlier_after": 1.7996443894317777
+  },
+  "/encoder12/mha/out/reshape": {
+   "consumers": [
+    "/encoder12/mha/out/dense/w"
+   ],
+   "outlier_before": 4.485287404739992,
+   "outlier_after": 2.7637929309429423
+  },
+  "/encoder12/ln1": {
+   "consumers": [
+    "/encoder12/ffn/dense1/w"
+   ],
+   "outlier_before": 24.25377170215352,
+   "outlier_after": 2.5069884195346157
+  },
+  "/encoder12/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder12/ffn/dense2/w"
+   ],
+   "outlier_before": 4.99011825795226,
+   "outlier_after": 2.175861784581764
+  },
+  "/encoder12/ln2": {
+   "consumers": [
+    "/encoder13/mha/Q/w",
+    "/encoder13/mha/K/w",
+    "/encoder13/mha/V/w",
+    "/encoder13/smolgen/compress"
+   ],
+   "outlier_before": 10.09642290093713,
+   "outlier_after": 2.207818110042272
+  },
+  "/encoder13/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder13/smolgen/dense1/w"
+   ],
+   "outlier_before": 2.381495292759176,
+   "outlier_after": 1.3239879001727646
+  },
+  "/encoder13/smolgen/ln1": {
+   "consumers": [
+    "/encoder13/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.0875634819423037,
+   "outlier_after": 1.611637193512361
+  },
+  "/encoder13/mha/out/reshape": {
+   "consumers": [
+    "/encoder13/mha/out/dense/w"
+   ],
+   "outlier_before": 3.3048794497803846,
+   "outlier_after": 1.8931770806143902
+  },
+  "/encoder13/ln1": {
+   "consumers": [
+    "/encoder13/ffn/dense1/w"
+   ],
+   "outlier_before": 29.60106048144542,
+   "outlier_after": 2.093476531078901
+  },
+  "/encoder13/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder13/ffn/dense2/w"
+   ],
+   "outlier_before": 3.868626218366872,
+   "outlier_after": 2.11853284252356
+  },
+  "/encoder13/ln2": {
+   "consumers": [
+    "/encoder14/mha/Q/w",
+    "/encoder14/mha/K/w",
+    "/encoder14/mha/V/w",
+    "/encoder14/smolgen/compress"
+   ],
+   "outlier_before": 13.385598342152305,
+   "outlier_after": 2.209582853961945
+  },
+  "/encoder14/smolgen/compress/reshape": {
+   "consumers": [
+    "/encoder14/smolgen/dense1/w"
+   ],
+   "outlier_before": 4.838491899940771,
+   "outlier_after": 1.6595306041084865
+  },
+  "/encoder14/smolgen/ln1": {
+   "consumers": [
+    "/encoder14/smolgen/dense2/w"
+   ],
+   "outlier_before": 2.062991720550137,
+   "outlier_after": 1.6449463501747095
+  },
+  "/encoder14/mha/out/reshape": {
+   "consumers": [
+    "/encoder14/mha/out/dense/w"
+   ],
+   "outlier_before": 7.511060997310604,
+   "outlier_after": 2.113160697111274
+  },
+  "/encoder14/ln1": {
+   "consumers": [
+    "/encoder14/ffn/dense1/w"
+   ],
+   "outlier_before": 21.871525302539848,
+   "outlier_after": 2.1810554623530867
+  },
+  "/encoder14/ffn/dense1/mish": {
+   "consumers": [
+    "/encoder14/ffn/dense2/w"
+   ],
+   "outlier_before": 5.045073872760398,
+   "outlier_after": 2.1924333096612565
+  },
+  "/encoder14/ln2": {
+   "consumers": [
+    "/policy/dense1/matmul",
+    "/value/embed/matmul",
+    "/mlh/embed/matmul"
+   ],
+   "outlier_before": 702714.4667381985,
+   "outlier_after": 1181.326891681189
+  },
+  "/policy/dense1/mish": {
+   "consumers": [
+    "/policy/Q/matmul",
+    "/policy/K/matmul"
+   ],
+   "outlier_before": 56.06642852947871,
+   "outlier_after": 7.790685569437629
+  },
+  "policy/promotion/slice": {
+   "consumers": [
+    "/policy/promotion/matmul"
+   ],
+   "outlier_before": 12.91834179397802,
+   "outlier_after": 8.670049558775595
+  },
+  "/value/reshape": {
+   "consumers": [
+    "/value/dense1/matmul"
+   ],
+   "outlier_before": 41.71420719682796,
+   "outlier_after": 9.01166259240649
+  },
+  "/value/dense1/mish": {
+   "consumers": [
+    "/value/dense2/matmul"
+   ],
+   "outlier_before": 94.17818240277539,
+   "outlier_after": 9.570380332417875
+  },
+  "/mlh/reshape": {
+   "consumers": [
+    "/mlh/dense1/matmul"
+   ],
+   "outlier_before": 4.257432141692172,
+   "outlier_after": 1.7418868060668764
+  },
+  "/mlh/dense1/mish": {
+   "consumers": [
+    "/mlh/dense2/matmul"
+   ],
+   "outlier_before": 28041.04045551827,
+   "outlier_after": 8046.045682761747
+  }
+ },
+ "activation_clip": {
+  "/attn_body/embedding/out/reshape/smoothed": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/attn_body/embedding/preprocess/matmul": {
+   "ratio": 0.80224609375,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/attn_body/embedding/reshape/smoothed": {
+   "ratio": 0.9892578125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/attn_body/ffn/dense1/mish/smoothed": {
+   "ratio": 0.865234375,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/attn_body/ffn/dense1/w": {
+   "ratio": 0.931640625,
+   "clipped_frac": 9.626150131225586e-06
+  },
+  "/attn_body/ffn/dense2/w": {
+   "ratio": 0.74853515625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/attn_body/ln2/smoothed": {
+   "ratio": 0.90087890625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/attn_body/matmul": {
+   "ratio": 0.716796875,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/attn_body/rehape/smoothed": {
+   "ratio": 0.93408203125,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder0/ffn/dense1/mish/smoothed": {
+   "ratio": 0.83935546875,
+   "clipped_frac": 9.864568710327148e-06
+  },
+  "/encoder0/ffn/dense1/w": {
+   "ratio": 0.8427734375,
+   "clipped_frac": 9.834766387939453e-06
+  },
+  "/encoder0/ffn/dense2/w": {
+   "ratio": 0.708984375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder0/ln1/smoothed": {
+   "ratio": 0.9501953125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder0/ln2/smoothed": {
+   "ratio": 0.994140625,
+   "clipped_frac": 8.145968119303385e-06
+  },
+  "/encoder0/mha/K/w": {
+   "ratio": 0.841796875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder0/mha/Q/w": {
+   "ratio": 0.58984375,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder0/mha/V/w": {
+   "ratio": 0.7998046875,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder0/mha/out/dense/w": {
+   "ratio": 0.9013671875,
+   "clipped_frac": 9.695688883463541e-06
+  },
+  "/encoder0/mha/out/reshape/smoothed": {
+   "ratio": 0.783203125,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder0/smolgen/compress": {
+   "ratio": 0.91162109375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder0/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.94873046875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder0/smolgen/dense1/w": {
+   "ratio": 0.912109375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder0/smolgen/dense2/w": {
+   "ratio": 0.9580078125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder0/smolgen/gen_from/reshape": {
+   "ratio": 0.9775390625,
+   "clipped_frac": 9.218851725260416e-06
+  },
+  "/encoder0/smolgen/ln1/smoothed": {
+   "ratio": 0.95849609375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder0/smolgen/smol_weight_gen": {
+   "ratio": 0.9521484375,
+   "clipped_frac": 9.755293528238932e-06
+  },
+  "/encoder1/ffn/dense1/mish/smoothed": {
+   "ratio": 0.77880859375,
+   "clipped_frac": 9.924173355102539e-06
+  },
+  "/encoder1/ffn/dense1/w": {
+   "ratio": 0.82421875,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder1/ffn/dense2/w": {
+   "ratio": 0.71435546875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder1/ln1/smoothed": {
+   "ratio": 0.86865234375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder1/ln2/smoothed": {
+   "ratio": 0.9951171875,
+   "clipped_frac": 8.900960286458334e-06
+  },
+  "/encoder1/mha/K/w": {
+   "ratio": 0.81591796875,
+   "clipped_frac": 9.735425313313803e-06
+  },
+  "/encoder1/mha/Q/w": {
+   "ratio": 0.68212890625,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder1/mha/V/w": {
+   "ratio": 0.81982421875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder1/mha/out/dense/w": {
+   "ratio": 0.83154296875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder1/mha/out/reshape/smoothed": {
+   "ratio": 0.69384765625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder1/smolgen/compress": {
+   "ratio": 0.81982421875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder1/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.96142578125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder1/smolgen/dense1/w": {
+   "ratio": 0.990234375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder1/smolgen/dense2/w": {
+   "ratio": 0.93359375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder1/smolgen/gen_from/reshape": {
+   "ratio": 0.986328125,
+   "clipped_frac": 9.218851725260416e-06
+  },
+  "/encoder1/smolgen/ln1/smoothed": {
+   "ratio": 0.9931640625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder1/smolgen/smol_weight_gen": {
+   "ratio": 0.681640625,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder10/ffn/dense1/mish/smoothed": {
+   "ratio": 0.6103515625,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder10/ffn/dense1/w": {
+   "ratio": 0.89697265625,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder10/ffn/dense2/w": {
+   "ratio": 0.759765625,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder10/ln1/smoothed": {
+   "ratio": 0.8466796875,
+   "clipped_frac": 9.57647959391276e-06
+  },
+  "/encoder10/ln2/smoothed": {
+   "ratio": 0.99755859375,
+   "clipped_frac": 8.861223856608072e-06
+  },
+  "/encoder10/mha/K/w": {
+   "ratio": 0.81201171875,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder10/mha/Q/w": {
+   "ratio": 0.73046875,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder10/mha/V/w": {
+   "ratio": 0.7294921875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder10/mha/out/dense/w": {
+   "ratio": 0.75732421875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder10/mha/out/reshape/smoothed": {
+   "ratio": 0.64501953125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder10/smolgen/compress": {
+   "ratio": 0.955078125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder10/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.92626953125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder10/smolgen/dense1/w": {
+   "ratio": 0.9765625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder10/smolgen/dense2/w": {
+   "ratio": 0.8662109375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder10/smolgen/gen_from/reshape": {
+   "ratio": 0.83447265625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder10/smolgen/ln1/smoothed": {
+   "ratio": 0.9375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder10/smolgen/smol_weight_gen": {
+   "ratio": 0.87158203125,
+   "clipped_frac": 9.914239247639975e-06
+  },
+  "/encoder11/ffn/dense1/mish/smoothed": {
+   "ratio": 0.6953125,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder11/ffn/dense1/w": {
+   "ratio": 0.8310546875,
+   "clipped_frac": 9.924173355102539e-06
+  },
+  "/encoder11/ffn/dense2/w": {
+   "ratio": 0.8193359375,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder11/ln1/smoothed": {
+   "ratio": 0.912109375,
+   "clipped_frac": 9.338061014811197e-06
+  },
+  "/encoder11/ln2/smoothed": {
+   "ratio": 0.9697265625,
+   "clipped_frac": 9.298324584960938e-06
+  },
+  "/encoder11/mha/K/w": {
+   "ratio": 0.8203125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder11/mha/Q/w": {
+   "ratio": 0.669921875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder11/mha/V/w": {
+   "ratio": 0.7353515625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder11/mha/out/dense/w": {
+   "ratio": 0.8046875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder11/mha/out/reshape/smoothed": {
+   "ratio": 0.82080078125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder11/smolgen/compress": {
+   "ratio": 0.8818359375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder11/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.95263671875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder11/smolgen/dense1/w": {
+   "ratio": 0.900390625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder11/smolgen/dense2/w": {
+   "ratio": 0.900390625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder11/smolgen/gen_from/reshape": {
+   "ratio": 0.87255859375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder11/smolgen/ln1/smoothed": {
+   "ratio": 0.97509765625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder11/smolgen/smol_weight_gen": {
+   "ratio": 0.71533203125,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder12/ffn/dense1/mish/smoothed": {
+   "ratio": 0.78271484375,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder12/ffn/dense1/w": {
+   "ratio": 0.73974609375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder12/ffn/dense2/w": {
+   "ratio": 0.7314453125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder12/ln1/smoothed": {
+   "ratio": 0.7490234375,
+   "clipped_frac": 9.695688883463541e-06
+  },
+  "/encoder12/ln2/smoothed": {
+   "ratio": 0.70947265625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder12/mha/K/w": {
+   "ratio": 0.775390625,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder12/mha/Q/w": {
+   "ratio": 0.68115234375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder12/mha/V/w": {
+   "ratio": 0.62060546875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder12/mha/out/dense/w": {
+   "ratio": 0.85791015625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder12/mha/out/reshape/smoothed": {
+   "ratio": 0.794921875,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder12/smolgen/compress": {
+   "ratio": 0.8427734375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder12/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.9130859375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder12/smolgen/dense1/w": {
+   "ratio": 0.9365234375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder12/smolgen/dense2/w": {
+   "ratio": 0.91455078125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder12/smolgen/gen_from/reshape": {
+   "ratio": 0.88037109375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder12/smolgen/ln1/smoothed": {
+   "ratio": 0.935546875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder12/smolgen/smol_weight_gen": {
+   "ratio": 0.84619140625,
+   "clipped_frac": 9.755293528238932e-06
+  },
+  "/encoder13/ffn/dense1/mish/smoothed": {
+   "ratio": 0.77880859375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder13/ffn/dense1/w": {
+   "ratio": 0.8232421875,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder13/ffn/dense2/w": {
+   "ratio": 0.689453125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder13/ln1/smoothed": {
+   "ratio": 0.9609375,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder13/ln2/smoothed": {
+   "ratio": 0.90478515625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder13/mha/K/w": {
+   "ratio": 0.66748046875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder13/mha/Q/w": {
+   "ratio": 0.828125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder13/mha/V/w": {
+   "ratio": 0.7626953125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder13/mha/out/dense/w": {
+   "ratio": 0.8720703125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder13/mha/out/reshape/smoothed": {
+   "ratio": 0.7490234375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder13/smolgen/compress": {
+   "ratio": 0.8271484375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder13/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.958984375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder13/smolgen/dense1/w": {
+   "ratio": 0.95703125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder13/smolgen/dense2/w": {
+   "ratio": 0.9072265625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder13/smolgen/gen_from/reshape": {
+   "ratio": 0.7978515625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder13/smolgen/ln1/smoothed": {
+   "ratio": 0.99267578125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder13/smolgen/smol_weight_gen": {
+   "ratio": 0.8720703125,
+   "clipped_frac": 9.993712107340494e-06
+  },
+  "/encoder14/ffn/dense1/mish/smoothed": {
+   "ratio": 0.828125,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder14/ffn/dense1/w": {
+   "ratio": 0.8193359375,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder14/ffn/dense2/w": {
+   "ratio": 0.55029296875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder14/ln1/smoothed": {
+   "ratio": 0.97705078125,
+   "clipped_frac": 9.57647959391276e-06
+  },
+  "/encoder14/ln2/smoothed": {
+   "ratio": 0.79833984375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder14/mha/K/w": {
+   "ratio": 0.75,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder14/mha/Q/w": {
+   "ratio": 0.84375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder14/mha/V/w": {
+   "ratio": 0.6025390625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder14/mha/out/dense/w": {
+   "ratio": 0.845703125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder14/mha/out/reshape/smoothed": {
+   "ratio": 0.8974609375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder14/smolgen/compress": {
+   "ratio": 0.76123046875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder14/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.89892578125,
+   "clipped_frac": 8.58306884765625e-06
+  },
+  "/encoder14/smolgen/dense1/w": {
+   "ratio": 0.994140625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder14/smolgen/dense2/w": {
+   "ratio": 0.92724609375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder14/smolgen/gen_from/reshape": {
+   "ratio": 0.91650390625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder14/smolgen/ln1/smoothed": {
+   "ratio": 0.9931640625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder14/smolgen/smol_weight_gen": {
+   "ratio": 0.85009765625,
+   "clipped_frac": 9.874502817789713e-06
+  },
+  "/encoder2/ffn/dense1/mish/smoothed": {
+   "ratio": 0.70703125,
+   "clipped_frac": 9.924173355102539e-06
+  },
+  "/encoder2/ffn/dense1/w": {
+   "ratio": 0.7568359375,
+   "clipped_frac": 9.924173355102539e-06
+  },
+  "/encoder2/ffn/dense2/w": {
+   "ratio": 0.765625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/ln1/smoothed": {
+   "ratio": 0.9697265625,
+   "clipped_frac": 9.338061014811197e-06
+  },
+  "/encoder2/ln2/smoothed": {
+   "ratio": 0.99609375,
+   "clipped_frac": 9.139378865559896e-06
+  },
+  "/encoder2/mha/K/w": {
+   "ratio": 0.92431640625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/mha/Q/w": {
+   "ratio": 0.80419921875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/mha/V/w": {
+   "ratio": 0.80029296875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/mha/out/dense/w": {
+   "ratio": 0.83056640625,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/mha/out/reshape/smoothed": {
+   "ratio": 0.80029296875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder2/smolgen/compress": {
+   "ratio": 0.7978515625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder2/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.9462890625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder2/smolgen/dense1/w": {
+   "ratio": 0.9677734375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder2/smolgen/dense2/w": {
+   "ratio": 0.951171875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder2/smolgen/gen_from/reshape": {
+   "ratio": 0.92529296875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder2/smolgen/ln1/smoothed": {
+   "ratio": 0.99267578125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder2/smolgen/smol_weight_gen": {
+   "ratio": 0.89404296875,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder3/ffn/dense1/mish/smoothed": {
+   "ratio": 0.81103515625,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder3/ffn/dense1/w": {
+   "ratio": 0.6982421875,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder3/ffn/dense2/w": {
+   "ratio": 0.828125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder3/ln1/smoothed": {
+   "ratio": 0.9169921875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder3/ln2/smoothed": {
+   "ratio": 0.9970703125,
+   "clipped_frac": 7.033348083496094e-06
+  },
+  "/encoder3/mha/K/w": {
+   "ratio": 0.75927734375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder3/mha/Q/w": {
+   "ratio": 0.67578125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder3/mha/V/w": {
+   "ratio": 0.71435546875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder3/mha/out/dense/w": {
+   "ratio": 0.8466796875,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder3/mha/out/reshape/smoothed": {
+   "ratio": 0.8662109375,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder3/smolgen/compress": {
+   "ratio": 0.90576171875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder3/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.81640625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder3/smolgen/dense1/w": {
+   "ratio": 0.953125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder3/smolgen/dense2/w": {
+   "ratio": 0.96044921875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder3/smolgen/gen_from/reshape": {
+   "ratio": 0.88916015625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder3/smolgen/ln1/smoothed": {
+   "ratio": 0.9560546875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder3/smolgen/smol_weight_gen": {
+   "ratio": 0.83740234375,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder4/ffn/dense1/mish/smoothed": {
+   "ratio": 0.794921875,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder4/ffn/dense1/w": {
+   "ratio": 0.88720703125,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder4/ffn/dense2/w": {
+   "ratio": 0.47265625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder4/ln1/smoothed": {
+   "ratio": 0.888671875,
+   "clipped_frac": 9.57647959391276e-06
+  },
+  "/encoder4/ln2/smoothed": {
+   "ratio": 0.99755859375,
+   "clipped_frac": 7.271766662597656e-06
+  },
+  "/encoder4/mha/K/w": {
+   "ratio": 0.87353515625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder4/mha/Q/w": {
+   "ratio": 0.73974609375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder4/mha/V/w": {
+   "ratio": 0.70458984375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder4/mha/out/dense/w": {
+   "ratio": 0.875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder4/mha/out/reshape/smoothed": {
+   "ratio": 0.67236328125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder4/smolgen/compress": {
+   "ratio": 0.912109375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder4/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.947265625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder4/smolgen/dense1/w": {
+   "ratio": 0.97119140625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder4/smolgen/dense2/w": {
+   "ratio": 0.89599609375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder4/smolgen/gen_from/reshape": {
+   "ratio": 0.9189453125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder4/smolgen/ln1/smoothed": {
+   "ratio": 0.9755859375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder4/smolgen/smol_weight_gen": {
+   "ratio": 0.77880859375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder5/ffn/dense1/mish/smoothed": {
+   "ratio": 0.8369140625,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder5/ffn/dense1/w": {
+   "ratio": 0.751953125,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder5/ffn/dense2/w": {
+   "ratio": 0.86279296875,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder5/ln1/smoothed": {
+   "ratio": 0.88427734375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder5/ln2/smoothed": {
+   "ratio": 0.998046875,
+   "clipped_frac": 6.516774495442708e-06
+  },
+  "/encoder5/mha/K/w": {
+   "ratio": 0.88671875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder5/mha/Q/w": {
+   "ratio": 0.7392578125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder5/mha/V/w": {
+   "ratio": 0.81103515625,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder5/mha/out/dense/w": {
+   "ratio": 0.74365234375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder5/mha/out/reshape/smoothed": {
+   "ratio": 0.70703125,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder5/smolgen/compress": {
+   "ratio": 0.8330078125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder5/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.91845703125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder5/smolgen/dense1/w": {
+   "ratio": 0.99609375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder5/smolgen/dense2/w": {
+   "ratio": 0.8935546875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder5/smolgen/gen_from/reshape": {
+   "ratio": 0.9384765625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder5/smolgen/ln1/smoothed": {
+   "ratio": 0.9951171875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder5/smolgen/smol_weight_gen": {
+   "ratio": 0.8896484375,
+   "clipped_frac": 9.834766387939453e-06
+  },
+  "/encoder6/ffn/dense1/mish/smoothed": {
+   "ratio": 0.6416015625,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder6/ffn/dense1/w": {
+   "ratio": 0.85302734375,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder6/ffn/dense2/w": {
+   "ratio": 0.759765625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder6/ln1/smoothed": {
+   "ratio": 0.84521484375,
+   "clipped_frac": 9.417533874511719e-06
+  },
+  "/encoder6/ln2/smoothed": {
+   "ratio": 0.998046875,
+   "clipped_frac": 7.828076680501303e-06
+  },
+  "/encoder6/mha/K/w": {
+   "ratio": 0.85888671875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder6/mha/Q/w": {
+   "ratio": 0.69091796875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder6/mha/V/w": {
+   "ratio": 0.7548828125,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder6/mha/out/dense/w": {
+   "ratio": 0.81005859375,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder6/mha/out/reshape/smoothed": {
+   "ratio": 0.728515625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder6/smolgen/compress": {
+   "ratio": 0.83349609375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder6/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.92333984375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder6/smolgen/dense1/w": {
+   "ratio": 0.8828125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder6/smolgen/dense2/w": {
+   "ratio": 0.92578125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder6/smolgen/gen_from/reshape": {
+   "ratio": 0.9453125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder6/smolgen/ln1/smoothed": {
+   "ratio": 0.984375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder6/smolgen/smol_weight_gen": {
+   "ratio": 0.8134765625,
+   "clipped_frac": 9.795029958089193e-06
+  },
+  "/encoder7/ffn/dense1/mish/smoothed": {
+   "ratio": 0.81640625,
+   "clipped_frac": 9.864568710327148e-06
+  },
+  "/encoder7/ffn/dense1/w": {
+   "ratio": 0.84033203125,
+   "clipped_frac": 9.98377799987793e-06
+  },
+  "/encoder7/ffn/dense2/w": {
+   "ratio": 0.84716796875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder7/ln1/smoothed": {
+   "ratio": 0.888671875,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder7/ln2/smoothed": {
+   "ratio": 0.998046875,
+   "clipped_frac": 9.457270304361979e-06
+  },
+  "/encoder7/mha/K/w": {
+   "ratio": 0.8515625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder7/mha/Q/w": {
+   "ratio": 0.75341796875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder7/mha/V/w": {
+   "ratio": 0.76171875,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder7/mha/out/dense/w": {
+   "ratio": 0.69287109375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder7/mha/out/reshape/smoothed": {
+   "ratio": 0.63330078125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder7/smolgen/compress": {
+   "ratio": 0.7939453125,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder7/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.90478515625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder7/smolgen/dense1/w": {
+   "ratio": 0.93505859375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder7/smolgen/dense2/w": {
+   "ratio": 0.9375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder7/smolgen/gen_from/reshape": {
+   "ratio": 0.86328125,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder7/smolgen/ln1/smoothed": {
+   "ratio": 0.990234375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder7/smolgen/smol_weight_gen": {
+   "ratio": 0.8154296875,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder8/ffn/dense1/mish/smoothed": {
+   "ratio": 0.77880859375,
+   "clipped_frac": 9.953975677490234e-06
+  },
+  "/encoder8/ffn/dense1/w": {
+   "ratio": 0.8681640625,
+   "clipped_frac": 9.775161743164062e-06
+  },
+  "/encoder8/ffn/dense2/w": {
+   "ratio": 0.77001953125,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder8/ln1/smoothed": {
+   "ratio": 0.98095703125,
+   "clipped_frac": 9.417533874511719e-06
+  },
+  "/encoder8/ln2/smoothed": {
+   "ratio": 0.99755859375,
+   "clipped_frac": 8.265177408854166e-06
+  },
+  "/encoder8/mha/K/w": {
+   "ratio": 0.7880859375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder8/mha/Q/w": {
+   "ratio": 0.67529296875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder8/mha/V/w": {
+   "ratio": 0.5166015625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder8/mha/out/dense/w": {
+   "ratio": 0.830078125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/encoder8/mha/out/reshape/smoothed": {
+   "ratio": 0.73974609375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder8/smolgen/compress": {
+   "ratio": 0.84228515625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder8/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.94091796875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder8/smolgen/dense1/w": {
+   "ratio": 0.984375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder8/smolgen/dense2/w": {
+   "ratio": 0.859375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder8/smolgen/gen_from/reshape": {
+   "ratio": 0.884765625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder8/smolgen/ln1/smoothed": {
+   "ratio": 0.98681640625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder8/smolgen/smol_weight_gen": {
+   "ratio": 0.81005859375,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder9/ffn/dense1/mish/smoothed": {
+   "ratio": 0.6708984375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder9/ffn/dense1/w": {
+   "ratio": 0.841796875,
+   "clipped_frac": 9.804964065551758e-06
+  },
+  "/encoder9/ffn/dense2/w": {
+   "ratio": 0.75048828125,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/encoder9/ln1/smoothed": {
+   "ratio": 0.97119140625,
+   "clipped_frac": 9.735425313313803e-06
+  },
+  "/encoder9/ln2/smoothed": {
+   "ratio": 0.998046875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder9/mha/K/w": {
+   "ratio": 0.87744140625,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder9/mha/Q/w": {
+   "ratio": 0.7099609375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder9/mha/V/w": {
+   "ratio": 0.8447265625,
+   "clipped_frac": 9.814898173014322e-06
+  },
+  "/encoder9/mha/out/dense/w": {
+   "ratio": 0.74755859375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder9/mha/out/reshape/smoothed": {
+   "ratio": 0.79638671875,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/encoder9/smolgen/compress": {
+   "ratio": 0.7275390625,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder9/smolgen/compress/reshape/smoothed": {
+   "ratio": 0.92138671875,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/encoder9/smolgen/dense1/w": {
+   "ratio": 0.9931640625,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder9/smolgen/dense2/w": {
+   "ratio": 0.85498046875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder9/smolgen/gen_from/reshape": {
+   "ratio": 0.92529296875,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/encoder9/smolgen/ln1/smoothed": {
+   "ratio": 0.966796875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/encoder9/smolgen/smol_weight_gen": {
+   "ratio": 0.86474609375,
+   "clipped_frac": 9.973843892415365e-06
+  },
+  "/mlh/dense1/matmul": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/mlh/dense1/mish/smoothed": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/mlh/dense2/matmul": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/mlh/embed/matmul": {
+   "ratio": 0.8505859375,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/mlh/reshape/smoothed": {
+   "ratio": 0.93310546875,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "/policy/K/matmul": {
+   "ratio": 0.68115234375,
+   "clipped_frac": 9.894371032714844e-06
+  },
+  "/policy/Q/matmul": {
+   "ratio": 0.57470703125,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/policy/dense1/matmul": {
+   "ratio": 0.67138671875,
+   "clipped_frac": 9.934107462565104e-06
+  },
+  "/policy/dense1/mish/smoothed": {
+   "ratio": 0.765625,
+   "clipped_frac": 9.854634602864584e-06
+  },
+  "/policy/promotion/matmul": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/value/dense1/matmul": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/value/dense1/mish/smoothed": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/value/dense2/matmul": {
+   "ratio": 1.0,
+   "clipped_frac": 0.0
+  },
+  "/value/embed/matmul": {
+   "ratio": 0.90234375,
+   "clipped_frac": 9.5367431640625e-06
+  },
+  "/value/reshape/smoothed": {
+   "ratio": 0.9736328125,
+   "clipped_frac": 7.62939453125e-06
+  },
+  "policy/promotion/slice/smoothed": {
+   "ratio": 0.548828125,
+   "clipped_frac": 9.854634602864584e-06
+  }
+ },
+ "seconds": 225.8
+}

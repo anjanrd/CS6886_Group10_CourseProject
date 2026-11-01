@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_ultimate.py",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480742.5623617,
+  "pid": 12648,
+  "exit_code": 0,
+  "elapsed_seconds": 2.012481212615967
+}

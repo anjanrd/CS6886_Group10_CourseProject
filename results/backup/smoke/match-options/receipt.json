@@ -1,0 +1,14 @@
+{
+  "status": "verified",
+  "started_unix": 1793480926.8901696,
+  "elapsed_seconds": 14.991480588912964,
+  "awake": {
+    "requested": true,
+    "released": true
+  },
+  "conditions": {
+    "path": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\smoke\\match-options\\conditions.json",
+    "bytes": 439,
+    "sha256": "5f092a9655f64ddefccb7c23e9295f09892d6eb68f43eeff40bdc47ee00d42e1"
+  }
+}

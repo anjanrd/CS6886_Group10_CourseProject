@@ -1,0 +1,9 @@
+model,n,correct,raw_accuracy,historical_search_nps_median,historical_search_nps_min,historical_search_nps_max,scope
+fp16,6720,6706,0.9979166666666667,4842.0,4820.0,4952.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s1,6720,6692,0.9958333333333333,6946.0,6875.0,7085.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s2,6720,6693,0.9959821428571428,7436.0,7402.0,7460.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s3,6720,6697,0.9965773809523809,7111.0,7095.0,7169.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s4,6720,6706,0.9979166666666667,6818.0,6745.0,6908.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s4aa,6720,6703,0.997470238095238,5956.0,5832.0,6036.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s0,6720,5381,0.8007440476190476,3775.0,3768.0,3816.0,Common M raw quality; historical bounded search repeats. No swap speed claims.
+s1sp,6720,6662,0.9913690476190476,5316.0,5305.0,5632.0,Common M raw quality; historical bounded search repeats. No swap speed claims.

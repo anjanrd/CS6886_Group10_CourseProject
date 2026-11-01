@@ -1,0 +1,40 @@
+[
+  {
+    "budget_ms": 100,
+    "games": 2,
+    "complete_pairs": 1,
+    "fp16_wins": 0,
+    "s4_wins": 0,
+    "draws": 2,
+    "fp16_win_pct": 0.0,
+    "s4_win_pct": 0.0,
+    "draw_pct": 100.0,
+    "fp16_score": 0.5,
+    "more_wins": "tie",
+    "absolute_win_margin": 0,
+    "pp_win_margin": 0.0,
+    "termination": {
+      "tablebase": 1,
+      "adjudicated_draw": 1
+    }
+  },
+  {
+    "budget_ms": 200,
+    "games": 2,
+    "complete_pairs": 1,
+    "fp16_wins": 0,
+    "s4_wins": 0,
+    "draws": 2,
+    "fp16_win_pct": 0.0,
+    "s4_win_pct": 0.0,
+    "draw_pct": 100.0,
+    "fp16_score": 0.5,
+    "more_wins": "tie",
+    "absolute_win_margin": 0,
+    "pp_win_margin": 0.0,
+    "termination": {
+      "threefold_repetition": 1,
+      "adjudicated_draw": 1
+    }
+  }
+]

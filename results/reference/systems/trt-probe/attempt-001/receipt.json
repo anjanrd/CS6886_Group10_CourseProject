@@ -1,0 +1,76 @@
+{
+  "status": "verified",
+  "manifest": "9300e77242ed09d7a3f7fbd270512a6a2d24830ae39bb783139ce213ac4a1fea",
+  "job": "e6568d8fe9ad48e499a7512c81fd1e0ed9c7e856d994811332ca986b6419ed23",
+  "runtime": "3e66d867667cac116a9c9082fa3f824fac6a6e74d0367f3d50eacf8503f14ff3",
+  "session": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "bytes": 1062,
+    "sha256": "97ce3badd097f7cd8c9f10b0561d1fdcd8b8c3239ce8e8d098ae1887bd25c5dd"
+  },
+  "attempt": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001",
+  "command": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "execution.gpu_job",
+    "probe",
+    "--trtexec",
+    "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe",
+    "--session",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "--out",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001/work"
+  ],
+  "started_unix": 1793338966.2285397,
+  "conditions": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\conditions.json",
+    "bytes": 430,
+    "sha256": "c3a09be6cd19ea0f47ea77a14c2e7a74d376db98862fe366156df7cb923af845"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 20.881352424621582,
+  "outputs": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\activity.log",
+      "bytes": 271276,
+      "sha256": "3b1f8ff2ec921e4b6ac2fe4b7d882fc7462da2d2f2acb9420705badda8095453"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\command.log",
+      "bytes": 428,
+      "sha256": "44a098fb31f0f153b1d2fee59791110afab8e9a4e5c555ba804f6ae2ef406e18"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\conditions.json",
+      "bytes": 430,
+      "sha256": "c3a09be6cd19ea0f47ea77a14c2e7a74d376db98862fe366156df7cb923af845"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe.log",
+      "bytes": 65695,
+      "sha256": "3aa4bfe977c9fc327770002f4c01bbf1a2301ff5e856991f6fc7997443c734a2"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe.onnx",
+      "bytes": 1117,
+      "sha256": "3d378b7c2446a7f55c12fb8c4292b301e6c1f9ce71f90b546866dd437d3b5ac2"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe_layers.json",
+      "bytes": 483,
+      "sha256": "6a43c620fe1432147e69fde392811fd49b157e02d472b9f9e80a4d343a980970"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe_profile.json",
+      "bytes": 152,
+      "sha256": "393b6869c29f40b3a956c8a69ae437718256c1964eaa0a40269803860f1b9b05"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\result.json",
+      "bytes": 686,
+      "sha256": "c2c61bc0c9268b8239ba5fbc8de1b4f828090615152c4d00e538634dc5c6319d"
+    }
+  ],
+  "verification_scope": "exit status, structured outputs, identities and resource flags; scientific interpretation/precision mapping requires Run 3"
+}

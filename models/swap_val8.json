@@ -1,0 +1,18 @@
+{
+  "kind": "policy/value swap",
+  "recipe_applies_to": "quantized component; other component is FP32 ONNX for FP16 engine fallback",
+  "method": "percentile",
+  "percentile": 99.999,
+  "smoothquant": 0.7,
+  "policy": {
+    "model": "fp16",
+    "onnx": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\bt3_fp32.onnx",
+    "sha256": "937d5ac3d1ce9daafc7858f54166787924680c0c9c4aaab94d438402430db2b9"
+  },
+  "value_mlh": {
+    "model": "s4",
+    "onnx": "C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\s4.onnx",
+    "sha256": "24fd9a11bbc755962b98fab08dd49f9a721c797097dfb607183e27b7e76e1904"
+  },
+  "generated_by": "reports/c2_continue.py provenance only; stitch_swap.py emits no native JSON"
+}

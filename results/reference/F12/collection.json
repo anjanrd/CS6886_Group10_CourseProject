@@ -1,0 +1,75 @@
+{
+  "status": "verified",
+  "sources": [
+    {
+      "path": "models/s4.onnx",
+      "bytes": 105829506,
+      "sha256": "24fd9a11bbc755962b98fab08dd49f9a721c797097dfb607183e27b7e76e1904"
+    },
+    {
+      "path": "models/s4.json",
+      "bytes": 50028,
+      "sha256": "b75628f2384aa6e576d26190907fae6b6fde44e0a9b5aaa8b4209b1924249e9d"
+    },
+    {
+      "path": "data/calib.npz",
+      "bytes": 235353,
+      "sha256": "e8f923b57d9d3131c7de6a569f55edc09eafff6aa62ff2f6c2f1518675bb6522"
+    },
+    {
+      "path": "quant/quantize.py",
+      "bytes": 17109,
+      "sha256": "0bb8b0400640a6eaf71472762cafbc2c245858286058f1b4669973d7927de031"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5314,
+      "sha256": "3371debc4cfcab5656c7cdfcd18ffcab2c7bbd2f94fbaf57f3b545ec81b71a4b"
+    },
+    {
+      "path": "analysis/person_a/smoothquant_diagnostic.py",
+      "bytes": 9175,
+      "sha256": "384a1df4a873a252534bc283aae25b0c80ad16a859aa7bac01bb9ea53dd32260"
+    }
+  ],
+  "output": {
+    "path": "analysis/person_a/a5/current-channel-maxima.npz",
+    "bytes": 9996,
+    "sha256": "73c2ba365772de2a8f46fdeaff7693e4e55b9ccdde80fce6e6b0e1a47734982e"
+  },
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "onnxruntime": "1.31.1",
+  "onnx": "1.23.2",
+  "numpy": "2.4.6",
+  "calibration_positions": 512,
+  "batch_size": 32,
+  "tensors": [
+    "/encoder14/ln2",
+    "/encoder14/ln2/smoothed"
+  ],
+  "observed_last_batch_tensor_shape": [
+    2048,
+    768
+  ],
+  "channel_axis": -1,
+  "reduce_axes": [
+    "positions",
+    "tokens"
+  ],
+  "collection_elapsed_seconds": 8.22917010000674,
+  "batch_pair_max_absolute_error": 0.0,
+  "pair_check": {
+    "agrees": true,
+    "channels": 768,
+    "failed_channels": 0,
+    "max_absolute_error": 0.0,
+    "max_relative_error": 0.0,
+    "rtol": 1e-05,
+    "atol": 1e-12
+  },
+  "model_modified": false,
+  "gpu_workload": false,
+  "scope": "CPU activation diagnostic, not GPU runtime precision, latency, search or accuracy measurement"
+}

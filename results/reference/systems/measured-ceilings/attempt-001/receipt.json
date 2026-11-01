@@ -1,0 +1,116 @@
+{
+  "status": "verified",
+  "manifest": "9300e77242ed09d7a3f7fbd270512a6a2d24830ae39bb783139ce213ac4a1fea",
+  "job": "2440b52414ec3aa7407f4bce4d37d226a820895a692c59ae0ef5e2e6263d4c6f",
+  "runtime": "3e66d867667cac116a9c9082fa3f824fac6a6e74d0367f3d50eacf8503f14ff3",
+  "session": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "bytes": 1062,
+    "sha256": "97ce3badd097f7cd8c9f10b0561d1fdcd8b8c3239ce8e8d098ae1887bd25c5dd"
+  },
+  "attempt": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001",
+  "command": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "execution.gpu_job",
+    "peaks",
+    "--trtexec",
+    "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe",
+    "--session",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\session.json",
+    "--out",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001/work"
+  ],
+  "started_unix": 1793340972.2461846,
+  "conditions": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\conditions.json",
+    "bytes": 439,
+    "sha256": "13e33fad06278f7bfe633fc9bea363eb5d7e97d9bb4a49696531331ef8463da7"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 566.4386057853699,
+  "outputs": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\activity.log",
+      "bytes": 6725320,
+      "sha256": "ab15e019b9b74de4f04a8ebf91507e4685ab1060f61b9e0fdfb4fd78174463d3"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\command.log",
+      "bytes": 436,
+      "sha256": "ce214c27770f328bd8040249c23abb84139339b046d350e61c5a6282a052aa8d"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\conditions.json",
+      "bytes": 439,
+      "sha256": "13e33fad06278f7bfe633fc9bea363eb5d7e97d9bb4a49696531331ef8463da7"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth.log",
+      "bytes": 32235,
+      "sha256": "e28d954d9f403b370a11fdc774a2d3eb9775d0eaff2642087db3da28bad0c9a9"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth.onnx",
+      "bytes": 1073741934,
+      "sha256": "7537d618619f25d6fac2869ada3968f8dca90c199dc212ec4e0cc8fc97abcf1b"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth_layers.json",
+      "bytes": 1839,
+      "sha256": "cebf2bab07feefba0751c0d6bd78169b1dbafa28329a166fb4b128a7c4a17a3f"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\bandwidth_profile.json",
+      "bytes": 519,
+      "sha256": "b7b750d916f9cf6c208d04cc6b22af9b5a21764fcfe4ae20b384bcdabaa2b892"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16.log",
+      "bytes": 20911,
+      "sha256": "216962b526c723f0ce531a6474351609a5f38f5b461300667ee10eb3d91d1ef6"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16.onnx",
+      "bytes": 67108969,
+      "sha256": "779fb20e7f7130e850d7a87199d9a9bcc71abf1aff6b25d089a8657a19197c4c"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16_layers.json",
+      "bytes": 1828,
+      "sha256": "57a0cbe91ba37b7eb3991845063bba82ddf74985e01db5989da89f6c50e171b7"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\fp16_profile.json",
+      "bytes": 504,
+      "sha256": "1ffa02a950043ca0d0a9df5bd3b8298266dc8284f48b71098e2a39e57e1083f9"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8.log",
+      "bytes": 27222,
+      "sha256": "9c8b469c92bd879282247ca45a9969bf4635eba7ffe42c3cf1983966eb911fc4"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8.onnx",
+      "bytes": 67129672,
+      "sha256": "98c4ca0263dc4cf982362e55b090af00f94dcdd86249bd63c54254f0af848206"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8_layers.json",
+      "bytes": 1029,
+      "sha256": "75e68ebd916d7787f8c554dccf11cec8174c3ce057a8ed8504869221ba55fdad"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\int8_profile.json",
+      "bytes": 291,
+      "sha256": "7489b0b9e6ca3c63b56baf9248912da9c77480cdd0d3fddfd4f17f2e758d9944"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\measured-ceilings\\attempt-001\\work\\result.json",
+      "bytes": 2595,
+      "sha256": "6a7565f19560ddaaf02ccab317909dbed5876a400f587bdb256a8c6892e92b3b"
+    }
+  ],
+  "verification_scope": "exit status, structured outputs, identities and resource flags; scientific interpretation/precision mapping requires Run 3"
+}

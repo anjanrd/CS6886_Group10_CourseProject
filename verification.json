@@ -1,0 +1,27 @@
+{
+  "status": "U10A_bounded_backup_verified",
+  "verified_IST": "2026-11-01 02:39:40 IST",
+  "full_reproduction_verified": false,
+  "U11": "pending; requires later explicit green light",
+  "U12": "pending; full integrated D8 not claimed",
+  "primary_measurements": "U0-U9 complete and verified; compatible original results reused",
+  "bounded_checks": [
+    "external ZIP extraction/CRC/hash manifest",
+    "new locally created venv/exact pins/pip check",
+    "public input/native check and import/prefix isolation",
+    "444332 unique reference observations/count reconciliation",
+    "all1000 production games and four excluded pilots reconciled",
+    "actual40 raw,8 node,16 timed and8 match-option searches",
+    "same12-page PDF inspected in full; identical packaged PDF verified",
+    "final ZIP re-extraction and folder hash agreement"
+  ],
+  "excluded": [
+    "full derivation/selection",
+    "fresh-cache builds",
+    "full studies/matches",
+    "all44 systems tasks",
+    "full U11/U12/D8"
+  ],
+  "cache_policy": "Same-host existing native caches intentionally reused; not fresh-cache validation",
+  "submission_scope": "Viable primary-study backup with bounded independent setup/runtime checks; not full fresh experimental reproduction"
+}

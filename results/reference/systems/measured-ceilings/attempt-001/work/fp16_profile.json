@@ -1,0 +1,6 @@
+[
+  { "count" : 442 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[node_of_Y]}", "timeMs" : 392.945, "averageMs" : 0.889016, "medianMs" : 0.888832, "percentage" : 12.2041 }
+, { "name" : "node_of_Y_myl1_0", "timeMs" : 2483.45, "averageMs" : 5.61866, "medianMs" : 5.61869, "percentage" : 77.1309 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[node_of_Y]}", "timeMs" : 343.39, "averageMs" : 0.7769, "medianMs" : 0.777216, "percentage" : 10.665 }
+]

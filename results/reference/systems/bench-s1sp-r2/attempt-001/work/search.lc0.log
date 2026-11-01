@@ -1,0 +1,475 @@
+E        _
+E |   _ | |
+E |_ |_ |_| v0.33.0-rc0 built Sep  5 2026
+E Search algorithm: classic
+O id name Lc0 v0.33.0-rc0
+O id author The LCZero Authors.
+O option name LogFile type string default 
+O option name ConfigFile type string default lc0.config
+O option name Ponder type check default false
+O option name SyzygyPath type string default 
+O option name Threads type spin default 0 min 0 max 128
+O option name MinibatchSize type spin default 0 min 0 max 1024
+O option name CPuct type string default 1.745000
+O option name CPuctBase type string default 38739.000000
+O option name CPuctFactor type string default 3.894000
+O option name TwoFoldDraws type check default true
+O option name VerboseMoveStats type check default false
+O option name FpuStrategy type combo default reduction var reduction var absolute
+O option name FpuValue type string default 0.330000
+O option name CacheHistoryLength type spin default 0 min 0 max 7
+O option name MaxCollisionEvents type spin default 917 min 1 max 65536
+O option name MaxCollisionVisits type spin default 80000 min 1 max 100000000
+O option name MaxCollisionVisitsScalingStart type spin default 28 min 1 max 100000
+O option name MaxCollisionVisitsScalingEnd type spin default 145000 min 0 max 100000000
+O option name MaxCollisionVisitsScalingPower type string default 1.250000
+O option name OutOfOrderEval type check default true
+O option name MaxOutOfOrderEvalsFactor type string default 2.400000
+O option name StickyEndgames type check default true
+O option name SyzygyFastPlay type check default false
+O option name MultiPV type spin default 1 min 1 max 500
+O option name PerPVCounters type check default false
+O option name ScoreType type combo default WDL_mu var centipawn var centipawn_with_drawscore var centipawn_2019 var centipawn_2018 var win_percentage var Q var W-L var WDL_mu
+O option name MovesLeftMaxEffect type string default 0.034500
+O option name MovesLeftThreshold type string default 0.800000
+O option name MovesLeftSlope type string default 0.002700
+O option name MovesLeftConstantFactor type string default 0.000000
+O option name MovesLeftScaledFactor type string default 1.652100
+O option name MovesLeftQuadraticFactor type string default -0.652100
+O option name MaxConcurrentSearchers type spin default 1 min 0 max 128
+O option name DrawScore type string default 0.000000
+O option name ContemptMode type combo default play var play var white_side_analysis var black_side_analysis var disable
+O option name Contempt type string default 
+O option name WDLCalibrationElo type string default 0.000000
+O option name WDLEvalObjectivity type string default 1.000000
+O option name WDLDrawRateReference type string default 0.500000
+O option name NodesPerSecondLimit type string default 0.000000
+O option name TaskWorkers type spin default -1 min -1 max 128
+O option name MinimumProcessingWork type spin default 20 min 2 max 100000
+O option name MinimumPickingWork type spin default 1 min 1 max 100000
+O option name MinimumRemainingPickingWork type spin default 20 min 0 max 100000
+O option name MinimumPerTaskProcessing type spin default 8 min 1 max 100000
+O option name IdlingMinimumWork type spin default 0 min 0 max 10000
+O option name ThreadIdlingThreshold type spin default 1 min 0 max 128
+O option name UCI_Opponent type string default 
+O option name UCI_RatingAdv type string default 0.000000
+O option name SearchSpinBackoff type check default false
+O option name GarbageCollectionDelay type string default 10.000000
+O option name MaxPrefetch type spin default 32 min 0 max 1024
+O option name SolidTreeThreshold type spin default 100 min 1 max 2000000000
+O option name SmartPruningFactor type string default 1.330000
+O option name SmartPruningMinimumBatches type spin default 0 min 0 max 10000
+O option name RamLimitMb type spin default 0 min 0 max 100000000
+O option name MoveOverheadMs type spin default 200 min 0 max 100000000
+O option name TimeManager type string default legacy
+O option name UCI_Chess960 type check default false
+O option name UCI_ShowWDL type check default false
+O option name UCI_ShowEPS type check default false
+O option name UCI_ShowMovesLeft type check default false
+O option name PolicyTemperature type string default 1.359000
+O option name HistoryFill type combo default fen_only var no var fen_only var always
+O option name WeightsFile type string default C:\Users\HP\Desktop\LC0\models\s1sp.pb.gz
+O option name Backend type combo default onnx-trt var onnx-trt var onnx-dml var onnx-cpu var onnx-cuda var onnx-coreml var trivial var random var check var roundrobin var recordreplay var multiplexing var demux
+O option name BackendOptions type string default optimize=8
+O option name NNCacheSize type spin default 2000000 min 0 max 999999999
+O uciok
+O readyok
+E Loading weights file from: C:\Users\HP\Desktop\LC0\models\s1sp.pb.gz
+E CUDA runtime version: 12.9.0
+E Latest version of CUDA supported by the driver: 13.1.0
+E GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+E GPU memory: 7.99561 Gb
+E GPU clock frequency: 2250 MHz
+E GPU device ID: 10de:28a0
+E GPU subsystem ID: 103c:8bcd
+O info depth 1 seldepth 2 time 50 nodes 2 score cp 0 nps 333 tbhits 0 pv b1c3 g8f6
+O info depth 1 seldepth 2 time 56 nodes 21 score cp 19 nps 1909 tbhits 0 pv e2e4 e7e5
+O info depth 2 seldepth 3 time 62 nodes 27 score cp 27 nps 1500 tbhits 0 pv b1c3 e7e5 g1f3
+O info depth 2 seldepth 4 time 77 nodes 48 score cp 17 nps 1454 tbhits 0 pv b1c3 e7e5 e2e4 b8c6
+O info depth 3 seldepth 4 time 85 nodes 67 score cp 25 nps 1675 tbhits 0 pv e2e4 g8f6 b1c3 e7e5
+O info depth 3 seldepth 5 time 98 nodes 117 score cp 29 nps 2166 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3
+O info depth 3 seldepth 6 time 113 nodes 167 score cp 32 nps 2455 tbhits 0 pv e2e4 g8f6 b1c3 e7e5 g1f3 b8c6
+O info depth 3 seldepth 7 time 127 nodes 227 score cp 33 nps 2734 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4
+O info depth 4 seldepth 8 time 141 nodes 274 score cp 32 nps 2854 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4
+O info depth 4 seldepth 9 time 175 nodes 464 score cp 30 nps 3569 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3
+O info depth 5 seldepth 9 time 189 nodes 549 score cp 31 nps 3812 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3
+O info depth 5 seldepth 10 time 203 nodes 640 score cp 29 nps 4050 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6
+O info depth 5 seldepth 11 time 231 nodes 845 score cp 27 nps 4543 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6
+O info depth 5 seldepth 12 time 272 nodes 1118 score cp 27 nps 4903 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6
+O info depth 6 seldepth 12 time 445 nodes 2312 score cp 25 nps 5780 tbhits 0 pv e2e4 c7c5 g1f3 b8c6 b1c3 e7e6 f1b5 g8e7 d2d3 a7a6
+O info depth 6 seldepth 13 time 511 nodes 2779 score cp 25 nps 5963 tbhits 0 pv e2e4 c7c5 g1f3 b8c6 b1c3 e7e6 f1b5 g8e7 d2d3 a7a6
+O info depth 6 seldepth 14 time 655 nodes 3925 score cp 24 nps 6423 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 f8c5 f1c4 g8f6 d2d3 d7d6 h2h3 h7h6
+O info depth 6 seldepth 15 time 860 nodes 5722 score cp 23 nps 7020 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1b5 f8d6 d2d3 a7a6 b5c4
+O info depth 7 seldepth 15 time 948 nodes 6458 score cp 23 nps 7143 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1b5 f8d6 d2d3 a7a6 b5c4
+O info depth 7 seldepth 16 time 974 nodes 6620 score cp 23 nps 7125 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1b5 f8d6 d2d3 a7a6 b5c4
+O info depth 7 seldepth 17 time 1088 nodes 7547 score cp 24 nps 7235 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 d4c6 d7c6 d1d8 e8d8 f2f3 c8e6 c1e3 f6d7 b1d2
+O info depth 7 seldepth 17 time 1134 nodes 7864 score cp 24 nps 7214 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 d4c6 d7c6 d1d8 e8d8 f2f3 c8e6 c1e3 f6d7 b1d2
+O bestmove e2e4 ponder e7e5
+O readyok
+O info depth 1 seldepth 2 time 12 nodes 2 score cp 0 nps 400 tbhits 0 pv b1c3 g8f6
+O info depth 2 seldepth 3 time 18 nodes 3 score cp 8 nps 272 tbhits 0 pv b1c3 g8f6 e2e4
+O info depth 3 seldepth 4 time 29 nodes 15 score cp 17 nps 652 tbhits 0 pv b1c3 g8f6 e2e4 e7e5
+O info depth 2 seldepth 4 time 37 nodes 27 score cp 12 nps 900 tbhits 0 pv b1c3 g8f6 e2e4 e7e5
+O info depth 3 seldepth 4 time 63 nodes 86 score cp 12 nps 1535 tbhits 0 pv b1c3 g8f6 e2e4 e7e5
+O info depth 3 seldepth 5 time 69 nodes 109 score cp 27 nps 1730 tbhits 0 pv e2e4 e7e5 b1c3 b8c6 g1f3
+O info depth 3 seldepth 6 time 76 nodes 136 score cp 25 nps 1942 tbhits 0 pv e2e4 g8f6 b1c3 e7e5 g1f3 b8c6
+O info depth 3 seldepth 7 time 98 nodes 239 score cp 28 nps 2597 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4
+O info depth 4 seldepth 7 time 104 nodes 260 score cp 29 nps 2653 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4
+O info depth 4 seldepth 8 time 124 nodes 329 score cp 32 nps 2788 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4
+O info depth 4 seldepth 9 time 144 nodes 435 score cp 34 nps 3152 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3
+O info depth 5 seldepth 9 time 152 nodes 499 score cp 32 nps 3417 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3
+O info depth 5 seldepth 10 time 165 nodes 612 score cp 31 nps 3849 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6
+O info depth 5 seldepth 11 time 191 nodes 797 score cp 28 nps 4331 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6
+O info depth 5 seldepth 12 time 355 nodes 2022 score cp 26 nps 5810 tbhits 0 pv e2e4 c7c5 g1f3 b8c6 b1c3 e7e6 f1b5 g8e7 d2d3 a7a6
+O info depth 6 seldepth 12 time 405 nodes 2425 score cp 25 nps 6077 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 e1g1
+O info depth 6 seldepth 13 time 544 nodes 3532 score cp 24 nps 6565 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 c3a4 c5b4 c2c3
+O info depth 6 seldepth 14 time 722 nodes 5063 score cp 23 nps 7071 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 c3a4 c5b4 c2c3
+O info depth 6 seldepth 15 time 837 nodes 5946 score cp 24 nps 7155 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 c3a4 c5b4 c2c3
+O info depth 7 seldepth 15 time 850 nodes 6066 score cp 24 nps 7187 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 c3a4 c5b4 c2c3
+O info depth 7 seldepth 16 time 978 nodes 7118 score cp 24 nps 7323 tbhits 0 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1c4 f8c5 d2d3 d7d6 c3a4 c5b4 c2c3
+O info depth 7 seldepth 17 time 1453 nodes 11695 score cp 22 nps 8082 tbhits 0 pv e2e4 e7e5 g1f3 g8f6 f3e5 f6e4 d2d3 e4f6 d3d4 d7d6 e5f3 d6d5 f1d3 f8d6
+O info depth 7 seldepth 18 time 1724 nodes 13720 score cp 25 nps 7990 tbhits 0 pv e2e4 e7e5 g1f3 g8f6 b1c3 b8c6 f1b5 f8c5 d2d3 d7d6 c3a4 c5b4
+O info depth 8 seldepth 18 time 1841 nodes 14568 score cp 26 nps 7938 tbhits 0 pv e2e4 e7e5 g1f3 g8f6 b1c3 b8c6 d2d4 e5d4 f3d4 f8b4 d4c6 d7c6 f1d3 d8e7 e1g1 c8e6
+O info depth 8 seldepth 19 time 2655 nodes 22014 score cp 24 nps 8313 tbhits 0 pv e2e4 e7e5 g1f3 g8f6 b1c3 b8c6 d2d4 e5d4 f3d4 f8b4 d4c6 d7c6 f1d3 d8e7 e1g1 c8e6
+O info depth 8 seldepth 20 time 2824 nodes 23515 score cp 24 nps 8344 tbhits 0 pv e2e4 e7e5 g1f3 g8f6 b1c3 b8c6 d2d4 e5d4 f3d4 f8b4 d4c6 d7c6 f1d3 d8e7 e1g1 c8e6
+O info depth 8 seldepth 21 time 5600 nodes 55734 score cp 23 nps 9963 tbhits 0 pv e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e6 d4b5 a7a6 b5d6 f8d6 d1d6 d8e7 d6g3 d7d5 g3g7 h8g8
+O info depth 8 seldepth 21 time 5795 nodes 58324 score cp 24 nps 10074 tbhits 0 pv d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 f8b4 b1c3 e5d4 e3d4 g8f6 g1f3 e8g8 e1g1 b8c6 a2a3 b4c3 b2c3 c6a5 c4a2
+O info depth 9 seldepth 21 time 6821 nodes 72112 score cp 24 nps 10581 tbhits 0 pv d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 f8b4 b1c3 e5d4 e3d4 g8f6 g1f3 e8g8 e1g1 b8c6 a2a3 b4d6 f1e1 c8g4 c1g5
+O info depth 9 seldepth 21 time 7463 nodes 80317 score cp 23 nps 10770 tbhits 0 pv d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 d5c4 e2e3 c7c5 f1c4 b8c6 e1g1 c5d4 e3d4 f8e7 f1e1 e8g8
+O bestmove d2d4 ponder d7d5
+O readyok
+O info depth 1 seldepth 2 time 12 nodes 2 score cp -39 nps 285 tbhits 0 pv e2a6 b4c3
+O info depth 2 seldepth 3 time 20 nodes 3 score cp -113 nps 200 tbhits 0 pv e2a6 b4c3 d2c3
+O info depth 2 seldepth 4 time 33 nodes 5 score cp -135 nps 178 tbhits 0 pv e2a6 b4c3 d2c3 h3g2
+O info depth 3 seldepth 5 time 48 nodes 7 score cp -137 nps 162 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2
+O info depth 3 seldepth 6 time 62 nodes 9 score cp -140 nps 157 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5
+O info depth 4 seldepth 6 time 69 nodes 11 score cp -148 nps 171 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5
+O info depth 4 seldepth 7 time 81 nodes 14 score cp -135 nps 184 tbhits 0 pv e2a6 b4c3 d2c3 e6d5 e5g4 h3g2
+O info depth 4 seldepth 8 time 89 nodes 17 score cp -134 nps 202 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e4d5 f6d5
+O info depth 5 seldepth 9 time 94 nodes 22 score cp -146 nps 247 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e4d5 f6d5 a6b7
+O info depth 6 seldepth 9 time 153 nodes 68 score cp -167 nps 459 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e4d5 f6d5 a6b7
+O info depth 6 seldepth 10 time 159 nodes 77 score cp -174 nps 500 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e4d5 f6d5 e1f1 d5c3
+O info depth 6 seldepth 11 time 181 nodes 102 score cp -171 nps 579 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e5g4 h8h4 g4f6 g7f6 c3f6
+O info depth 6 seldepth 12 time 231 nodes 151 score cp -176 nps 668 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e5g4 h8h4 g4f6 g7f6 c3f6 e7f6
+O info depth 7 seldepth 12 time 246 nodes 200 score cp -175 nps 829 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 f3g2 e6d5 e5g4 h8h4 g4f6 g7f6 c3f6 e7f6
+O info depth 7 seldepth 13 time 280 nodes 277 score cp -174 nps 1007 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h7 g1h1
+O info depth 8 seldepth 14 time 294 nodes 309 score cp -162 nps 1069 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h4 g1h1 e7e4
+O info depth 8 seldepth 15 time 309 nodes 331 score cp -163 nps 1088 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h7 g1h1 e7e4 g2e4
+O info depth 8 seldepth 16 time 346 nodes 458 score cp -168 nps 1343 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h7 g1h1 e7e4 g2e4
+O info depth 8 seldepth 17 time 374 nodes 531 score cp -173 nps 1439 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h7 g1h1 e7e4 g2e4
+O info depth 8 seldepth 18 time 396 nodes 592 score cp -169 nps 1514 tbhits 0 pv e2a6 b4c3 d2c3 h3g2 h1g1 e6d5 e5g4 f6g4 c3g7 g4h2 f3g2 h8h7 g1h1 e7e4 g2e4
+O info depth 9 seldepth 18 time 403 nodes 625 score cp -168 nps 1570 tbhits 0 pv e2a6 b4c3 d2c3 e6d5 e5g4 h3g2 h1g1 f6g4 c3g7 g4h2 f3g2 h8h4 g1h1 e7e4
+O info depth 9 seldepth 19 time 516 nodes 917 score cp -180 nps 1794 tbhits 0 pv e2a6 h3g2 h1g1 b4c3 d2c3 e6d5 e5g4 f6h5 c3g7 h5g7 e4e5 e7b4 c2c3 b4b2 a1d1 b2a2 a6b7 a8b8
+O info depth 9 seldepth 19 time 910 nodes 1663 score cp -108 nps 1837 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5e6 c3b5 e6c6 e4e5 f6d5 b5d4 c6c5 g2e4 e8f8 d4b3
+O info depth 10 seldepth 20 time 1131 nodes 2089 score cp -118 nps 1855 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a6d3 d8c7 e4e5 f6h5 a2a3 b6d5
+O info depth 10 seldepth 21 time 1139 nodes 2123 score cp -116 nps 1872 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a6d3 d8c7 e4e5 f6h5 a2a3 g7f8 h1f1
+O info depth 9 seldepth 21 time 1182 nodes 2230 score cp -113 nps 1894 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a2a3 d8c7 a6d3 g7f8 g2g5 a5g5 f4g5
+O info depth 10 seldepth 21 time 1386 nodes 2558 score cp -107 nps 1852 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a2a3 d8c7 a6d3 g7f8 g2g5 a5g5 f4g5
+O info depth 9 seldepth 21 time 1394 nodes 2578 score cp -106 nps 1856 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a2a3 d8c7 a6d3 g7f8 g2g5 a5g5 f4g5
+O info depth 10 seldepth 21 time 1400 nodes 2604 score cp -107 nps 1866 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a2a3 d8c7 a6d3 g7f8 g2g5 a5g5 f4g5
+O info depth 11 seldepth 21 time 1913 nodes 4180 score cp -91 nps 2190 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 f2f4 e5a5 c3b5 e8d8 b5c7 a8b8 a2a3 d8c7 a6d3 g7f8 g2g5 a5g5 f4g5
+O info depth 11 seldepth 22 time 1962 nodes 4510 score cp -89 nps 2304 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 f6h5 e5d3 b4c3 d2c3 g7c3 b2c3 e6c6 a1b1 c6c3 e1d1 c3a3 g2g5 e8f8 a6b7 a8b8 b1b3
+O info depth 11 seldepth 23 time 2022 nodes 4713 score cp -87 nps 2336 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 f6h5 e5d3 b4c3 d2c3 g7c3 b2c3 e6c6 a1b1 c6c3 e1d1 c3a3 g2g5 e8f8 a6b7 a8b8 b1b3
+O info depth 12 seldepth 23 time 2788 nodes 7371 score cp -86 nps 2649 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 b4c3 d2c3 f6h5 e5d3 g7c3 b2c3 e6c6 e1g1 e8f8 a1b1 c6c3 b1b3 c3a5
+O info depth 12 seldepth 23 time 4875 nodes 12520 score cp -106 nps 2570 tbhits 0 pv d5e6 e7e6 e2a6 h3g2 f3g2 e6e5 g2g3 e5g3 f2g3 b4c3 d2c3 e8f8 e4e5 f6d5 c3d4 a8e8 e1f2 g7e5 d4c5 f8g7 a1d1
+O bestmove d5e6 ponder e7e6
+O readyok
+O info depth 1 seldepth 2 time 9 nodes 2 score cp 119 nps 500 tbhits 0 pv b4f4 h4g3
+O info depth 2 seldepth 3 time 13 nodes 3 score cp 109 nps 375 tbhits 0 pv b4f4 h4g3 f4c4
+O info depth 2 seldepth 4 time 18 nodes 4 score cp 145 nps 307 tbhits 0 pv b4f4 h4g3 f4c4 h5h7
+O info depth 3 seldepth 5 time 23 nodes 5 score cp 130 nps 277 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6
+O info depth 3 seldepth 6 time 28 nodes 6 score cp 121 nps 250 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2
+O info depth 4 seldepth 7 time 33 nodes 7 score cp 102 nps 250 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2
+O info depth 4 seldepth 8 time 37 nodes 8 score cp 95 nps 242 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5
+O info depth 5 seldepth 9 time 42 nodes 9 score cp 92 nps 243 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7
+O info depth 4 seldepth 9 time 47 nodes 17 score cp 95 nps 395 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7
+O info depth 5 seldepth 9 time 62 nodes 22 score cp 114 nps 385 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7
+O info depth 5 seldepth 10 time 102 nodes 55 score cp 93 nps 567 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7
+O info depth 6 seldepth 10 time 106 nodes 78 score cp 92 nps 772 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7 g2f2
+O info depth 6 seldepth 11 time 112 nodes 90 score cp 87 nps 841 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7 d5d4 c2d2
+O info depth 6 seldepth 12 time 145 nodes 169 score cp 77 nps 1198 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7 d5d4 c2d2
+O info depth 7 seldepth 13 time 156 nodes 251 score cp 72 nps 1662 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 d6d5 a6b7 d5d4 c2d2
+O info depth 7 seldepth 14 time 211 nodes 596 score cp 61 nps 2893 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c6 g2f2 a6b7 h7h5 b7a6 h5h7
+O info depth 8 seldepth 14 time 224 nodes 682 score cp 58 nps 3114 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5
+O info depth 8 seldepth 15 time 234 nodes 737 score cp 58 nps 3204 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5
+O info depth 8 seldepth 16 time 382 nodes 1693 score cp 52 nps 4490 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4f4 h7h5 f4c4 h5h7
+O info depth 9 seldepth 16 time 480 nodes 2424 score cp 49 nps 5092 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 c2b2 h5c5 e2e4 f2e3 b2b4
+O info depth 9 seldepth 17 time 710 nodes 4555 score cp 46 nps 6460 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4f4 h7h5 f4c4 h5h7
+O info depth 10 seldepth 17 time 1222 nodes 9648 score cp 43 nps 7927 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5 e2e4 c5c4
+O info depth 10 seldepth 18 time 1262 nodes 10101 score cp 42 nps 8035 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5 e2e4 c5c4
+O info depth 10 seldepth 19 time 1379 nodes 11559 score cp 42 nps 8412 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5 e2e4 c5c4
+O info depth 10 seldepth 20 time 1432 nodes 12236 score cp 41 nps 8574 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c2 g2f2 a6b7 h7h5 b7a6 h5c5 c2c5 d6c5 e2e4 c5c4
+O info depth 10 seldepth 21 time 1584 nodes 13742 score cp 41 nps 8702 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 h7e7 a6b7 e7e4 c3c7 d6d5 c7d7 d5d4 b5b6 f2e3 b7c6 d4d3 b6b7
+O info depth 10 seldepth 22 time 1727 nodes 15380 score cp 42 nps 8926 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 f2e2 a6b7 h7h5 b7c7 h5b5 c7d6 b5b6 d6e5
+O info depth 10 seldepth 23 time 1975 nodes 17809 score cp 43 nps 9040 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 f2e2 a6b7 h7h5 b7c7 h5b5 c7d6 b5b6 d6e5
+O info depth 11 seldepth 23 time 1989 nodes 17920 score cp 43 nps 9032 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 f2e2 a6b7 h7h5 b7c7 h5b5 c7d6 b5b6 d6e5
+O info depth 11 seldepth 24 time 2002 nodes 18030 score cp 43 nps 9028 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 f2e2 a6b7 h7h5 b7c7 h5b5 c7d6 b5b6 d6e5
+O info depth 11 seldepth 25 time 2029 nodes 18301 score cp 43 nps 9041 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 a5a6 g3g2 c4c3 g2f2 e2e4 f2e2 a6b7 h7h5 b7c7 h5b5 c7d6 b5b6 d6e5
+O info depth 11 seldepth 26 time 2055 nodes 18611 score cp 44 nps 9078 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 e4b4 b5b6 d6d5 c3d3 d5d4 b6b7 f2e2 d3d4 b4d4 b7b8q e2e3 b8b6 e3d3
+O info depth 12 seldepth 26 time 2479 nodes 24313 score cp 49 nps 9827 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 c3b3 d5d4 b5b6 f2e2 b6b7 e4e8 b3b2 e2e3 b7b8r e8b8
+O info depth 12 seldepth 27 time 2623 nodes 25857 score cp 50 nps 9876 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b6b7 e4e8 b3b2 e2e3 b7b8q e8e4 b8f8
+O info depth 12 seldepth 28 time 2783 nodes 27198 score cp 50 nps 9790 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 c3b3 f2e2 b5b6 d5d4 b3b2 e2e3 b6b7 e4e7 c7c6 e7b7 b2b7 d4d3 b7d7 d3d2
+O info depth 12 seldepth 29 time 2915 nodes 28523 score cp 50 nps 9801 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 c3b3 d5d4 b5b6 f2e2 b6b7 e4e7 c7c6 e7b7 b3b7 d4d3 b7e7 e2f2 e7d7
+O info depth 13 seldepth 29 time 3088 nodes 30116 score cp 49 nps 9768 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b6b7 e4e7 c7c6 e7b7 b3b7 d4d3 b7e7 e2f2 e7d7
+O info depth 13 seldepth 30 time 3360 nodes 32425 score cp 48 nps 9661 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b6b7 e4e7 c7c6 e7b7 b3b7 d4d3 b7e7 e2f2 e7d7
+O info depth 14 seldepth 30 time 4248 nodes 41185 score cp 47 nps 9706 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b3b2 e2e3 b6b7 e4e7 c7c6 e7b7 c6b7 d4d3 b7c6 d3d2 b2b1
+O info depth 13 seldepth 30 time 4299 nodes 41872 score cp 47 nps 9751 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b3b2 e2e3 b6b7 e4e7 c7c6 e7b7 c6b7 d4d3 b7c6 d3d2 b2b1
+O info depth 13 seldepth 31 time 4401 nodes 43427 score cp 47 nps 9878 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b3b2 e2e3 b6b7 e4e7 c7c6 e7b7 c6b7 d4d3 b7c6 d3d2 b2b1
+O info depth 13 seldepth 31 time 4548 nodes 45275 score cp 46 nps 9965 tbhits 0 pv b4f4 h4g3 f4c4 h5h7 e2e4 g3g2 c4c3 g2f2 a5a6 h7e7 a6b7 e7e4 b7c7 d6d5 b5b6 d5d4 c3b3 f2e2 b3b2 e2e3 b6b7 e4e7 c7c6 e7b7 c6b7 d4d3 b7c6 d3d2 b2b1
+O bestmove b4f4 ponder h4g3
+O readyok
+O info depth 1 seldepth 2 time 11 nodes 2 score cp -113 nps 285 tbhits 0 pv f5d3 f1f8
+O info depth 2 seldepth 3 time 16 nodes 6 score cp 121 nps 500 tbhits 0 pv f5d3 f1f8 e8f8
+O info depth 2 seldepth 4 time 38 nodes 15 score cp 202 nps 454 tbhits 0 pv f5d3 d4e5 f8f1 g3f1
+O info depth 3 seldepth 4 time 43 nodes 22 score cp 34 nps 578 tbhits 0 pv f5d3 d4e5 e8e5 f1f8
+O info depth 3 seldepth 5 time 62 nodes 33 score cp 34 nps 578 tbhits 0 pv f5d3 d4e5 e8e5 f1f8
+O info depth 3 seldepth 6 time 76 nodes 35 score cp 34 nps 486 tbhits 0 pv f5d3 d4e5 e8e5 f1f8
+O info depth 3 seldepth 7 time 90 nodes 37 score cp 80 nps 435 tbhits 0 pv f5c2 d4e5 f8f1 g3f1 e8e5 d2f4 e5e1
+O info depth 3 seldepth 7 time 95 nodes 40 score cp 86 nps 439 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 d7e5
+O info depth 4 seldepth 7 time 109 nodes 50 score cp 35 nps 476 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 e8e5 d2f4 e5e1
+O info depth 4 seldepth 8 time 115 nodes 58 score cp 74 nps 527 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 e8e5 d2f4 e5e1
+O info depth 4 seldepth 9 time 125 nodes 60 score cp 93 nps 500 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 e8e5 d2f4 e5e1 f4d6 e1f1
+O info depth 4 seldepth 10 time 130 nodes 70 score cp 127 nps 555 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 e8e5 d2f4 e5e1 g1f2
+O info depth 5 seldepth 10 time 152 nodes 80 score cp 111 nps 544 tbhits 0 pv f5d3 d4e5 f8f1 g3f1 e8e5 h6h4 e5e1 d2e1 d6f6
+O info depth 6 seldepth 10 time 242 nodes 185 score cp 77 nps 780 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8e7 d2g5 e7e6 e1d1 e6h3
+O info depth 6 seldepth 11 time 255 nodes 201 score cp 71 nps 804 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8e7 g3e4 d3c4 d4e5 d7e5 d2g5 e7e6
+O info depth 6 seldepth 12 time 269 nodes 225 score cp 79 nps 852 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8e7 g3e4 d3c4 d4e5 d7e5 d2g5 e7e6 e4f6
+O info depth 7 seldepth 12 time 305 nodes 318 score cp 8 nps 1060 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8e7 g3e4 d3c4 d4e5 d7e5 d2g5 e7f8 e4f6
+O info depth 7 seldepth 13 time 311 nodes 335 score cp 15 nps 1091 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8e7 g3e4 d3c4 d4e5 d7e5 d2g5 e7e6 e4f6 g8f8
+O info depth 7 seldepth 14 time 503 nodes 712 score cp 78 nps 1426 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e5d4 e4e8 f7e8
+O info depth 7 seldepth 15 time 536 nodes 743 score cp 78 nps 1399 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e5d4 e4e8 f7e8 c3d4 c5d4 h3g4 d4d3
+O info depth 8 seldepth 15 time 550 nodes 771 score cp 82 nps 1412 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e5d4 e4e8 f7e8 c3d4 c5d4 h3g4 d4d3
+O info depth 8 seldepth 16 time 578 nodes 881 score cp 75 nps 1534 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e5d4 e4e8 f7e8 c3d4 c5d4 h3g4 d4d3 g4d4
+O info depth 8 seldepth 17 time 664 nodes 1071 score cp 70 nps 1625 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e8f8 h3d3 c5d4 c3d4 f7f5 d4e5 d7c5 d3d5
+O info depth 9 seldepth 18 time 684 nodes 1184 score cp 63 nps 1743 tbhits 0 pv f5d3 f1f8 d6f8 h6h3 f8f7 g3e4 d3e4 e1e4 e8f8 h3d3 c5d4 c3d4 f7f5 d4e5 d7c5 d3d5
+O info depth 9 seldepth 19 time 757 nodes 1438 score cp 56 nps 1912 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 b7b6 e3c5 b6c5 g3e4 d3e4 e1e4 f8f7 g1f2 f7e6 e4h4 h7h5
+O info depth 9 seldepth 20 time 988 nodes 2291 score cp 60 nps 2328 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 b7b6 e3c5 b6c5 g3e4 d3e4 e1e4 f8f7 g1f2 f7e6 e4h4 h7h5
+O info depth 10 seldepth 20 time 1091 nodes 2776 score cp 59 nps 2556 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 b7b6 e3c5 b6c5 g3e4 d3e4 e1e4 f8f7 g1f2 f7e6 e4h4 h7h5
+O info depth 10 seldepth 21 time 1232 nodes 3425 score cp 58 nps 2791 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 e8c8 e3h6 f8f7 e1e5 b7b6 a2a3 c8e8 e5e8 f7e8 g3f1 d3c4 f1d2
+O info depth 10 seldepth 22 time 1341 nodes 3782 score cp 56 nps 2830 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 e8c8 e3h6 f8f7 e1e5 b7b6 a2a3 c8e8 e5e8 f7e8 g3f1 d3c4 f1d2
+O info depth 10 seldepth 23 time 1370 nodes 3933 score cp 55 nps 2881 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 e8c8 e3h6 f8f7 e1e5 b7b6 h6e3 d3c4 g3e4 c5e4 e5e4 c4a2 e4a4 a2d5 a4a7 f7e6
+O info depth 11 seldepth 23 time 1461 nodes 4450 score cp 53 nps 3056 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 d7c5 d2e3 e8c8 e3h6 f8f7 e1e5 b7b6 h6e3 d3c4 g3e4 c5e4 e5e4 c4a2 e4a4 a2d5 a4a7 f7e6
+O info depth 10 seldepth 23 time 2979 nodes 9568 score cp 49 nps 3217 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 10 seldepth 24 time 3218 nodes 10218 score cp 49 nps 3180 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 11 seldepth 24 time 3232 nodes 10291 score cp 49 nps 3189 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 11 seldepth 25 time 3245 nodes 10362 score cp 49 nps 3198 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 11 seldepth 26 time 3271 nodes 10522 score cp 49 nps 3221 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 11 seldepth 27 time 3298 nodes 10664 score cp 49 nps 3238 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2c1 f8e7 c1a3 e7e6 e1d1 e5e4 d1e1 d7f6 h2h3 c8c6 a3c1
+O info depth 12 seldepth 27 time 4376 nodes 16297 score cp 50 nps 3727 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2e3 f8e7 e3f2 e7e6 e1d1 d3c4 g3e4 c8c7 e4d6 c4a2 d1a1 a2b3 d6b5 c7c6
+O info depth 11 seldepth 27 time 4932 nodes 18070 score cp 50 nps 3667 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2e3 f8e7 e3f2 e7e6 e1d1 d3c4 g3e4 c8c7 e4d6 c4a2 d6b5 c7c6 b5a7 c6a6 a7b5 a6c6 b5a7
+O info depth 11 seldepth 27 time 5273 nodes 19383 score cp 52 nps 3678 tbhits 0 pv f5d3 f1f8 d6f8 h6f8 g8f8 d4c5 e8c8 d2e3 f8e7 e3f2 e7e6 e1d1 d3c4 g3e4 c8c7 e4d6 c4a2 d6b5 c7c6 b5a7 c6a6 a7b5 a6c6 b5a7
+O bestmove f5d3 ponder f1f8
+O readyok
+O info depth 1 seldepth 2 time 11 nodes 2 score cp 64 nps 285 tbhits 0 pv d4c6 b7c6
+O info depth 2 seldepth 3 time 25 nodes 6 score cp 152 nps 300 tbhits 0 pv d4c6 b7c6 d5e7
+O info depth 2 seldepth 4 time 38 nodes 8 score cp 103 nps 235 tbhits 0 pv d4c6 b7c6 d5e7 g8h8
+O info depth 2 seldepth 5 time 42 nodes 9 score cp 105 nps 236 tbhits 0 pv d4c6 b7c6 d5e7 g8h8 e7c6
+O info depth 3 seldepth 6 time 47 nodes 10 score cp 80 nps 238 tbhits 0 pv d4c6 b7c6 d5e7 g8h8 e7c6 b8b7
+O info depth 3 seldepth 7 time 61 nodes 19 score cp 53 nps 339 tbhits 0 pv d4c6 b7c6 d5e7 g8h8 e7c6 b8e8 c6d4
+O info depth 3 seldepth 7 time 70 nodes 25 score cp 78 nps 378 tbhits 0 pv d4f5 f7f6 g5f4 b8e8 g2g4 c6e5
+O info depth 4 seldepth 8 time 77 nodes 37 score cp 79 nps 513 tbhits 0 pv d4f5 f7f6 g5f4 b8e8 c1b1 b6a5
+O info depth 5 seldepth 8 time 84 nodes 55 score cp 75 nps 687 tbhits 0 pv d4f5 f7f6 g5f4 b8e8 c1b1 b6a5 d2d3
+O info depth 4 seldepth 8 time 89 nodes 62 score cp 91 nps 729 tbhits 0 pv d4f5 f7f6 g5f4 b8e8 c1b1 b6a5 d2d3
+O info depth 5 seldepth 8 time 100 nodes 70 score cp 96 nps 736 tbhits 0 pv d4f5 f7f6 g5f4 b8e8 c1b1 b6a5 d2d3
+O info depth 5 seldepth 9 time 153 nodes 195 score cp 93 nps 1317 tbhits 0 pv d4f5 f7f6 g5e3 b6a5 d2e2 b8e8 g2g4 c6e7 d5e7
+O info depth 6 seldepth 9 time 188 nodes 278 score cp 91 nps 1519 tbhits 0 pv d4f5 f7f6 g5e3 b6a5 d2e2 b8e8 g2g4 c6e7 d5e7
+O info depth 6 seldepth 10 time 296 nodes 500 score cp 89 nps 1718 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 g2g4 e6d5 e4d5 b6e3 f5e3
+O info depth 6 seldepth 11 time 303 nodes 525 score cp 89 nps 1761 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 g2g4 e6d5 e4d5 b6e3 f5e3
+O info depth 6 seldepth 12 time 334 nodes 626 score cp 83 nps 1902 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 e3b6 a7b6 a2a3 d8d7 g2g4 g8h8 f2f4 b6b5
+O info depth 7 seldepth 12 time 417 nodes 982 score cp 76 nps 2383 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 c1b1 d8d7 g2g4 b6a5 d2e2 a8e8
+O info depth 7 seldepth 13 time 608 nodes 1769 score cp 73 nps 2933 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 g2g4 b6a5 d2e2 d8d7 h3h4 a8e8 h4h5
+O info depth 8 seldepth 13 time 1030 nodes 3391 score cp 78 nps 3308 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 c1b1 b6a5 d2e2 f8e8 g2g4 d8d7 h1g1 e6d5 e4d5
+O info depth 8 seldepth 14 time 1090 nodes 3740 score cp 78 nps 3443 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 c1b1 b6a5 d2e2 f8e8 g2g4 d8d7 h1g1 e6d5 e4d5
+O info depth 8 seldepth 15 time 1454 nodes 5527 score cp 81 nps 3811 tbhits 0 pv d4f5 f7f6 g5e3 b8d8 c1b1 b6a5 d2e2 d8d7 g2g4 a8e8 f2f3 g7g6 f5h6
+O info depth 9 seldepth 15 time 1897 nodes 7760 score cp 77 nps 4101 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 f5g3 b6e3 f2e3 e7g6 g3f5 e8e5 g2g4
+O info depth 9 seldepth 16 time 1991 nodes 8207 score cp 77 nps 4132 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 f5e7 g2g4 e7g6 h3h4
+O info depth 9 seldepth 17 time 2039 nodes 8503 score cp 76 nps 4180 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 18 time 2346 nodes 10136 score cp 75 nps 4329 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 19 time 2784 nodes 11349 score cp 76 nps 4083 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 20 time 2813 nodes 11408 score cp 76 nps 4062 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 21 time 3032 nodes 11949 score cp 76 nps 3946 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 22 time 3324 nodes 12452 score cp 76 nps 3750 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 23 time 3346 nodes 12559 score cp 76 nps 3759 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 24 time 3359 nodes 12598 score cp 76 nps 3754 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 25 time 3378 nodes 12642 score cp 76 nps 3746 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 9 seldepth 26 time 3386 nodes 12663 score cp 76 nps 3745 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 27 time 3394 nodes 12691 score cp 76 nps 3744 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 28 time 3409 nodes 12764 score cp 76 nps 3749 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 29 time 3439 nodes 12895 score cp 76 nps 3755 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 30 time 3461 nodes 12993 score cp 76 nps 3759 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 31 time 3505 nodes 13198 score cp 76 nps 3770 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 32 time 3524 nodes 13303 score cp 76 nps 3779 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 10 seldepth 33 time 3649 nodes 13863 score cp 76 nps 3804 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 11 seldepth 33 time 3743 nodes 14320 score cp 76 nps 3829 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 11 seldepth 34 time 3889 nodes 14785 score cp 76 nps 3805 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 12 seldepth 34 time 5272 nodes 18059 score cp 76 nps 3428 tbhits 0 pv d4f5 f7f6 g5e3 f8e8 c1b1 e6d5 e4d5 c6e7 e3b6 e7f5 b6a5 b8c8 g2g4 f5h4 f2f4 c8d7 d2f2
+O info depth 12 seldepth 34 time 6096 nodes 19566 score cp 196 nps 3212 tbhits 0 pv d4c6 b7c6 d5f6 g8h8 h3h4 b6c5 h4h5 h7h6 g5h6 g7f6 h6f8 b8f8 c1b1 a8b8 d1g1 c5a3 b2b3 a3b4 d2f4 f8g7 h5h6 g7g5 f4f3 e6g4 f3g3 b4c5 f2f4
+O info depth 13 seldepth 34 time 7667 nodes 23327 score cp 184 nps 3044 tbhits 0 pv d4c6 b7c6 d5f6 g8h8 h3h4 b6c5 h4h5 h7h6 g5h6 g7f6 h6f8 b8f8 c1b1 a8b8 h5h6 f8e7 b2b3 f6f5 d2c3 f7f6 e4f5 e6f5 g2g4 f5g4 d1g1 g4f5
+O info depth 13 seldepth 34 time 7991 nodes 24159 score cp 180 nps 3025 tbhits 0 pv d4c6 b7c6 d5f6 g8h8 h3h4 b6c5 h4h5 h7h6 g5h6 g7f6 h6f8 b8f8 c1b1 a8b8 h5h6 f8e7 b2b3 f6f5 e4f5 e6f5 g2g4 f5g4 d1g1 g4f5 h6h7 f5g6 d2c3
+O bestmove d4c6 ponder b7c6
+O readyok
+O info depth 1 seldepth 2 time 12 nodes 2 score cp -193 nps 285 tbhits 0 pv d3d4 e5d4
+O info depth 2 seldepth 3 time 17 nodes 4 score cp -110 nps 333 tbhits 0 pv d3d4 e5d4 d1d4
+O info depth 2 seldepth 4 time 24 nodes 5 score cp -130 nps 263 tbhits 0 pv d3d4 e5d4 d1d4 a8a5
+O info depth 2 seldepth 5 time 29 nodes 6 score cp -115 nps 250 tbhits 0 pv d3d4 e5d4 d1d4 a8a5 h5h4
+O info depth 3 seldepth 6 time 34 nodes 9 score cp -129 nps 310 tbhits 0 pv d3d4 e5d4 d1d4 e7c6 d4a4 a8a4
+O info depth 3 seldepth 7 time 46 nodes 16 score cp -147 nps 390 tbhits 0 pv d3d4 e5d4 d1d4 e7c6 d4a4 a8a4 b3a4
+O info depth 4 seldepth 8 time 51 nodes 22 score cp -147 nps 478 tbhits 0 pv d3d4 e5d4 d1d4 e7c6 d4a4 a8a4 b3a4 c6e5
+O info depth 4 seldepth 9 time 86 nodes 55 score cp -128 nps 679 tbhits 0 pv d3d4 e5d4 d1d4 a8a5 h5d1 e7c6 d4d5 f4f3 g2f3
+O info depth 5 seldepth 10 time 99 nodes 87 score cp -132 nps 925 tbhits 0 pv d3d4 e5d4 d1d4 a8a5 h5d1 e7c6 d4d5 f4f3 g2f3
+O info depth 4 seldepth 10 time 99 nodes 89 score cp -132 nps 946 tbhits 0 pv d3d4 e5d4 d1d4 a8a5 h5d1 e7c6 d4d5 f4f3 g2f3
+O info depth 5 seldepth 10 time 119 nodes 123 score cp -119 nps 1078 tbhits 0 pv f2f3 e7c6 c3e2 c8d7 g2g3 f4g3 h2g3
+O info depth 4 seldepth 10 time 126 nodes 136 score cp -123 nps 1123 tbhits 0 pv f2f3 e7c6 c3e2 c8d7 g2g3 f4g3 h2g3
+O info depth 4 seldepth 10 time 139 nodes 164 score cp -138 nps 1223 tbhits 0 pv d3d4 e5d4 d1d4 a8a5 h5d1 e7c6 d4d5 f4f3 g2f3
+O info depth 4 seldepth 10 time 199 nodes 285 score cp -95 nps 1469 tbhits 0 pv c3d5 e7d5 b3d5 g7g6 h5h6 f4f3 g2f3
+O info depth 5 seldepth 11 time 269 nodes 539 score cp -111 nps 2041 tbhits 0 pv c3d5 e7g6 d3d4 e5d4 d1d4 a8a5 h5d1 c7c6
+O info depth 6 seldepth 11 time 890 nodes 2685 score cp -142 nps 3033 tbhits 0 pv c3d5 e7g6 f2f3 c8d7 d5c3 c7c6 c3e2 b6b5 d3d4 e5d4
+O info depth 6 seldepth 12 time 1059 nodes 3463 score cp -139 nps 3285 tbhits 0 pv c3d5 e7g6 f2f3 c8d7 d5c3 c7c6 c3e2 b6b5 d3d4 e5d4
+O info depth 6 seldepth 12 time 1810 nodes 6818 score cp -137 nps 3777 tbhits 0 pv c3e2 a8a5 h5g5 d8e8 f2f3 h7h6 g5h4 d6d5 e4d5
+O info depth 6 seldepth 13 time 1975 nodes 7680 score cp -134 nps 3898 tbhits 0 pv c3e2 a8a5 f2f3 e7g6 e2c3 c8d7 a2a3 g6h4 g2g3 f4g3
+O info depth 6 seldepth 14 time 2307 nodes 9488 score cp -136 nps 4121 tbhits 0 pv c3e2 c8d7 d3d4 e7c6 d4e5 c6e5 f2f3 a8a5 d1d5 a5d5 e4d5 f8f5 h5h3
+O info depth 6 seldepth 15 time 2331 nodes 9642 score cp -136 nps 4145 tbhits 0 pv c3e2 c8d7 d3d4 e7c6 d4e5 c6e5 f2f3 a8a5 d1d5 a5d5 e4d5 f8f5 h5h3
+O info depth 6 seldepth 15 time 3610 nodes 15390 score cp -138 nps 4269 tbhits 0 pv a2a4 f4f3 g2g3 e7c6 c3b5 c8d7 c2c3 c6a5 b3a2 a5c6 a2b3
+O info depth 7 seldepth 15 time 3945 nodes 17129 score cp -140 nps 4347 tbhits 0 pv a2a4 c8d7 f2f3 e7c6 c3b5 f8f6 d3d4 e5d4 h5g5 a8a5 g5h4
+O info depth 7 seldepth 16 time 5200 nodes 23970 score cp -151 nps 4614 tbhits 0 pv a2a4 c8d7 f2f3 e7g8 d3d4 g8f6 h5g5 h7h6 g5h4 d8e7 d4e5 e7e5
+O info depth 7 seldepth 16 time 5657 nodes 26689 score cp -149 nps 4722 tbhits 0 pv f2f3 e7g8 b3g8 h8g8 d3d4 a8a5 d4e5 g7g6 h5h6 a5e5 g2g4 c7c6 g1g2 d8e7 h2h4 c8e6
+O info depth 7 seldepth 17 time 5763 nodes 27592 score cp -148 nps 4791 tbhits 0 pv f2f3 e7g8 b3g8 h8g8 d3d4 a8a5 d4e5 g7g6 h5h6 a5e5 g2g4 c7c6 g1g2 b6b5 c3e2 d8f6 h2h4
+O info depth 7 seldepth 18 time 7421 nodes 37127 score cp -153 nps 5006 tbhits 0 pv f2f3 e7c6 c3e2 a8a5 c2c3 c8d7 b3d5 g7g6 h5h6 a5a8 d3d4
+O info depth 7 seldepth 19 time 7464 nodes 37344 score cp -153 nps 5006 tbhits 0 pv f2f3 e7c6 c3e2 a8a5 c2c3 c8d7 b3d5 g7g6 h5h6 a5a8 d3d4
+O info depth 7 seldepth 20 time 7536 nodes 37724 score cp -153 nps 5009 tbhits 0 pv f2f3 e7c6 c3e2 a8a5 c2c3 c8d7 b3d5 g7g6 h5h6 a5a8 d3d4
+O info depth 8 seldepth 20 time 8471 nodes 42979 score cp -156 nps 5076 tbhits 0 pv f2f3 e7c6 c3e2 a8a5 c2c3 c8d7 g2g3 d8f6 g1h1 g7g6 h5h6 g6g5 h6f6
+O info depth 8 seldepth 20 time 8802 nodes 44340 score cp -155 nps 5040 tbhits 0 pv f2f3 e7c6 c3e2 a8a5 c2c3 c8d7 g2g3 d8f6 g1h1 g7g6 h5h6 g6g5 h6f6
+O bestmove f2f3 ponder e7c6
+O readyok
+O info depth 1 seldepth 2 time 12 nodes 2 score cp -2562 nps 285 tbhits 0 pv b4b2 c3a4
+O info depth 2 seldepth 3 time 16 nodes 4 score cp -136 nps 363 tbhits 0 pv b4b2 c3a4 b2c2
+O info depth 3 seldepth 4 time 37 nodes 18 score cp -114 nps 562 tbhits 0 pv b4b2 e3d2 b2b4 a1b1
+O info depth 3 seldepth 5 time 51 nodes 25 score cp -95 nps 543 tbhits 0 pv b4b2 e3d2 b2b4 f1b1 b4c5
+O info depth 3 seldepth 6 time 63 nodes 30 score cp -90 nps 517 tbhits 0 pv b4b2 e3d2 b2b4 f1b1 b4c5 d3d4
+O info depth 4 seldepth 6 time 68 nodes 34 score cp -84 nps 539 tbhits 0 pv b4b2 e3d2 b2a3 e4e5 f6d7 a1e1
+O info depth 4 seldepth 7 time 73 nodes 38 score cp -74 nps 558 tbhits 0 pv b4b2 e3d2 b2a3 h2h3 f6d7 c3e2 a8b8
+O info depth 4 seldepth 8 time 87 nodes 64 score cp -62 nps 790 tbhits 0 pv b4b2 e3d2 b2a3 h2h3 f6d7 c3e2 c6c5 e2f4
+O info depth 5 seldepth 8 time 94 nodes 78 score cp -79 nps 876 tbhits 0 pv b4b2 e3d2 b2a3 h2h3 f6d7 c3e2 c6c5 e2f4
+O info depth 5 seldepth 9 time 128 nodes 143 score cp -86 nps 1162 tbhits 0 pv b4b2 e3d2 b2a3 f1b1 f6d7 c3e2 e6g4 b1b3 a3d6
+O info depth 6 seldepth 9 time 170 nodes 294 score cp -66 nps 1781 tbhits 0 pv b4b2 e3d2 b2a3 f1b1 f6d7 c3e2 e6g4 b1b3 a3d6
+O info depth 6 seldepth 10 time 184 nodes 357 score cp -65 nps 1994 tbhits 0 pv b4b2 e3d2 a8b8 f1b1 b2a3 h2h3 f6d7 g1h1 b8b1 a1b1
+O info depth 6 seldepth 11 time 404 nodes 948 score cp -71 nps 2381 tbhits 0 pv b4b2 e3d2 f6d7 h2h3 b2a3 c3e2 a8b8 e2d4 c6c5 d4e6
+O info depth 6 seldepth 12 time 440 nodes 1118 score cp -70 nps 2570 tbhits 0 pv b4b2 e3d2 f6d7 h2h3 b2a3 c3e2 a8b8 e2d4 c6c5 d4e6
+O info depth 6 seldepth 13 time 512 nodes 1268 score cp -68 nps 2500 tbhits 0 pv b4b2 e3d2 b2a3 f1b1 f6d7 c3d1 a6a5 h2h3 a3d6
+O info depth 7 seldepth 13 time 648 nodes 1832 score cp -67 nps 2849 tbhits 0 pv b4b2 e3d2 b2a3 f1b1 f6d7 h2h3 a8b8 g1h1 c6c5 c3d5 e6d5
+O info depth 7 seldepth 14 time 1211 nodes 4346 score cp -56 nps 3603 tbhits 0 pv b4b2 e3d2 f6d7 g1h1 b2a3 f3d4 c6c5 d4e6 f7e6 a1b1 e8f8
+O info depth 8 seldepth 14 time 1396 nodes 5299 score cp -54 nps 3809 tbhits 0 pv b4b2 e3d2 f6d7 h2h3 b2a3 f1b1 a8b8 c3e2 b8b1 a1b1 e6a2 b1a1
+O info depth 8 seldepth 15 time 2152 nodes 8318 score cp -58 nps 3874 tbhits 0 pv b4b2 e3d2 f6d7 a2a4 b2b6 g1h1 b6a5 f1b1 h7h6 f3d4 d7e5 h2h3 c6c5 d4e6 f7e6
+O info depth 8 seldepth 16 time 2168 nodes 8370 score cp -58 nps 3869 tbhits 0 pv b4b2 e3d2 f6d7 a2a4 b2b6 g1h1 b6a5 f1b1 h7h6 f3d4 d7e5 h2h3 c6c5 d4e6 e8e6 d2e1
+O info depth 8 seldepth 17 time 3885 nodes 16260 score cp -56 nps 4190 tbhits 0 pv b4b2 e3d2 f6d7 a2a4 b2b6 g1h1 b6a5 f1b1 h7h6 f3d4 d7e5 h2h3 c6c5 d4e6 e8e6 d2e1
+O info depth 8 seldepth 17 time 4407 nodes 18120 score cp -56 nps 4117 tbhits 0 pv b4b2 e3d2 f6d7 a2a4 b2b6 g1h1 b6a5 f1b1 h7h6 f3d4 d7e5 h2h3 c6c5 d4e6 e8e6 d2e1
+O bestmove b4b2 ponder e3d2
+O readyok
+O info depth 1 seldepth 2 time 12 nodes 2 score cp 140 nps 285 tbhits 0 pv f4d6 c8e6
+O info depth 2 seldepth 3 time 17 nodes 6 score cp 206 nps 500 tbhits 0 pv f4d6 c8e6 b5d4
+O info depth 2 seldepth 4 time 28 nodes 14 score cp 229 nps 608 tbhits 0 pv f4d6 g8e7 b5d4 c6d4
+O info depth 2 seldepth 5 time 33 nodes 16 score cp 242 nps 571 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4
+O info depth 3 seldepth 5 time 39 nodes 21 score cp 250 nps 617 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4
+O info depth 3 seldepth 6 time 44 nodes 22 score cp 249 nps 550 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7f5
+O info depth 3 seldepth 7 time 65 nodes 42 score cp 252 nps 700 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7f5 d4e4
+O info depth 4 seldepth 7 time 79 nodes 74 score cp 251 nps 986 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 c8e6 f1d3
+O info depth 4 seldepth 8 time 86 nodes 90 score cp 259 nps 1111 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 c8e6 f1d3 e7c6
+O info depth 4 seldepth 9 time 99 nodes 128 score cp 258 nps 1361 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 c8e6 f1d3 e7c6
+O info depth 5 seldepth 9 time 114 nodes 193 score cp 257 nps 1770 tbhits 0 pv f4d6 c8e6 d6c5 d8e7 b5c7 e8d7 c5d4 c6d4
+O info depth 5 seldepth 10 time 144 nodes 292 score cp 257 nps 2100 tbhits 0 pv f4d6 c8e6 b5d4 c6d4 d1d4 d8f6 d4e4 g8e7 d6a3 e8f8
+O info depth 5 seldepth 11 time 164 nodes 335 score cp 259 nps 2106 tbhits 0 pv f4d6 c8e6 b5d4 c6d4 d1d4 d8f6 d4e4 g8e7 d6a3 e8f8
+O info depth 6 seldepth 11 time 185 nodes 452 score cp 262 nps 2511 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 c8e6 d4e4 e7f5 d6e5 h8g8 f1d3
+O info depth 6 seldepth 12 time 216 nodes 615 score cp 263 nps 2914 tbhits 0 pv f4d6 c8e6 d6c5 d8e7 b5c7 e8d7 c5d4 c6d4 c7a8
+O info depth 6 seldepth 13 time 381 nodes 1326 score cp 275 nps 3526 tbhits 0 pv f4d6 c8e6 d6c5 d8e7 b5c7 e8d7 c7e6 f7e6 c5d4 c6d4 d1d4
+O info depth 7 seldepth 13 time 536 nodes 1967 score cp 277 nps 3704 tbhits 0 pv f4d6 c8e6 b5d4 c6d4 d1d4 d8f6 d4d1 g8e7 d6a3 e8f8 c4d6 e6a2
+O info depth 7 seldepth 14 time 563 nodes 2121 score cp 277 nps 3801 tbhits 0 pv f4d6 c8e6 b5d4 c6d4 d1d4 d8f6 d4d1 g8e7 d6a3 e8f8 c4d6 e6a2
+O info depth 7 seldepth 15 time 896 nodes 3818 score cp 285 nps 4285 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 f1d3 d8e7 h1e1 a8d8 d6e7
+O info depth 7 seldepth 16 time 1030 nodes 4594 score cp 290 nps 4481 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 f1d3 d8e7 h1e1 a8d8 d6e7
+O info depth 8 seldepth 16 time 1130 nodes 5187 score cp 292 nps 4610 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 f1d3 d8e7 h1e1 a8d8 d6e7
+O info depth 8 seldepth 17 time 1453 nodes 6955 score cp 284 nps 4803 tbhits 0 pv f4d6 g8e7 d6c5 b7b6 c5a3 c8g4 f2f3 g4e6 b5d4 c6d4 d1d4 e7f5 d4e4 d8e7 f1d3 e7a3
+O info depth 8 seldepth 18 time 1525 nodes 7370 score cp 283 nps 4848 tbhits 0 pv f4d6 g8e7 d6c5 b7b6 c5a3 c8g4 f2f3 g4e6 b5d4 c6d4 d1d4 e7f5 d4e4 d8e7 f1d3 e7a3
+O info depth 9 seldepth 18 time 2007 nodes 10163 score cp 278 nps 5076 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 f1d3 d8e7 d6e7 e8e7 h2h4 h7h6 c4e3
+O info depth 9 seldepth 19 time 2292 nodes 11867 score cp 276 nps 5188 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 c4e5 d8e7 d6e7 c6e7 f1c4 e6c4 e5c4 e8f8 h1d1
+O info depth 9 seldepth 20 time 2903 nodes 15448 score cp 278 nps 5330 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4e4 c8e6 c4e5 d8e7 d6e7 c6e7 f1c4 e6c4 e5c4 e8f8 c4d6 a8d8
+O info depth 9 seldepth 21 time 3147 nodes 16892 score cp 278 nps 5374 tbhits 0 pv f4d6 g8e7 b5d4 c6d4 d1d4 e7c6 d4d1 c8e6 d6c5 b7b6 c4d6 e8f8 c5a3 d8e7 f1b5 c6e5 h1e1 e5g6
+O info depth 9 seldepth 22 time 3425 nodes 18568 score cp 278 nps 5429 tbhits 0 pv f4d6 g8e7 d6c5 b7b6 c5a3 c8g4 f2f3 g4e6 b5d4 c6d4 c4d6 e8f8 d1d4 e7c6 d4d1 d8e7 f1b5 c6a5 b2b3 a7a6
+O info depth 10 seldepth 22 time 3709 nodes 20435 score cp 279 nps 5517 tbhits 0 pv f4d6 g8e7 d6c5 b7b6 c5a3 c8g4 f2f3 g4e6 b5d4 c6d4 c4d6 e8f8 d1d4 e7c6 d4d1 d8e7 f1b5 c6a5 b2b3 a7a6
+O info depth 10 seldepth 22 time 4856 nodes 27461 score cp 277 nps 5660 tbhits 0 pv f4d6 g8e7 d6c5 b7b6 c5a3 c8e6 b5d4 c6d4 c4d6 e8f8 d1d4 e7c6 d4e4 d8e7 f1b5 e6d5 e4e3 a7a6 b5c6
+O bestmove f4d6 ponder g8e7
+O readyok
+O info depth 1 seldepth 2 time 13 nodes 2 score cp -54 nps 285 tbhits 0 pv b3c2 g7g6
+O info depth 2 seldepth 3 time 19 nodes 5 score cp -38 nps 384 tbhits 0 pv b3c2 g7g6 h5h4
+O info depth 2 seldepth 4 time 34 nodes 10 score cp -71 nps 357 tbhits 0 pv b3c2 g7g6 h5e5 f7f6
+O info depth 3 seldepth 4 time 39 nodes 17 score cp -81 nps 515 tbhits 0 pv b3c2 g7g6 h5f3 e6g7
+O info depth 3 seldepth 4 time 47 nodes 25 score cp -55 nps 609 tbhits 0 pv a1e1 c7c6 b3c2 e7g6
+O info depth 3 seldepth 5 time 59 nodes 37 score cp -52 nps 698 tbhits 0 pv a1e1 c7c6 b3c2 g7g6 h5h6
+O info depth 3 seldepth 6 time 70 nodes 42 score cp -58 nps 656 tbhits 0 pv a1e1 c7c6 b3c2 g7g6 h5h6 f7f6
+O info depth 4 seldepth 7 time 87 nodes 60 score cp -25 nps 740 tbhits 0 pv b3c2 g7g6 h5f3 e6g7 e3g5 c8f5 c2f5
+O info depth 4 seldepth 8 time 105 nodes 83 score cp -20 nps 838 tbhits 0 pv b3c2 g7g6 h5f3 e6g7 e3g5 c8f5 c2f5
+O info depth 4 seldepth 8 time 197 nodes 282 score cp -63 nps 1476 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5f3 e6g7 g2g4 f6f5
+O info depth 4 seldepth 9 time 204 nodes 295 score cp -62 nps 1489 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5f3 e6g7 g2g4 f6f5 e3g5
+O info depth 4 seldepth 10 time 219 nodes 311 score cp -55 nps 1460 tbhits 0 pv b3c2 f7f5 d2f3 d8e8 h5e8 f8e8 e3d2 g7g6 a1e1 c8d7
+O info depth 5 seldepth 10 time 234 nodes 361 score cp -51 nps 1590 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5f3 e6g7 g2g4 f6f5 e3g5
+O info depth 5 seldepth 10 time 256 nodes 418 score cp -43 nps 1672 tbhits 0 pv b3c2 f7f5 d2f3 g7g6 h5h6 f5f4 e3d2 e7f5 c2f5
+O info depth 5 seldepth 11 time 272 nodes 507 score cp -31 nps 1906 tbhits 0 pv b3c2 f7f5 d2f3 g7g6 h5h6 f5f4 e3d2 e7f5 c2f5 f8f5
+O info depth 5 seldepth 12 time 329 nodes 689 score cp -33 nps 2133 tbhits 0 pv b3c2 f7f5 d2f3 g7g6 h5h6 f5f4 e3d2 e7f5 h6h3 f5e3 d2e3 f4e3
+O info depth 6 seldepth 12 time 410 nodes 999 score cp -28 nps 2472 tbhits 0 pv b3c2 f7f5 d2f3 g7g6 h5h6 f5f4 e3d2 e7f5 h6h3 f5e3 d2e3 f4e3
+O info depth 6 seldepth 13 time 736 nodes 2064 score cp -18 nps 2827 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 6 seldepth 14 time 803 nodes 2435 score cp -18 nps 3059 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 7 seldepth 14 time 958 nodes 3352 score cp -16 nps 3521 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 7 seldepth 15 time 1169 nodes 4435 score cp -15 nps 3813 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 7 seldepth 16 time 1193 nodes 4554 score cp -15 nps 3836 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 7 seldepth 17 time 1426 nodes 5697 score cp -20 nps 4011 tbhits 0 pv b3c2 h7h6 a1e1 f7f6 e3f2 c8d7 f2g3 d8e8 h5f3 f6f5 c2b3
+O info depth 7 seldepth 18 time 1448 nodes 5804 score cp -20 nps 4024 tbhits 0 pv b3c2 f7f5 h5e2 f5f4 e3f2 e6g5 f2h4 e7f5 c2f5 f8f5 a1e1 c8d7 d2f3 g5f3 f1f3
+O info depth 8 seldepth 19 time 1904 nodes 7776 score cp -18 nps 4096 tbhits 0 pv b3c2 f7f5 h5e2 f5f4 e3f2 e6g5 f2h4 h7h6 a1e1 e7f5 c2f5 f8f5 d2f3 g5f3 e2f3
+O info depth 9 seldepth 19 time 3990 nodes 18600 score cp -29 nps 4668 tbhits 0 pv b3c2 e7g6 d2f3 f8e8 f3g5 e6g5 e3g5 d8d7 h5f3 f7f6 g5c1 g6f8 c1f4 c7c6 h2h3 b7b6 c2d3 f8g6
+O info depth 9 seldepth 19 time 7931 nodes 39713 score cp -26 nps 5011 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5e2 g8h8 e2f3 e7g8 c3c4 c7c6 c4d5 c6d5 d2b1 c8d7 b1c3 d7c6
+O info depth 9 seldepth 20 time 8597 nodes 43013 score cp -28 nps 5006 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5f3 g8h8 c2d3 c7c6 h2h4 e7g8 g2g4 c8d7 f3g3 e6g7 e3f4 d8c8 d3e2 f8e8
+O info depth 9 seldepth 20 time 8813 nodes 44152 score cp -29 nps 5013 tbhits 0 pv a1e1 f7f6 b3c2 g7g6 h5f3 g8h8 c2d3 c7c6 h2h4 e7g8 g2g4 c8d7 f3g3 e6g7 e3f4 d8c8 d3e2 f8e8
+O bestmove a1e1 ponder f7f6
+O readyok
+O info depth 1 seldepth 2 time 11 nodes 2 score cp -183 nps 285 tbhits 0 pv e3g3 c7e5
+O info depth 1 seldepth 2 time 18 nodes 4 score cp -22 nps 307 tbhits 0 pv a1e1 f6d5
+O info depth 2 seldepth 3 time 25 nodes 5 score cp -31 nps 250 tbhits 0 pv a1e1 f6d5 e3e4
+O info depth 2 seldepth 4 time 32 nodes 6 score cp -118 nps 222 tbhits 0 pv a1e1 f6d5 e3e4 d5f4
+O info depth 2 seldepth 4 time 45 nodes 11 score cp -68 nps 275 tbhits 0 pv f4f6 g7f6 e3g3 f6f5
+O info depth 3 seldepth 5 time 50 nodes 14 score cp -87 nps 311 tbhits 0 pv f4f6 g7f6 e3f4 g4h5 f4h6
+O info depth 3 seldepth 6 time 85 nodes 27 score cp -82 nps 337 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5
+O info depth 3 seldepth 7 time 101 nodes 30 score cp 51 nps 312 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1
+O info depth 3 seldepth 8 time 109 nodes 31 score cp 47 nps 298 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2e5
+O info depth 4 seldepth 9 time 117 nodes 33 score cp 19 nps 292 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2e5 b3d4
+O info depth 4 seldepth 10 time 128 nodes 38 score cp 54 nps 306 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2e5 b3d4 h7h5
+O info depth 5 seldepth 10 time 136 nodes 44 score cp 18 nps 333 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2a2 g4d4 c6c5
+O info depth 6 seldepth 11 time 145 nodes 57 score cp 51 nps 407 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2e5 b3d4 h7h5 g4h4
+O info depth 7 seldepth 11 time 183 nodes 98 score cp 55 nps 547 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 b2e5 b3d4 h7h5 g4h4
+O info depth 7 seldepth 12 time 191 nodes 108 score cp 40 nps 580 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5
+O info depth 8 seldepth 13 time 243 nodes 162 score cp 35 nps 680 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5 f3g5
+O info depth 8 seldepth 14 time 412 nodes 321 score cp 27 nps 788 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5 f3g5
+O info depth 8 seldepth 15 time 419 nodes 329 score cp 27 nps 794 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5 f3g5
+O info depth 9 seldepth 16 time 435 nodes 352 score cp 27 nps 818 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5 f3g5
+O info depth 9 seldepth 17 time 452 nodes 395 score cp 27 nps 883 tbhits 0 pv e3g3 c7e5 f4g4 f6g4 g3g4 e5b2 a1f1 g7g6 b3d4 b2c3 d4f3 b6b5 f3g5
+O info depth 10 seldepth 17 time 603 nodes 529 score cp 116 nps 884 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 b6b5 c4d3 c7e5 g3e5 e8e5
+O info depth 10 seldepth 18 time 683 nodes 674 score cp 130 nps 994 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 c7c5 g1h2 b6b5 c4d3 c5e5 h3g4 h5g4
+O info depth 10 seldepth 19 time 697 nodes 761 score cp 152 nps 1099 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 c7c5 g1h2 b6b5 c4d3 c5e5 g3e5 e8e5 h3g4
+O info depth 11 seldepth 19 time 711 nodes 788 score cp 152 nps 1114 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 c7c5 g1h2 b6b5 c4d3 c5e5 g3e5 e8e5 h3g4
+O info depth 10 seldepth 19 time 719 nodes 804 score cp 157 nps 1126 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 c7c5 g1h2 b6b5 c4d3 c5e5 g3e5 e8e5 h3g4
+O info depth 11 seldepth 20 time 733 nodes 843 score cp 156 nps 1157 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c6c5 b3d2 c5c4 d3c4 c7c5 g1h2 b6b5 c4d3 c5e5 g3e5 e8e5 h3g4
+O info depth 11 seldepth 21 time 1183 nodes 1849 score cp 166 nps 1569 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 d3a6 b6b5 a2a4 e5e4 c2c3 b5a4 a1a4 c6c5 a6d3
+O info depth 11 seldepth 22 time 1204 nodes 1957 score cp 164 nps 1632 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 d3a6 b6b5 a2a4 e5e4 c2c3 b5a4 a6d3 e4e3 d3f1 c7b7
+O info depth 11 seldepth 23 time 1228 nodes 2113 score cp 161 nps 1727 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 b6b5 d4f5 h7h5 g1f2 c6c5 a1f1
+O info depth 12 seldepth 23 time 1239 nodes 2168 score cp 158 nps 1756 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 c6c5 d4f5 h7h5 a1f1 b6b5 f1f4 g8f8 g1f2
+O info depth 11 seldepth 23 time 1262 nodes 2216 score cp 156 nps 1762 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 c6c5 d4f5 h7h5 a1f1 b6b5 f1f4 g8f8 g1f2
+O info depth 12 seldepth 23 time 1306 nodes 2305 score cp 154 nps 1770 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 c6c5 d4f5 h7h5 a1f1 b6b5 f1f4 g8f8 g1f2
+O info depth 12 seldepth 24 time 1328 nodes 2434 score cp 147 nps 1839 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 h7h5 d4f5 b6b5 a1f1 c6c5 f1f4 g8f8 g1f2
+O info depth 12 seldepth 25 time 1368 nodes 2711 score cp 141 nps 1988 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 h7h5 d4f5 b6b5 a1f1 c6c5 f1f4 c5c4 b3c4 b5c4
+O info depth 13 seldepth 25 time 1752 nodes 3770 score cp 152 nps 2157 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 h7h5 a2a4 a6a5 a1f1 c7d7 d4c6 e5c5 c6b8
+O info depth 14 seldepth 25 time 2251 nodes 5749 score cp 139 nps 2559 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 b6b5 d4f5 h7h5 a2a4 c7d7 a4b5 c6b5 b3b4 d7d3 f5h6
+O info depth 14 seldepth 26 time 2755 nodes 6840 score cp 135 nps 2487 tbhits 0 pv f4f6 g7f6 e3g3 f6f5 h2h3 c7e5 g3e5 e8e5 h3g4 f5g4 b3d4 a7c7 b2b3 b6b5 d4f5 h7h5 a2a4 c7d7 a4b5 c6b5 b3b4 d7d3 f5h6
+O info depth 14 seldepth 27 time 3712 nodes 8549 score cp 138 nps 2306 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 d3e2 h5g4 e2g4 e8d8 g1f2 a6a5 a2a4 g8g7 f2e3 d8g8 g4f5 a7e7
+O info depth 14 seldepth 28 time 3734 nodes 8643 score cp 137 nps 2317 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 d3e2 h5g4 e2g4 e8d8 g4f5 c6c5 f5e4 c5c4 b3c1 a7e7 e4f3 d8d2 c1e2 e7e2 f3e2 d2e2 a1c1 e2d2
+O info depth 14 seldepth 29 time 3755 nodes 8742 score cp 136 nps 2330 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 d3e2 h5g4 e2g4 e8d8 g4f5 c6c5 g1f2 c5c4 b3c1 d8d2 c1e2 d2c2 a1b1 a7e7 f2e3 c2d2
+O info depth 14 seldepth 30 time 3832 nodes 9077 score cp 133 nps 2371 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 a1e1 a7e7 d3e2 h5g4 e2g4 e8d8 g1f2 a6a5 c2c3 c6c5 f2e3 a5a4 b3c1 g8g7
+O info depth 14 seldepth 31 time 3992 nodes 9799 score cp 125 nps 2457 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 a1e1 a7e7 d3e2 h5g4 e2g4 e8d8 g1f2 a6a5 c2c3 c6c5 f2e3 a5a4 b3c1 a4a3 b2a3
+O info depth 15 seldepth 31 time 4033 nodes 10041 score cp 123 nps 2492 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 a1e1 a7e7 d3e2 h5g4 e2g4 e8d8 g1f2 e7e5 g4e2 a6a5 f2e3 a5a4 b3c1 e5c5 c2c3
+O info depth 15 seldepth 31 time 4504 nodes 11385 score cp 123 nps 2530 tbhits 0 pv f4f6 g7f6 e3g3 h7h5 h2h3 c7e5 g3e5 f6e5 h3g4 e5e4 a1e1 a7e7 d3e2 h5g4 e2g4 e8d8 g1f2 e7e5 g4e2 a6a5 f2e3 a5a4 b3c1 e5c5 c2c3 a4a3
+O bestmove f4f6 ponder g7f6

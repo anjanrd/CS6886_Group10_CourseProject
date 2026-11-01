@@ -1,0 +1,174 @@
+{
+  "name": "fp16",
+  "model": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\models\\fp16.pb.gz",
+    "bytes": 294605128,
+    "sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135"
+  },
+  "backend": "onnx-trt",
+  "backend_opts": "optimize=6",
+  "env": {
+    "nvml": true,
+    "nvml_energy_counter": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "rapl": false,
+    "platform": "win32",
+    "pid": 24684
+  },
+  "idle": {
+    "seconds": 10.471875429153442,
+    "gpu_w": 41.115175873974884,
+    "sm_mhz_mean": 2281.0344827586205,
+    "temp_c_mean": 64.06896551724138
+  },
+  "idle_search": {
+    "seconds": 10.248422145843506,
+    "gpu_w": 45.12733701036813,
+    "sm_mhz_mean": 2275.714285714286,
+    "temp_c_mean": 64.71428571428571
+  },
+  "network": [
+    {
+      "batch": 32,
+      "nps": 3473.0,
+      "ms": 9.213
+    },
+    {
+      "batch": 64,
+      "nps": 3539.0,
+      "ms": 18.08
+    },
+    {
+      "batch": 128,
+      "nps": 3417.0,
+      "ms": 37.46
+    },
+    {
+      "batch": 256,
+      "nps": 3245.0,
+      "ms": 78.89
+    }
+  ],
+  "search": {
+    "nodes": 268899,
+    "time_ms": 55791,
+    "nps": 4820,
+    "wall_nps": 4798.079513019525,
+    "positions": 10,
+    "movetime": 10000,
+    "energy": {
+      "seconds": 56.04304790496826,
+      "gpu_j": 4651.894,
+      "gpu_j_source": "nvml_counter",
+      "power_w_mean": 83.08600629496395,
+      "power_w_min": 77.541,
+      "power_w_max": 97.696,
+      "sm_mhz_mean": 2227.4055755395684,
+      "sm_mhz_min": 1950,
+      "sm_mhz_max": 2505,
+      "mem_mhz_mean": 8001.0,
+      "mem_mhz_min": 8001,
+      "mem_mhz_max": 8001,
+      "temp_c_mean": 84.5341726618705,
+      "temp_c_min": 80,
+      "temp_c_max": 88,
+      "util_mean": 98.71043165467626,
+      "util_min": 90,
+      "util_max": 100,
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "gpu_j_above_idle": 2122.820490104292
+    },
+    "warnings": [],
+    "gpu_j_per_node": 0.007894490087744066,
+    "gpu_j_per_node_total": 0.017299781702423588,
+    "per_position": [
+      {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "nodes": 57481,
+        "time_ms": 8231,
+        "wall": 8.231908799993107,
+        "bestmove": "d2d4"
+      },
+      {
+        "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 10",
+        "nodes": 20672,
+        "time_ms": 5288,
+        "wall": 5.28925650002202,
+        "bestmove": "e2a6"
+      },
+      {
+        "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 11",
+        "nodes": 43351,
+        "time_ms": 4828,
+        "wall": 4.828731299989158,
+        "bestmove": "b4f4"
+      },
+      {
+        "fen": "4rrk1/pp1n3p/3q2pQ/2p1pb2/2PP4/2P3N1/P2B2PP/4RRK1 b - - 0 19",
+        "nodes": 15625,
+        "time_ms": 4410,
+        "wall": 4.411404200014658,
+        "bestmove": "f5d3"
+      },
+      {
+        "fen": "rq3rk1/ppp2ppp/1bnpb3/3N2B1/3NP3/7P/PPPQ1PP1/2KR3R w - - 0 14",
+        "nodes": 19597,
+        "time_ms": 5185,
+        "wall": 5.186414199997671,
+        "bestmove": "d4c6"
+      },
+      {
+        "fen": "r1bq1r1k/1pp1n1pp/1p1p4/4p2Q/4Pp2/1BNP4/PPP2PPP/3R1RK1 w - - 0 14",
+        "nodes": 28694,
+        "time_ms": 5838,
+        "wall": 5.839629900001455,
+        "bestmove": "f2f3"
+      },
+      {
+        "fen": "r3r1k1/2p2ppp/p1p1bn2/8/1q2P3/2NPQN2/PPP3PP/R4RK1 b - - 0 15",
+        "nodes": 15368,
+        "time_ms": 4484,
+        "wall": 4.4851807999948505,
+        "bestmove": "b4b2"
+      },
+      {
+        "fen": "r1bbk1nr/pp3p1p/2n5/1N4p1/2Np1B2/8/PPP2PPP/2KR1B1R w kq - 0 13",
+        "nodes": 26203,
+        "time_ms": 6155,
+        "wall": 6.156374800018966,
+        "bestmove": "f4g3"
+      },
+      {
+        "fen": "r1bq1rk1/ppp1nppp/4n3/3p3Q/3P4/1BP1B3/PP1N2PP/R4RK1 w - - 0 16",
+        "nodes": 26381,
+        "time_ms": 6947,
+        "wall": 6.948143799992977,
+        "bestmove": "f1f3"
+      },
+      {
+        "fen": "4r1k1/r1q2ppp/ppp2n2/4P3/5Rb1/1N1BQ3/PPP3PP/R5K1 w - - 0 17",
+        "nodes": 15527,
+        "time_ms": 4425,
+        "wall": 4.426461399998516,
+        "bestmove": "f4f6"
+      }
+    ]
+  },
+  "threads": 0,
+  "minibatch": 64,
+  "conditioning_wall_seconds": 34.13424980000127,
+  "positions": [
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 10",
+    "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 11",
+    "4rrk1/pp1n3p/3q2pQ/2p1pb2/2PP4/2P3N1/P2B2PP/4RRK1 b - - 0 19",
+    "rq3rk1/ppp2ppp/1bnpb3/3N2B1/3NP3/7P/PPPQ1PP1/2KR3R w - - 0 14",
+    "r1bq1r1k/1pp1n1pp/1p1p4/4p2Q/4Pp2/1BNP4/PPP2PPP/3R1RK1 w - - 0 14",
+    "r3r1k1/2p2ppp/p1p1bn2/8/1q2P3/2NPQN2/PPP3PP/R4RK1 b - - 0 15",
+    "r1bbk1nr/pp3p1p/2n5/1N4p1/2Np1B2/8/PPP2PPP/2KR1B1R w kq - 0 13",
+    "r1bq1rk1/ppp1nppp/4n3/3p3Q/3P4/1BP1B3/PP1N2PP/R4RK1 w - - 0 16",
+    "4r1k1/r1q2ppp/ppp2n2/4P3/5Rb1/1N1BQ3/PPP3PP/R5K1 w - - 0 17"
+  ],
+  "warnings": [],
+  "precision_coverage": "not inferred from flags or throughput"
+}

@@ -1,0 +1,125 @@
+{
+  "sources": [
+    {
+      "path": "analysis/tables/F6-roofline-points.csv",
+      "bytes": 131992,
+      "sha256": "6e9c37e0256358797956a1371c5fa8456a1476f57008a33c8d28d927df7dd818"
+    },
+    {
+      "path": "analysis/tables/roofline-operation-inventory.csv",
+      "bytes": 32496,
+      "sha256": "af4ce4cdc7727054e67f375ad8d63a00ac1cbde122d78b9c7a6a2bfe4c0144c3"
+    },
+    {
+      "path": "analysis/tables/smoothquant-channels.csv",
+      "bytes": 50784,
+      "sha256": "9c802cd3a01a3fa5444e4d532bd27729a950809797dfb5c5a9efb8f59c106b81"
+    },
+    {
+      "path": "analysis/tables/smoothquant-groups.csv",
+      "bytes": 12093,
+      "sha256": "815c16d60a5edba76a4625bd17efa5a8375e38f310feb35dd3e9232badeca979"
+    },
+    {
+      "path": "analysis/tables/T2-engine-layers.csv",
+      "bytes": 644870,
+      "sha256": "d6bd8eef20dc5d8d74fdec05647f061b8da4e25ee19dad90315a12e002b48770"
+    },
+    {
+      "path": "analysis/tables/T2-lc0-kernel-tags.csv",
+      "bytes": 3784,
+      "sha256": "d4d401d9b8885274a3710ef71e625beb98eea25c7b4bfc9cee0e72618843af30"
+    },
+    {
+      "path": "analysis/tables/T2-lc0-kernels.csv",
+      "bytes": 76151,
+      "sha256": "6e77dcb031bc1c569827d7899766ed791feccc957c77fa56d51958aa821963fb"
+    },
+    {
+      "path": "analysis/tables/T2-network-batch-summary.csv",
+      "bytes": 2548,
+      "sha256": "1342ae60634fc3047e4f8b2d2f075ccdef2201e7910456c0b224542b39d203ab"
+    },
+    {
+      "path": "analysis/tables/T2-network-batches.csv",
+      "bytes": 5398,
+      "sha256": "8bd96b87c349649c6136aaafe0d377bd910f5dddfe8466f689c6b983650b817c"
+    },
+    {
+      "path": "analysis/tables/T2-operation-precision.csv",
+      "bytes": 250758,
+      "sha256": "3238e0536eaa4ed80d3e7105a253e7e5ca6fbd1bc178529df661b8a929188d92"
+    },
+    {
+      "path": "analysis/tables/T2-session-review.csv",
+      "bytes": 992,
+      "sha256": "85a46a62e02378b047d319cd45daa9dfa37a478b4c3e601fc16f9bc64122bf6e"
+    },
+    {
+      "path": "analysis/tables/T2-speed-trials.csv",
+      "bytes": 10109,
+      "sha256": "4bf47d1a6b33a7e9be4e4a49a10d47090b04375fdaaa6555eef768487cba5ac1"
+    },
+    {
+      "path": "analysis/tables/T2-speed.csv",
+      "bytes": 6582,
+      "sha256": "c2d9c0494af40520264b9f88818724475bd280bd399c71c4a80b64d5db60ff65"
+    },
+    {
+      "path": "analysis/tables/T2-standalone-profiles.csv",
+      "bytes": 1988,
+      "sha256": "d98c125ad18ed33331e74db94196dc2c8317fda63398babb032519d5b5b52a10"
+    },
+    {
+      "path": "analysis/tables/T3-energy.csv",
+      "bytes": 7656,
+      "sha256": "71c446440d87984d6da9abda2e6a42655f505f9fc9613b1a8fcb866f391a8c7b"
+    },
+    {
+      "path": "analysis/tables/T3-idle-telemetry-review.csv",
+      "bytes": 4669,
+      "sha256": "cc3e1b3a009ad75ce2a3efb61f63564d8eb77ecf585445b900be9433117149f3"
+    },
+    {
+      "path": "analysis/tables/T5-sparsity.csv",
+      "bytes": 372,
+      "sha256": "ff7b43d56f1f36d14eecb60f63f63e4c66993e1e0825dceb9a25d199bd4b14f4"
+    },
+    {
+      "path": "reports/takeover/run3/measured-reference-peaks.json",
+      "bytes": 1251,
+      "sha256": "2d83fd4b932b2b81e78ed07272218845df83058ceb3b346c64e5db4608aeead5"
+    },
+    {
+      "path": "reports/takeover/run3/profile-review.json",
+      "bytes": 8270,
+      "sha256": "fad5d2a5b53d6e66e7708ded7e60bcfbd8ebdd168ab67165e2ab39f47f3e9f77"
+    },
+    {
+      "path": "reports/takeover/run3/benchmark-review.json",
+      "bytes": 17273,
+      "sha256": "7b329ab6225a7c136182191295108013b851e42bb426c20236fb7ce5c945e904"
+    },
+    {
+      "path": "analysis/person_a/a5/current-channel-maxima.npz",
+      "bytes": 9996,
+      "sha256": "73c2ba365772de2a8f46fdeaff7693e4e55b9ccdde80fce6e6b0e1a47734982e"
+    }
+  ],
+  "U2_numeric": {
+    "path": "reports/ultimate/U2/numeric-verification.json",
+    "bytes": 4029,
+    "sha256": "6c43ce33c955e7a9c0139138b629c1c9ffd8b524ab00e1f89aa01c87476fed2b"
+  },
+  "U2_systems": {
+    "path": "reports/ultimate/U2/systems-verification.json",
+    "bytes": 4135,
+    "sha256": "46fa561f9f2b073bca8be6ae194926b3d63de256f14e49766f44a791c7d01a7b"
+  },
+  "U2_idle": {
+    "path": "reports/ultimate/U2/idle/work/idle.json",
+    "bytes": 45905,
+    "sha256": "7122a40e0e6c9cb98b5818bb9ec290ca62f2c8cba93e1edcc8bc65709613ed91"
+  },
+  "scope": "Original repeated hardware observations retained; fresh gate separately labelled; no retroactive idle validation"
+}

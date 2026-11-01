@@ -1,0 +1,160 @@
+{
+  "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829",
+  "model": "s0",
+  "study": "A",
+  "budget": 0,
+  "backend": "onnx-trt",
+  "backend_opts": "optimize=8",
+  "weights": {
+    "path": "models/s0.pb.gz",
+    "bytes": 69978207,
+    "sha256": "01976840b4de5de2a9299ecfda97fc9c56c626eb7e6a79c48f64aaf526d3afd4"
+  },
+  "roots": "9804a43b743e91f3f3ee37fef950cf86c85cfaaa2b73439266f7d611bab88810",
+  "ids": [
+    160,
+    161,
+    560,
+    561
+  ],
+  "sources": [
+    {
+      "path": "common.py",
+      "bytes": 5314,
+      "sha256": "3371debc4cfcab5656c7cdfcd18ffcab2c7bbd2f94fbaf57f3b545ec81b71a4b"
+    },
+    {
+      "path": "eval/lc0uci.py",
+      "bytes": 8619,
+      "sha256": "160265fc12d2e8219a2c89ce0de937c99fcca58362989cf6855174942aaf7ccd"
+    },
+    {
+      "path": "eval/run_study.py",
+      "bytes": 9360,
+      "sha256": "651650030b856d7ebb4a383ef84ecbc87bf6af9ad3121810cb9df0bdf76ea1e3"
+    },
+    {
+      "path": "execution/ultimate_study.py",
+      "bytes": 12679,
+      "sha256": "227aa0786f7eb8ea898986692bbced67354604a625a499ea2aa3b0d63609cdfb"
+    },
+    {
+      "path": "execution/ultimate_contract.py",
+      "bytes": 9513,
+      "sha256": "d7da82a3942c14af0d0867a7486efcbe2980f8dcab1a6b7c3f967f0d18ba6cb5"
+    },
+    {
+      "path": "execution/support.py",
+      "bytes": 4915,
+      "sha256": "feabad3f52a6ac2ac84327fd0b2ea74cb047d3525e20b003c24d0f52740b1b61"
+    },
+    {
+      "path": "execution/resources.py",
+      "bytes": 6535,
+      "sha256": "f9f38c5ab4e97e14375ef39f8cb203ba4090d993312a3858c0f5d8b4c7b4c2fc"
+    },
+    {
+      "path": "hw/energy.py",
+      "bytes": 5603,
+      "sha256": "fd3cf8ba572f5238736093edf1ccc5936c597f00dadba4beb848b9b33fc6efc0"
+    }
+  ],
+  "runtime": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\lc0.exe",
+      "bytes": 1796096,
+      "sha256": "3a437bdcb353fc264df317b9308ba589d29294695521909b459fbb72e918af50"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cublas64_12.dll",
+      "bytes": 102518272,
+      "sha256": "90052a83efd1b57a8e3616a6590b335855f81b814a4f16eecb7b5bf6d1b1d4eb"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cublasLt64_12.dll",
+      "bytes": 668669952,
+      "sha256": "c3a05ea244c937314afec09f87b91f814c7e27977681f6c67eb51bb06ced3a4a"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cudart64_12.dll",
+      "bytes": 583680,
+      "sha256": "760c38928bbe5759f7b31ed6692599eb7ec83cedd5702e84c2b72028a89837e1"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cudnn64_9.dll",
+      "bytes": 266352,
+      "sha256": "98461c2e24270b75c6d4767ff469c244d7f7c91cb3d9c9ac76d497510d7d9c5f"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cudnn_graph64_9.dll",
+      "bytes": 2441248,
+      "sha256": "41f57d2b475bbe5bd10095c9529bbd58711c71cca984bf13bfe813ee89d9b949"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\cufft64_11.dll",
+      "bytes": 287136768,
+      "sha256": "5b90655ca9cdf5d91cbdf2c72b995ec937eed0aef2d6954370c711b45c929b35"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\mimalloc-override.dll",
+      "bytes": 108032,
+      "sha256": "c3538d9e1804c6d9a8780360f3d68e062d6151166fbfb65c4cdd76004fc40bb3"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\mimalloc-redirect.dll",
+      "bytes": 68096,
+      "sha256": "63dc4f158fd76940ec018b42f83d92d8ceec70043b1ac2a8455fb0d67e1feebf"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\nvinfer_10.dll",
+      "bytes": 471953952,
+      "sha256": "324727055c3698c875de5462f0a3bb2f45a739903ae65ab4480c92e98935587f"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\nvinfer_builder_resource_10.dll",
+      "bytes": 1791236128,
+      "sha256": "1afb85570dc76408b08dbaf774243e0d8d90558fa302242ccbfb714c23348b92"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\nvinfer_plugin_10.dll",
+      "bytes": 52735520,
+      "sha256": "db63b4f6be909c27929f36f93eae91a999ddacea4fba761e70d4465a4d8d87a5"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\nvonnxparser_10.dll",
+      "bytes": 2960928,
+      "sha256": "ba0f2387e2ffa2a54d609161ddd676bb9ded97ca498798dfc311abfb89b9889e"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\onnxruntime.dll",
+      "bytes": 16468024,
+      "sha256": "f722dd91a311b9fa4b7f2341d22c379a72fb7bc5b639df18b64821f23cdde14b"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\onnxruntime_providers_cuda.dll",
+      "bytes": 322615840,
+      "sha256": "2baf389c51fb3996bee2eb94126a7b0f36a6871053501fe8b38222504560c0f8"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\onnxruntime_providers_shared.dll",
+      "bytes": 22048,
+      "sha256": "7de6659e55a0e02a8e7ca94ab2864d0e6ea59add87c3e947e8990229ae7f5e3a"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\onnxruntime_providers_tensorrt.dll",
+      "bytes": 799792,
+      "sha256": "eef5eb5fd81a0397dc09281623fc8c77906e8d6dd6d6a9bcb2db5d1afd7042c7"
+    }
+  ],
+  "runtime_observation": {
+    "path": "reports/ultimate/runtime-identity.json",
+    "bytes": 270,
+    "sha256": "fc7e59bdac95081d5a69fca5967bd728ad0718aa417e6f9e7efabb5844f895b3"
+  },
+  "search_options": {
+    "nodes": 1,
+    "Threads": 1,
+    "MinibatchSize": 256,
+    "PolicyTemperature": 1.0
+  }
+}

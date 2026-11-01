@@ -1,0 +1,43 @@
+{
+  "model": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\models\\s4.onnx",
+    "bytes": 105829506,
+    "sha256": "24fd9a11bbc755962b98fab08dd49f9a721c797097dfb607183e27b7e76e1904"
+  },
+  "engine": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64.engine",
+    "bytes": 110079676,
+    "sha256": "0f5d69a0bc0c517816dd8b4498de3911f2f473c87b278187b8e3464c4f96fde3"
+  },
+  "int8_permission": true,
+  "sparse_permission": false,
+  "profiles": {
+    "64": {
+      "layers": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_layers.json",
+        "bytes": 280524,
+        "sha256": "4ebb7982fa4e8a4906b59751b61e07142554cf49db842322e7651b48ff87b1af"
+      },
+      "profile": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\build_b64_profile.json",
+        "bytes": 58364,
+        "sha256": "a4396dd373edbeb416b2c1fa6ea29df5579fa15066446c6aa678124486733e04"
+      }
+    },
+    "256": {
+      "layers": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256_layers.json",
+        "bytes": 280532,
+        "sha256": "f574beb4595f1cd72702554f06265723dd71f0b9a9b72d874ad53a0e9e41f04b"
+      },
+      "profile": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s4\\attempt-001\\work\\reload_b256_profile.json",
+        "bytes": 58294,
+        "sha256": "429a0c6fba8a9d8346f47eb4f4f08846c869147845951f0295314ad058ad8ddb"
+      }
+    }
+  },
+  "same_engine_both_batches": true,
+  "layer_norm_constraint": "prefer FP32 by name glob",
+  "scope": "Standalone TensorRT profiles; inspect actual formats/tactics. Not asserted identical to lc0/ORT partitioning."
+}

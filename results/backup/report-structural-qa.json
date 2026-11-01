@@ -1,0 +1,81 @@
+{
+  "pages": 12,
+  "pdf": {
+    "path": "reports/ultimate/report/report.pdf",
+    "bytes": 1132432,
+    "sha256": "8cb927997fbf3b7f724787bb6150503f87c7bb92fbc5b86c0a6744bd911b78df"
+  },
+  "renderer": {
+    "path": "analysis/ultimate_report.py",
+    "bytes": 35443,
+    "sha256": "ae9989bb6d4fac4d182763fab906bf42a2d8e1e49b3afcd414d03562a7878fa9"
+  },
+  "figures": [
+    {
+      "path": "reports/ultimate/analysis/hardware/F12-outliers.png",
+      "bytes": 95762,
+      "sha256": "eaf9dae570cb340d6ea1057384d97cd5ef5bbd17c496c8284397fc79d87a93b5"
+    },
+    {
+      "path": "reports/ultimate/analysis/F1-raw.png",
+      "bytes": 78897,
+      "sha256": "b88fdb94173eb3c9fa70e21e19c2957370b3766f88b040154cf2b05b1cede4d5"
+    },
+    {
+      "path": "reports/ultimate/analysis/F1-graded.png",
+      "bytes": 76814,
+      "sha256": "59d2a243c552ef8430b46b5cba6c4efc24c8c412bc8779be6af8ec64161377c2"
+    },
+    {
+      "path": "reports/ultimate/analysis/F2-nodes.png",
+      "bytes": 132414,
+      "sha256": "d7ce61f950f88fc3e11f0efe389e25fdb39ba310a8ab8bf8927bb8ae41118462"
+    },
+    {
+      "path": "reports/ultimate/analysis/F4-swaps.png",
+      "bytes": 125054,
+      "sha256": "147f2aaf71fb1a1a2e785ddbc5bd0e7f177a6ebbbc719377991569aaeba554de"
+    },
+    {
+      "path": "reports/ultimate/analysis/F3-node-equivalents.png",
+      "bytes": 59759,
+      "sha256": "87be5ec9da3367040bd503629a2de3dedbf550d8fb104ea0db1845e86a152d28"
+    },
+    {
+      "path": "reports/ultimate/analysis/F5-time.png",
+      "bytes": 107130,
+      "sha256": "7e0edab5eb20d909c02497a545edc7b5a27b617a96747e631981c2324c8881c6"
+    },
+    {
+      "path": "reports/ultimate/analysis/F11-frontier.png",
+      "bytes": 52262,
+      "sha256": "2bebb69f20208abab3126f8d971efad2767562623f8ec92a415843d391d5b483"
+    },
+    {
+      "path": "reports/ultimate/analysis/hardware/F6-profile-breakdown.png",
+      "bytes": 47176,
+      "sha256": "ee961a22dbe1e199fe85ade22752ed3812039a112a198b1a3d0a1233c1d1b2c6"
+    },
+    {
+      "path": "reports/ultimate/analysis/hardware/F6-roofline.png",
+      "bytes": 80450,
+      "sha256": "499b151c03a26d4bfa24b666bb68de675747e38aeaa6d11143d99a48902230bb"
+    },
+    {
+      "path": "reports/ultimate/analysis/hardware/F7-energy.png",
+      "bytes": 50290,
+      "sha256": "7ed042cacb7cd4e80170aca94d4e6916dca317ce474fc5f6fcacfc5f2b77da27"
+    },
+    {
+      "path": "reports/ultimate/analysis/F9-batch.png",
+      "bytes": 46823,
+      "sha256": "cba5fcbde7914adb5c1a30931197c81ad659a69de78ec015cb988d51650176b6"
+    }
+  ],
+  "markdown": {
+    "path": "reports/ultimate/report/report.md",
+    "bytes": 25157,
+    "sha256": "6780fb51ba03119782f426315e9a6ee77daab18fb97fa401daab4b9e474ce919"
+  },
+  "visual_review_required": true
+}

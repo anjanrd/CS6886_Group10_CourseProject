@@ -1,0 +1,49 @@
+[
+  {
+    "budget_ms": 100,
+    "games": 500,
+    "complete_pairs": 250,
+    "fp16_wins": 50,
+    "s4_wins": 93,
+    "draws": 357,
+    "fp16_win_pct": 10.0,
+    "s4_win_pct": 18.6,
+    "draw_pct": 71.4,
+    "fp16_score": 0.457,
+    "more_wins": "s4",
+    "absolute_win_margin": 43,
+    "pp_win_margin": 8.6,
+    "termination": {
+      "tablebase": 41,
+      "threefold_repetition": 194,
+      "adjudicated_draw": 135,
+      "adjudicated_resign": 128,
+      "checkmate": 1,
+      "fifty_moves": 1
+    }
+  },
+  {
+    "budget_ms": 200,
+    "games": 500,
+    "complete_pairs": 250,
+    "fp16_wins": 36,
+    "s4_wins": 39,
+    "draws": 425,
+    "fp16_win_pct": 7.2,
+    "s4_win_pct": 7.8,
+    "draw_pct": 85.0,
+    "fp16_score": 0.497,
+    "more_wins": "s4",
+    "absolute_win_margin": 3,
+    "pp_win_margin": 0.6,
+    "termination": {
+      "adjudicated_resign": 61,
+      "adjudicated_draw": 192,
+      "checkmate": 2,
+      "threefold_repetition": 189,
+      "tablebase": 53,
+      "fifty_moves": 1,
+      "stalemate": 2
+    }
+  }
+]

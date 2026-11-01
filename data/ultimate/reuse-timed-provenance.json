@@ -1,0 +1,68 @@
+{
+  "status": "verified",
+  "backup_rows_exactly_preserved": 9429,
+  "old_counts": {
+    "200": 6720,
+    "800": 2709
+  },
+  "current_counts": {
+    "200": 6720,
+    "800": 4119
+  },
+  "commands": [
+    "$ C:\\Users\\HP\\Desktop\\LC0-B\\.venv\\Scripts\\python.exe C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\eval\\run_study.py --lc0 C:/Users/HP/Desktop/LC0-B/tools/lc0/lc0.exe --name fp16 --weights C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\models\\fp16.pb.gz --backend onnx-trt --backend-opts optimize=6 --tbset C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\data\\tbset.jsonl --split test --limit 0 --budgets  --threads 0 --minibatch 256 --out-dir C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\results --movetimes 200,800",
+    "$ C:\\Users\\HP\\Desktop\\LC0-B\\.venv\\Scripts\\python.exe C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\eval\\run_study.py --lc0 C:/Users/HP/Desktop/LC0-B/tools/lc0/lc0.exe --name fp16 --weights C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\models\\fp16.pb.gz --backend onnx-trt --backend-opts optimize=6 --tbset C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\data\\tbset.jsonl --split test --limit 2437 --budgets  --threads 0 --minibatch 256 --out-dir C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\results --movetimes 200,800",
+    "$ C:\\Users\\HP\\Desktop\\LC0-B\\.venv\\Scripts\\python.exe C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\eval\\run_study.py --lc0 C:/Users/HP/Desktop/LC0-B/tools/lc0/lc0.exe --name s4 --weights C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\models\\s4.pb.gz --backend onnx-trt --backend-opts optimize=8 --tbset C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\data\\tbset.jsonl --split test --limit 2437 --budgets  --threads 0 --minibatch 256 --out-dir C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\reports\\c3-part1\\studyc-work\\results --movetimes 200,800"
+  ],
+  "canonical_weight_load_headers": {
+    "200": [
+      "E Loading weights file from: C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz"
+    ],
+    "800": [
+      "E Loading weights file from: C:\\Users\\HP\\Desktop\\LC0-B\\leela-int8\\models\\fp16.pb.gz"
+    ]
+  },
+  "supporting_inputs": [
+    {
+      "path": "reports/studyc-backup/2026-10-28T140625_+0530/manifest.json",
+      "bytes": 686,
+      "sha256": "d0c86c983cbdbcb1077c2457f7e3ba9d464867ea86c5ac541d9f150a792c1feb"
+    },
+    {
+      "path": "reports/studyc-backup/2026-10-28T140625_+0530/config.studyc.before.json",
+      "bytes": 1389,
+      "sha256": "a58ef48c931445b7bec17c5a429c269ba63b32a3142935daf08642c0dbbbce30"
+    },
+    {
+      "path": "reports/studyc-backup/2026-10-28T140625_+0530/fp16/study_c.jsonl",
+      "bytes": 992829,
+      "sha256": "e9e13cae30cb04b37415761979ee1d0f77f916ef61ec0bcca4f4fe0a807bc5f1"
+    },
+    {
+      "path": "reports/studyc-backup/2026-10-28T140625_+0530/fp16/C200.lc0.log",
+      "bytes": 21785955,
+      "sha256": "e3085bdb81e7fe6aaa3571fe9c29541fdb566ba0998c9fba285d00fa4c32005c"
+    },
+    {
+      "path": "reports/studyc-backup/2026-10-28T140625_+0530/fp16/C800.lc0.log",
+      "bytes": 9872869,
+      "sha256": "49708498a3ab979a93be33a6900aa8651850ba3219818078efb5101f6ff19bd9"
+    },
+    {
+      "path": "reports/c3-part1/resize-baseline.json",
+      "bytes": 546628,
+      "sha256": "35c6178c478d0e21bd62b93dd53dee6dac692c88e1f9dffba0829bc27aa045f8"
+    },
+    {
+      "path": "reports/logs/c3_b_studyc.log",
+      "bytes": 33586,
+      "sha256": "26ed7d981c52abd8aaa77b83e4809c162e80ef44d2f1e53f9929774f969ef49b"
+    },
+    {
+      "path": "eval/run_study.py",
+      "bytes": 9360,
+      "sha256": "651650030b856d7ebb4a383ef84ecbc87bf6af9ad3121810cb9df0bdf76ea1e3"
+    }
+  ],
+  "interpretation": "Initial full-test limit0 then2437-ID continuation; same source/models, threads0, minibatch256, default pruning and source default overhead20. Extra FP16 rows retain original values and qualify for matching keys; no reinference implied."
+}

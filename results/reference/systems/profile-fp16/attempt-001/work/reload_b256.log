@@ -1,0 +1,106 @@
+{"argv": ["C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe", "--loadEngine=C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-fp16\\attempt-001\\work\\build_b64.engine", "--shapes=/input/planes:256x112x8x8", "--useCudaGraph", "--noDataTransfers", "--profilingVerbosity=detailed", "--exportLayerInfo=C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-fp16\\attempt-001\\work\\reload_b256_layers.json", "--exportProfile=C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-fp16\\attempt-001\\work\\reload_b256_profile.json", "--exportTimes=C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-fp16\\attempt-001\\work\\reload_b256_times.json", "--separateProfileRun"], "cwd": "C:\\Users\\HP\\Desktop\\LC0"}
+&&&& RUNNING TensorRT.trtexec [TensorRT v101200] [b36] # C:\Users\HP\Desktop\LC0\.runtime\tools\TensorRT-10.12.0.36\bin\trtexec.exe --loadEngine=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\build_b64.engine --shapes=/input/planes:256x112x8x8 --useCudaGraph --noDataTransfers --profilingVerbosity=detailed --exportLayerInfo=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_layers.json --exportProfile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_profile.json --exportTimes=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_times.json --separateProfileRun
+[10/30/2026-11:19:58] [I] TF32 is enabled by default. Add --noTF32 flag to further improve accuracy with some performance cost.
+[10/30/2026-11:19:58] [I] === Model Options ===
+[10/30/2026-11:19:58] [I] Format: *
+[10/30/2026-11:19:58] [I] Model: 
+[10/30/2026-11:19:58] [I] Output:
+[10/30/2026-11:19:58] [I] 
+[10/30/2026-11:19:58] [I] === System Options ===
+[10/30/2026-11:19:58] [I] Device: 0
+[10/30/2026-11:19:58] [I] DLACore: 
+[10/30/2026-11:19:58] [I] Plugins:
+[10/30/2026-11:19:58] [I] setPluginsToSerialize:
+[10/30/2026-11:19:58] [I] dynamicPlugins:
+[10/30/2026-11:19:58] [I] ignoreParsedPluginLibs: 0
+[10/30/2026-11:19:58] [I] 
+[10/30/2026-11:19:58] [I] === Inference Options ===
+[10/30/2026-11:19:58] [I] Batch: Explicit
+[10/30/2026-11:19:58] [I] Input inference shape : /input/planes=256x112x8x8
+[10/30/2026-11:19:58] [I] Iterations: 10
+[10/30/2026-11:19:58] [I] Duration: 3s (+ 200ms warm up)
+[10/30/2026-11:19:58] [I] Sleep time: 0ms
+[10/30/2026-11:19:58] [I] Idle time: 0ms
+[10/30/2026-11:19:58] [I] Inference Streams: 1
+[10/30/2026-11:19:58] [I] ExposeDMA: Disabled
+[10/30/2026-11:19:58] [I] Data transfers: Disabled
+[10/30/2026-11:19:58] [I] Spin-wait: Disabled
+[10/30/2026-11:19:58] [I] Multithreading: Disabled
+[10/30/2026-11:19:58] [I] CUDA Graph: Enabled
+[10/30/2026-11:19:58] [I] Separate profiling: Enabled
+[10/30/2026-11:19:58] [I] Time Deserialize: Disabled
+[10/30/2026-11:19:58] [I] Time Refit: Disabled
+[10/30/2026-11:19:58] [I] NVTX verbosity: 2
+[10/30/2026-11:19:58] [I] Persistent Cache Ratio: 0
+[10/30/2026-11:19:58] [I] Optimization Profile Index: 0
+[10/30/2026-11:19:58] [I] Weight Streaming Budget: 100.000000%
+[10/30/2026-11:19:58] [I] Inputs:
+[10/30/2026-11:19:58] [I] Debug Tensor Save Destinations:
+[10/30/2026-11:19:58] [I] Dump All Debug Tensor in Formats: 
+[10/30/2026-11:19:58] [I] === Reporting Options ===
+[10/30/2026-11:19:58] [I] Verbose: Disabled
+[10/30/2026-11:19:58] [I] Averages: 10 inferences
+[10/30/2026-11:19:58] [I] Percentiles: 90,95,99
+[10/30/2026-11:19:58] [I] Dump refittable layers:Disabled
+[10/30/2026-11:19:58] [I] Dump output: Disabled
+[10/30/2026-11:19:58] [I] Profile: Disabled
+[10/30/2026-11:19:58] [I] Export timing to JSON file: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_times.json
+[10/30/2026-11:19:58] [I] Export output to JSON file: 
+[10/30/2026-11:19:58] [I] Export profile to JSON file: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_profile.json
+[10/30/2026-11:19:58] [I] 
+[10/30/2026-11:19:58] [I] === Device Information ===
+[10/30/2026-11:19:58] [I] Available Devices: 
+[10/30/2026-11:19:58] [I]   Device 0: "NVIDIA GeForce RTX 4060 Laptop GPU" UUID: GPU-020e5950-8d4c-173a-fa0e-a2c9b981160d
+[10/30/2026-11:19:58] [I] Selected Device: NVIDIA GeForce RTX 4060 Laptop GPU
+[10/30/2026-11:19:58] [I] Selected Device ID: 0
+[10/30/2026-11:19:58] [I] Selected Device UUID: GPU-020e5950-8d4c-173a-fa0e-a2c9b981160d
+[10/30/2026-11:19:58] [I] Compute Capability: 8.9
+[10/30/2026-11:19:58] [I] SMs: 24
+[10/30/2026-11:19:58] [I] Device Global Memory: 8187 MiB
+[10/30/2026-11:19:58] [I] Shared Memory per SM: 100 KiB
+[10/30/2026-11:19:58] [I] Memory Bus Width: 128 bits (ECC disabled)
+[10/30/2026-11:19:58] [I] Application Compute Clock Rate: 2.25 GHz
+[10/30/2026-11:19:58] [I] Application Memory Clock Rate: 8.001 GHz
+[10/30/2026-11:19:58] [I] 
+[10/30/2026-11:19:58] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[10/30/2026-11:19:58] [I] 
+[10/30/2026-11:19:58] [I] TensorRT version: 10.12.0
+[10/30/2026-11:19:58] [I] Loading standard plugins
+[10/30/2026-11:19:58] [I] [TRT] Loaded engine size: 203 MiB
+[10/30/2026-11:19:58] [I] Engine deserialized in 0.195006 sec.
+[10/30/2026-11:19:58] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +718, now: CPU 0, GPU 913 (MiB)
+[10/30/2026-11:19:58] [I] Setting persistentCacheLimit to 0 bytes.
+[10/30/2026-11:19:58] [I] Set shape of input tensor /input/planes to: 256x112x8x8
+[10/30/2026-11:19:58] [I] Created execution context with device memory size: 718.008 MiB
+[10/30/2026-11:19:58] [I] Using random values for input /input/planes
+[10/30/2026-11:19:59] [I] Input binding for /input/planes with dimensions 256x112x8x8 is created.
+[10/30/2026-11:19:59] [I] Output binding for /output/policy with dimensions 256x1858 is created.
+[10/30/2026-11:19:59] [I] Output binding for /output/wdl with dimensions 256x3 is created.
+[10/30/2026-11:19:59] [I] Output binding for /output/mlh with dimensions 256x1 is created.
+[10/30/2026-11:19:59] [I] Starting inference
+[10/30/2026-11:19:59] [I] Capturing CUDA graph for the current execution context
+[10/30/2026-11:19:59] [I] Successfully captured CUDA graph for the current execution context
+[10/30/2026-11:20:02] [I] Warmup completed 2 queries over 200 ms
+[10/30/2026-11:20:02] [I] Timing trace has 47 queries over 3.14854 s
+[10/30/2026-11:20:02] [I] 
+[10/30/2026-11:20:02] [I] === Trace details ===
+[10/30/2026-11:20:02] [I] Trace averages of 10 runs:
+[10/30/2026-11:20:02] [I] Average on 10 runs - GPU latency: 66.8301 ms - Host latency: 66.8301 ms (enqueue 0.497134 ms)
+[10/30/2026-11:20:02] [I] Average on 10 runs - GPU latency: 66.8374 ms - Host latency: 66.8374 ms (enqueue 0.473987 ms)
+[10/30/2026-11:20:02] [I] Average on 10 runs - GPU latency: 66.8375 ms - Host latency: 66.8375 ms (enqueue 0.429443 ms)
+[10/30/2026-11:20:02] [I] Average on 10 runs - GPU latency: 67.3143 ms - Host latency: 67.3143 ms (enqueue 0.465967 ms)
+[10/30/2026-11:20:02] [I] 
+[10/30/2026-11:20:02] [I] === Performance summary ===
+[10/30/2026-11:20:02] [I] Throughput: 14.9276 qps
+[10/30/2026-11:20:02] [I] Latency: min = 66.7259 ms, max = 68.1738 ms, mean = 66.9885 ms, median = 66.8488 ms, percentile(90%) = 67.3086 ms, percentile(95%) = 67.9097 ms, percentile(99%) = 68.1738 ms
+[10/30/2026-11:20:02] [I] Enqueue Time: min = 0.347168 ms, max = 0.758301 ms, mean = 0.461182 ms, median = 0.429932 ms, percentile(90%) = 0.635986 ms, percentile(95%) = 0.703903 ms, percentile(99%) = 0.758301 ms
+[10/30/2026-11:20:02] [I] H2D Latency: min = 0 ms, max = 0 ms, mean = 0 ms, median = 0 ms, percentile(90%) = 0 ms, percentile(95%) = 0 ms, percentile(99%) = 0 ms
+[10/30/2026-11:20:02] [I] GPU Compute Time: min = 66.7259 ms, max = 68.1738 ms, mean = 66.9885 ms, median = 66.8488 ms, percentile(90%) = 67.3086 ms, percentile(95%) = 67.9097 ms, percentile(99%) = 68.1738 ms
+[10/30/2026-11:20:02] [I] D2H Latency: min = 0 ms, max = 0 ms, mean = 0 ms, median = 0 ms, percentile(90%) = 0 ms, percentile(95%) = 0 ms, percentile(99%) = 0 ms
+[10/30/2026-11:20:02] [I] Total Host Walltime: 3.14854 s
+[10/30/2026-11:20:02] [I] Total GPU Compute Time: 3.14846 s
+[10/30/2026-11:20:02] [I] Explanations of the performance metrics are printed in the verbose logs.
+[10/30/2026-11:20:02] [I] 
+[10/30/2026-11:20:02] [I] Capturing CUDA graph for the current execution context
+[10/30/2026-11:20:02] [I] Successfully captured CUDA graph for the current execution context
+&&&& PASSED TensorRT.trtexec [TensorRT v101200] [b36] # C:\Users\HP\Desktop\LC0\.runtime\tools\TensorRT-10.12.0.36\bin\trtexec.exe --loadEngine=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\build_b64.engine --shapes=/input/planes:256x112x8x8 --useCudaGraph --noDataTransfers --profilingVerbosity=detailed --exportLayerInfo=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_layers.json --exportProfile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_profile.json --exportTimes=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-fp16\attempt-001\work\reload_b256_times.json --separateProfileRun

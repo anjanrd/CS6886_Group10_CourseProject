@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-29",
+  "status": "passed",
+  "branch": "anjan",
+  "parent_run1_commit": "7f9bacc12b896ef6ad9421509fd0049f6ccf4051",
+  "authorization": "User requested A5 plan and implementation; no Run 2 execution",
+  "A5": "verified; F12 complete",
+  "plan": "analysis/person_a/A5_resolution_plan.md",
+  "diagnosis": "Historical C1 alpha0.5 / percentile99.99 arrays were compared with final C2 alpha0.7 / percentile99.999 scales. Correct historical pair agrees exactly; newly collected selected-model pair also agrees exactly.",
+  "provenance": "analysis/person_a/a5/provenance.json",
+  "collection": "analysis/person_a/a5/collection.json",
+  "selected_model": {
+    "path": "models/s4.onnx",
+    "bytes": 105829506,
+    "sha256": "24fd9a11bbc755962b98fab08dd49f9a721c797097dfb607183e27b7e76e1904"
+  },
+  "calibration_positions": 512,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "batch_size": 32,
+  "matched_channels": 768,
+  "pair_check": {
+    "agrees": true,
+    "channels": 768,
+    "failed_channels": 0,
+    "max_absolute_error": 0.0,
+    "max_relative_error": 0.0,
+    "rtol": 1e-05,
+    "atol": 1e-12
+  },
+  "group_ratios": {
+    "groups": 101,
+    "improved": 100,
+    "worsened": 1
+  },
+  "measured_example": {
+    "s4_raw": {
+      "max": 53.507041931152344,
+      "median": 7.907499093562365e-05,
+      "max_over_median": 676662.0052440269,
+      "live_channels": 768
+    },
+    "s4_smoothed": {
+      "max": 2.270639419555664,
+      "median": 0.0020073330961167812,
+      "max_over_median": 1131.1722124983905,
+      "live_channels": 768
+    }
+  },
+  "regression_tests": {
+    "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -p test_person_a_run1.py -v",
+    "exit_code": 0,
+    "passed": 11
+  },
+  "frozen_source_files_verified": 350,
+  "frozen_source_bytes": 8588424153,
+  "source_failures": [],
+  "preserved_failure_and_prior_verification": [
+    {
+      "path": "analysis/person_a/run1/blocker-A5.json",
+      "bytes": 1522,
+      "sha256": "c25e0ee518635df24a1c6fff66ed16ef477f3228bd44a8712b2c00770fd21d89"
+    },
+    {
+      "path": "analysis/person_a/run1/verification.json",
+      "bytes": 1165,
+      "sha256": "a4d3d3de77abdacc66d749bf3c052ee903fc6975016eadc9444f1ab9b4c0a1e8"
+    },
+    {
+      "path": "analysis/person_a/run1/visual_review.json",
+      "bytes": 1606,
+      "sha256": "1634d7aa98d1266201fb77511adf6b3ac2f33e32e603be1a18d3a1f80e10dbc2"
+    },
+    {
+      "path": "analysis/person_a/run1/document_verification.json",
+      "bytes": 181,
+      "sha256": "2632a626d0cdec47927c16d083165622ea8d412edee6106f27ad6a5201a318db"
+    },
+    {
+      "path": "analysis/person_a/run1/output_manifest.json",
+      "bytes": 12336,
+      "sha256": "35eac1ecad459b73a7524a2492a4c924887a78832e9c52432c89119c3ced3a1f"
+    }
+  ],
+  "past_LOG_content_unchanged": true,
+  "analysis_python_files_parsed": 5,
+  "local_document_links_checked": 36,
+  "figure_visual_review": "analysis/person_a/a5/visual_review.json",
+  "new_numerical_outputs": {
+    "smoothquant-groups.csv": 101,
+    "smoothquant-channels.csv": 768
+  },
+  "collection_resume_check": "collect reused the verified file with no new inference; exit0",
+  "collection_first_attempt": "new collector shape assertion stopped before saving; failure record retained; one permitted obvious shape/reduction correction then successful retry",
+  "quantization_evaluation_tablebase_code_changed": false,
+  "scientific_protocol_model_calibration_changed": false,
+  "new_chess_search_gpu_performance_experiments": 0,
+  "new_successful_CPU_diagnostic_full_cohort_passes": 1,
+  "new_engine_or_GPU_workloads": 0,
+  "Run2_started": false,
+  "readiness": {
+    "ready_for_run2": false,
+    "A5_status": "verified",
+    "A5_reminder_required": false,
+    "Ritwik_handoffs_to_review": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "note": "Availability/markers are not experimental validity or permission to launch GPU jobs."
+  },
+  "commit_push_or_teammate_message_performed": false,
+  "current_output_inventory": "analysis/person_a/a5/output_manifest.json",
+  "historical_run1_verification": "analysis/person_a/run1/verification.json"
+}

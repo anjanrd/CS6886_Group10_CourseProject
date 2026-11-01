@@ -1,0 +1,196 @@
+name,region,kind,a_shape_batch1,b_shape_batch1,output_shape_batch1,K,macs_per_position,arithmetic_ops_per_position,unique_weight_name,weight_parameters,s4_qdq_intent,s4aa_qdq_intent,observed_kernel_precision
+/attn_body/embedding/preprocess/matmul,attn_body,activation_times_weight,"[1, 768]","[768, 8192]","[1, 8192]",768,6291456,12582912,/attn_body/embedding/preprocess/matmul/w,6291456,True,True,WAIT R1
+/attn_body/matmul,attn_body,activation_times_weight,"[64, 240]","[240, 768]","[64, 768]",240,11796480,23592960,/attn_body/matmul/w,184320,True,True,WAIT R1
+/attn_body/ffn/dense1/w,attn_body,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/attn_body/ffn/dense1/w/w,786432,True,True,WAIT R1
+/attn_body/ffn/dense2/w,attn_body,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/attn_body/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder0/mha/Q/w,encoder0,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder0/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder0/mha/K/w,encoder0,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder0/mha/K/w/w,589824,True,True,WAIT R1
+/encoder0/mha/V/w,encoder0,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder0/mha/V/w/w,589824,True,True,WAIT R1
+/encoder0/mha/QK/matmul,encoder0,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder0/smolgen/compress,encoder0,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder0/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder0/smolgen/dense1/w,encoder0,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder0/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder0/smolgen/dense2/w,encoder0,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder0/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder0/smolgen/smol_weight_gen,encoder0,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder0/mha/QKV/matmul,encoder0,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder0/mha/out/dense/w,encoder0,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder0/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder0/ffn/dense1/w,encoder0,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder0/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder0/ffn/dense2/w,encoder0,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder0/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder1/mha/Q/w,encoder1,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder1/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder1/mha/K/w,encoder1,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder1/mha/K/w/w,589824,True,True,WAIT R1
+/encoder1/mha/V/w,encoder1,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder1/mha/V/w/w,589824,True,True,WAIT R1
+/encoder1/mha/QK/matmul,encoder1,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder1/smolgen/compress,encoder1,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder1/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder1/smolgen/dense1/w,encoder1,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder1/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder1/smolgen/dense2/w,encoder1,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder1/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder1/smolgen/smol_weight_gen,encoder1,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder1/mha/QKV/matmul,encoder1,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder1/mha/out/dense/w,encoder1,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder1/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder1/ffn/dense1/w,encoder1,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder1/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder1/ffn/dense2/w,encoder1,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder1/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder2/mha/Q/w,encoder2,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder2/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder2/mha/K/w,encoder2,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder2/mha/K/w/w,589824,True,True,WAIT R1
+/encoder2/mha/V/w,encoder2,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder2/mha/V/w/w,589824,True,True,WAIT R1
+/encoder2/mha/QK/matmul,encoder2,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder2/smolgen/compress,encoder2,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder2/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder2/smolgen/dense1/w,encoder2,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder2/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder2/smolgen/dense2/w,encoder2,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder2/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder2/smolgen/smol_weight_gen,encoder2,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder2/mha/QKV/matmul,encoder2,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder2/mha/out/dense/w,encoder2,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder2/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder2/ffn/dense1/w,encoder2,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder2/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder2/ffn/dense2/w,encoder2,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder2/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder3/mha/Q/w,encoder3,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder3/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder3/mha/K/w,encoder3,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder3/mha/K/w/w,589824,True,True,WAIT R1
+/encoder3/mha/V/w,encoder3,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder3/mha/V/w/w,589824,True,True,WAIT R1
+/encoder3/mha/QK/matmul,encoder3,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder3/smolgen/compress,encoder3,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder3/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder3/smolgen/dense1/w,encoder3,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder3/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder3/smolgen/dense2/w,encoder3,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder3/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder3/smolgen/smol_weight_gen,encoder3,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder3/mha/QKV/matmul,encoder3,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder3/mha/out/dense/w,encoder3,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder3/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder3/ffn/dense1/w,encoder3,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder3/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder3/ffn/dense2/w,encoder3,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder3/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder4/mha/Q/w,encoder4,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder4/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder4/mha/K/w,encoder4,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder4/mha/K/w/w,589824,True,True,WAIT R1
+/encoder4/mha/V/w,encoder4,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder4/mha/V/w/w,589824,True,True,WAIT R1
+/encoder4/mha/QK/matmul,encoder4,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder4/smolgen/compress,encoder4,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder4/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder4/smolgen/dense1/w,encoder4,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder4/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder4/smolgen/dense2/w,encoder4,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder4/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder4/smolgen/smol_weight_gen,encoder4,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder4/mha/QKV/matmul,encoder4,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder4/mha/out/dense/w,encoder4,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder4/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder4/ffn/dense1/w,encoder4,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder4/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder4/ffn/dense2/w,encoder4,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder4/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder5/mha/Q/w,encoder5,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder5/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder5/mha/K/w,encoder5,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder5/mha/K/w/w,589824,True,True,WAIT R1
+/encoder5/mha/V/w,encoder5,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder5/mha/V/w/w,589824,True,True,WAIT R1
+/encoder5/mha/QK/matmul,encoder5,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder5/smolgen/compress,encoder5,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder5/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder5/smolgen/dense1/w,encoder5,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder5/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder5/smolgen/dense2/w,encoder5,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder5/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder5/smolgen/smol_weight_gen,encoder5,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder5/mha/QKV/matmul,encoder5,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder5/mha/out/dense/w,encoder5,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder5/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder5/ffn/dense1/w,encoder5,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder5/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder5/ffn/dense2/w,encoder5,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder5/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder6/mha/Q/w,encoder6,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder6/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder6/mha/K/w,encoder6,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder6/mha/K/w/w,589824,True,True,WAIT R1
+/encoder6/mha/V/w,encoder6,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder6/mha/V/w/w,589824,True,True,WAIT R1
+/encoder6/mha/QK/matmul,encoder6,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder6/smolgen/compress,encoder6,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder6/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder6/smolgen/dense1/w,encoder6,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder6/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder6/smolgen/dense2/w,encoder6,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder6/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder6/smolgen/smol_weight_gen,encoder6,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder6/mha/QKV/matmul,encoder6,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder6/mha/out/dense/w,encoder6,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder6/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder6/ffn/dense1/w,encoder6,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder6/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder6/ffn/dense2/w,encoder6,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder6/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder7/mha/Q/w,encoder7,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder7/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder7/mha/K/w,encoder7,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder7/mha/K/w/w,589824,True,True,WAIT R1
+/encoder7/mha/V/w,encoder7,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder7/mha/V/w/w,589824,True,True,WAIT R1
+/encoder7/mha/QK/matmul,encoder7,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder7/smolgen/compress,encoder7,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder7/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder7/smolgen/dense1/w,encoder7,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder7/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder7/smolgen/dense2/w,encoder7,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder7/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder7/smolgen/smol_weight_gen,encoder7,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder7/mha/QKV/matmul,encoder7,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder7/mha/out/dense/w,encoder7,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder7/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder7/ffn/dense1/w,encoder7,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder7/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder7/ffn/dense2/w,encoder7,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder7/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder8/mha/Q/w,encoder8,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder8/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder8/mha/K/w,encoder8,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder8/mha/K/w/w,589824,True,True,WAIT R1
+/encoder8/mha/V/w,encoder8,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder8/mha/V/w/w,589824,True,True,WAIT R1
+/encoder8/mha/QK/matmul,encoder8,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder8/smolgen/compress,encoder8,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder8/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder8/smolgen/dense1/w,encoder8,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder8/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder8/smolgen/dense2/w,encoder8,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder8/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder8/smolgen/smol_weight_gen,encoder8,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder8/mha/QKV/matmul,encoder8,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder8/mha/out/dense/w,encoder8,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder8/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder8/ffn/dense1/w,encoder8,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder8/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder8/ffn/dense2/w,encoder8,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder8/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder9/mha/Q/w,encoder9,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder9/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder9/mha/K/w,encoder9,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder9/mha/K/w/w,589824,True,True,WAIT R1
+/encoder9/mha/V/w,encoder9,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder9/mha/V/w/w,589824,True,True,WAIT R1
+/encoder9/mha/QK/matmul,encoder9,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder9/smolgen/compress,encoder9,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder9/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder9/smolgen/dense1/w,encoder9,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder9/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder9/smolgen/dense2/w,encoder9,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder9/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder9/smolgen/smol_weight_gen,encoder9,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder9/mha/QKV/matmul,encoder9,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder9/mha/out/dense/w,encoder9,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder9/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder9/ffn/dense1/w,encoder9,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder9/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder9/ffn/dense2/w,encoder9,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder9/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder10/mha/Q/w,encoder10,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder10/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder10/mha/K/w,encoder10,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder10/mha/K/w/w,589824,True,True,WAIT R1
+/encoder10/mha/V/w,encoder10,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder10/mha/V/w/w,589824,True,True,WAIT R1
+/encoder10/mha/QK/matmul,encoder10,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder10/smolgen/compress,encoder10,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder10/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder10/smolgen/dense1/w,encoder10,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder10/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder10/smolgen/dense2/w,encoder10,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder10/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder10/smolgen/smol_weight_gen,encoder10,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder10/mha/QKV/matmul,encoder10,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder10/mha/out/dense/w,encoder10,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder10/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder10/ffn/dense1/w,encoder10,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder10/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder10/ffn/dense2/w,encoder10,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder10/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder11/mha/Q/w,encoder11,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder11/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder11/mha/K/w,encoder11,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder11/mha/K/w/w,589824,True,True,WAIT R1
+/encoder11/mha/V/w,encoder11,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder11/mha/V/w/w,589824,True,True,WAIT R1
+/encoder11/mha/QK/matmul,encoder11,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder11/smolgen/compress,encoder11,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder11/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder11/smolgen/dense1/w,encoder11,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder11/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder11/smolgen/dense2/w,encoder11,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder11/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder11/smolgen/smol_weight_gen,encoder11,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder11/mha/QKV/matmul,encoder11,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder11/mha/out/dense/w,encoder11,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder11/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder11/ffn/dense1/w,encoder11,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder11/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder11/ffn/dense2/w,encoder11,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder11/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder12/mha/Q/w,encoder12,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder12/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder12/mha/K/w,encoder12,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder12/mha/K/w/w,589824,True,True,WAIT R1
+/encoder12/mha/V/w,encoder12,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder12/mha/V/w/w,589824,True,True,WAIT R1
+/encoder12/mha/QK/matmul,encoder12,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder12/smolgen/compress,encoder12,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder12/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder12/smolgen/dense1/w,encoder12,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder12/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder12/smolgen/dense2/w,encoder12,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder12/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder12/smolgen/smol_weight_gen,encoder12,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder12/mha/QKV/matmul,encoder12,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder12/mha/out/dense/w,encoder12,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder12/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder12/ffn/dense1/w,encoder12,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder12/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder12/ffn/dense2/w,encoder12,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder12/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder13/mha/Q/w,encoder13,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder13/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder13/mha/K/w,encoder13,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder13/mha/K/w/w,589824,True,True,WAIT R1
+/encoder13/mha/V/w,encoder13,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder13/mha/V/w/w,589824,True,True,WAIT R1
+/encoder13/mha/QK/matmul,encoder13,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder13/smolgen/compress,encoder13,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder13/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder13/smolgen/dense1/w,encoder13,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder13/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder13/smolgen/dense2/w,encoder13,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder13/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder13/smolgen/smol_weight_gen,encoder13,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder13/mha/QKV/matmul,encoder13,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder13/mha/out/dense/w,encoder13,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder13/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder13/ffn/dense1/w,encoder13,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder13/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder13/ffn/dense2/w,encoder13,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder13/ffn/dense2/w/w,786432,True,True,WAIT R1
+/encoder14/mha/Q/w,encoder14,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder14/mha/Q/w/w,589824,True,True,WAIT R1
+/encoder14/mha/K/w,encoder14,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder14/mha/K/w/w,589824,True,True,WAIT R1
+/encoder14/mha/V/w,encoder14,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder14/mha/V/w/w,589824,True,True,WAIT R1
+/encoder14/mha/QK/matmul,encoder14,activation_times_activation,"[1, 24, 64, 32]","[1, 24, 32, 64]","[1, 24, 64, 64]",32,3145728,6291456,,0,False,True,WAIT R1
+/encoder14/smolgen/compress,encoder14,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/encoder14/smolgen/compress/w,24576,True,True,WAIT R1
+/encoder14/smolgen/dense1/w,encoder14,activation_times_weight,"[1, 2048]","[2048, 256]","[1, 256]",2048,524288,1048576,/encoder14/smolgen/dense1/w/w,524288,True,True,WAIT R1
+/encoder14/smolgen/dense2/w,encoder14,activation_times_weight,"[1, 256]","[256, 6144]","[1, 6144]",256,1572864,3145728,/encoder14/smolgen/dense2/w/w,1572864,True,True,WAIT R1
+/encoder14/smolgen/smol_weight_gen,encoder14,activation_times_weight,"[1, 24, 256]","[256, 4096]","[1, 24, 4096]",256,25165824,50331648,/const/smolgen_w,1048576,True,True,WAIT R1
+/encoder14/mha/QKV/matmul,encoder14,activation_times_activation,"[1, 24, 64, 64]","[1, 24, 64, 32]","[1, 24, 64, 32]",64,3145728,6291456,,0,False,True,WAIT R1
+/encoder14/mha/out/dense/w,encoder14,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/encoder14/mha/out/dense/w/w,589824,True,True,WAIT R1
+/encoder14/ffn/dense1/w,encoder14,activation_times_weight,"[64, 768]","[768, 1024]","[64, 1024]",768,50331648,100663296,/encoder14/ffn/dense1/w/w,786432,True,True,WAIT R1
+/encoder14/ffn/dense2/w,encoder14,activation_times_weight,"[64, 1024]","[1024, 768]","[64, 768]",1024,50331648,100663296,/encoder14/ffn/dense2/w/w,786432,True,True,WAIT R1
+/policy/dense1/matmul,policy,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/policy/dense1/matmul/w,589824,True,True,WAIT R1
+/policy/Q/matmul,policy,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/policy/Q/matmul/w,589824,True,True,WAIT R1
+/policy/K/matmul,policy,activation_times_weight,"[64, 768]","[768, 768]","[64, 768]",768,37748736,75497472,/policy/K/matmul/w,589824,True,True,WAIT R1
+/policy/matmul,policy,activation_times_activation,"[1, 64, 768]","[1, 768, 64]","[1, 64, 64]",768,3145728,6291456,,0,False,True,WAIT R1
+/policy/promotion/matmul,policy,activation_times_weight,"[1, 8, 768]","[768, 4]","[1, 8, 4]",768,24576,49152,/policy/promotion/matmul/w,3072,True,True,WAIT R1
+/value/embed/matmul,value,activation_times_weight,"[64, 768]","[768, 32]","[64, 32]",768,1572864,3145728,/value/embed/matmul/w,24576,True,True,WAIT R1
+/value/dense1/matmul,value,activation_times_weight,"[1, 2048]","[2048, 128]","[1, 128]",2048,262144,524288,/value/dense1/matmul/w,262144,True,True,WAIT R1
+/value/dense2/matmul,value,activation_times_weight,"[1, 128]","[128, 3]","[1, 3]",128,384,768,/value/dense2/matmul/w,384,True,True,WAIT R1
+/mlh/embed/matmul,mlh,activation_times_weight,"[64, 768]","[768, 8]","[64, 8]",768,393216,786432,/mlh/embed/matmul/w,6144,True,True,WAIT R1
+/mlh/dense1/matmul,mlh,activation_times_weight,"[1, 512]","[512, 128]","[1, 128]",512,65536,131072,/mlh/dense1/matmul/w,65536,True,True,WAIT R1
+/mlh/dense2/matmul,mlh,activation_times_weight,"[1, 128]","[128, 1]","[1, 1]",128,128,256,/mlh/dense2/matmul/w,128,True,True,WAIT R1

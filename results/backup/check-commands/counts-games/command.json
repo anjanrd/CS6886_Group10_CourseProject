@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-c",
+    "from execution.ultimate_backup import audit_observations,audit_games\naudit_observations('data/ultimate','results/reference/observations','results/reference/analysis',r\"C:\\Users\\HP\\Desktop\\LC0\\reports\\ultimate\\backup\\count-audit.json\")\naudit_games('results/reference','results/reference/analysis',r\"C:\\Users\\HP\\Desktop\\LC0\\reports\\ultimate\\backup\\game-audit.json\")\nprint('All compact observations and complete game records reconciled')\n"
+  ],
+  "cwd": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\extracted\\CS6886_Group10_CourseProject",
+  "started_unix": 1793480727.6251054,
+  "pid": 16292,
+  "exit_code": 0,
+  "elapsed_seconds": 10.013668775558472
+}

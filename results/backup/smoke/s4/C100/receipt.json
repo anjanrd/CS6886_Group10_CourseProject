@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "started_unix": 1793480915.7845235,
+  "elapsed_seconds": 5.177110910415649,
+  "awake": {
+    "requested": true,
+    "released": true
+  },
+  "conditions": {
+    "path": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\smoke\\s4\\C100\\conditions.json",
+    "bytes": 434,
+    "sha256": "adb210447cf7dd49d33fc8953079623bcc7e630a8624a9f3c7bb2b2b6e104261"
+  },
+  "output": {
+    "path": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\smoke\\s4\\C100\\output.json",
+    "bytes": 746,
+    "sha256": "c0ebf9f13d178fbb20d000bceeb1db945c69e155be87d5d01427f342412e6bbf"
+  }
+}

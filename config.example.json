@@ -1,0 +1,173 @@
+{
+  "lc0": "C:/declared-native-installation/lc0.exe",
+  "trtexec": "C:/declared-native-installation/trtexec.exe",
+  "nsys": "C:/declared-native-installation/nsys.exe",
+  "syzygy": "C:/declared-native-installation/syzygy",
+  "work": ".",
+  "bt3": "nets/BT3.pb.gz",
+  "best": "s4",
+  "recipe": {
+    "s3_method": "percentile",
+    "s3_percentile": 99.999,
+    "s4_alpha": 0.7
+  },
+  "ultimate": {
+    "version": 1,
+    "seed": 20261030,
+    "encoding": "INPUT_CLASSICAL_112_PLANE",
+    "history": "FEN-only",
+    "halfmove": 0,
+    "syzygy": {
+      "2": 1,
+      "-2": -1,
+      "0/1/-1": 0
+    },
+    "calibration": 512,
+    "development": 3360,
+    "selected": "s4",
+    "recipe": {
+      "percentile": 99.999,
+      "alpha": 0.7
+    },
+    "raw_models": [
+      "fp16",
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s4aa",
+      "s0",
+      "s1sp",
+      "swap_pol8",
+      "swap_val8"
+    ],
+    "search_models": [
+      "fp16",
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s4aa",
+      "s1sp",
+      "swap_pol8",
+      "swap_val8"
+    ],
+    "M": {
+      "n": 6720,
+      "classes": 28,
+      "per_class": 240
+    },
+    "sensitivity_exclusions": [
+      388,
+      611,
+      627,
+      965,
+      1100
+    ],
+    "N": {
+      "n": 24000,
+      "classes": 12,
+      "per_class": 2000,
+      "first_id": 11200,
+      "max_attempts_per_class": 200000,
+      "evaluation_only": true
+    },
+    "challenge": "FP16 raw best not preserving OR printed preserving mass < 0.8",
+    "raw": {
+      "nodes": 1,
+      "Threads": 1,
+      "MinibatchSize": 256,
+      "PolicyTemperature": 1.0
+    },
+    "nodes": {
+      "budgets": [
+        100,
+        400,
+        800,
+        1600
+      ],
+      "Threads": 1,
+      "MinibatchSize": 256,
+      "SmartPruningFactor": 0
+    },
+    "low_nodes": [
+      10,
+      25,
+      50,
+      100,
+      200
+    ],
+    "s0_nodes": [
+      100,
+      400
+    ],
+    "timed": {
+      "budgets_ms": [
+        100,
+        200,
+        400,
+        800
+      ],
+      "MinibatchSize": 256,
+      "MoveOverheadMs": 20,
+      "Threads": "default",
+      "SmartPruningFactor": "default"
+    },
+    "match": {
+      "budgets_ms": [
+        100,
+        200
+      ],
+      "pairs_per_budget": 250,
+      "distinct_openings": 250,
+      "opening_plies": 6,
+      "MinibatchSize": 64,
+      "MoveOverheadMs": 20,
+      "Ponder": false,
+      "Threads": "default",
+      "SmartPruningFactor": "default",
+      "tb_men": 5,
+      "resign_cp": 1000,
+      "draw_cp": 10,
+      "draw_after": 80,
+      "max_plies": 400,
+      "watchdog_seconds": 30,
+      "pair_batch": 5,
+      "pilot_pairs_per_budget": 1,
+      "pilot_mean_median_extra_ms": 10,
+      "pilot_p95_extra_ms": 25,
+      "time_forfeits": false
+    },
+    "statistics": {
+      "primary": [
+        "fp16",
+        "s4"
+      ],
+      "secondary": "other contrasts",
+      "mcnemar": "exact nominal; Holm by study/cohort family",
+      "bootstrap_seed": 20261030,
+      "bootstrap_replicates": 10000,
+      "bootstrap": "material-stratified paired legal-symmetry groups",
+      "matches": "descriptive counts, percentages, score, absolute/pp win margin"
+    },
+    "numeric_gate": {
+      "wl": 0.005,
+      "d": 0.005,
+      "v": 0.005,
+      "m": 0.25,
+      "policy": 0.005,
+      "raw_outcome_changes": 0,
+      "performance_ratio": [
+        0.8,
+        1.2
+      ]
+    },
+    "background_flags_informational": true,
+    "single_GPU": true,
+    "warmup": {
+      "raw_nodes": "imported convention, no extra excluded search",
+      "timed": "one excluded search on first root per engine/budget",
+      "match": "one excluded 2000ms search per resident engine"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+E        _
+E |   _ | |
+E |_ |_ |_| v0.33.0-rc0 built Sep  5 2026
+E Search algorithm: classic
+O id name Lc0 v0.33.0-rc0
+O id author The LCZero Authors.
+O option name LogFile type string default 
+O option name ConfigFile type string default lc0.config
+O option name Ponder type check default false
+O option name SyzygyPath type string default 
+O option name Threads type spin default 0 min 0 max 128
+O option name MinibatchSize type spin default 0 min 0 max 1024
+O option name CPuct type string default 1.745000
+O option name CPuctBase type string default 38739.000000
+O option name CPuctFactor type string default 3.894000
+O option name TwoFoldDraws type check default true
+O option name VerboseMoveStats type check default false
+O option name FpuStrategy type combo default reduction var reduction var absolute
+O option name FpuValue type string default 0.330000
+O option name CacheHistoryLength type spin default 0 min 0 max 7
+O option name MaxCollisionEvents type spin default 917 min 1 max 65536
+O option name MaxCollisionVisits type spin default 80000 min 1 max 100000000
+O option name MaxCollisionVisitsScalingStart type spin default 28 min 1 max 100000
+O option name MaxCollisionVisitsScalingEnd type spin default 145000 min 0 max 100000000
+O option name MaxCollisionVisitsScalingPower type string default 1.250000
+O option name OutOfOrderEval type check default true
+O option name MaxOutOfOrderEvalsFactor type string default 2.400000
+O option name StickyEndgames type check default true
+O option name SyzygyFastPlay type check default false
+O option name MultiPV type spin default 1 min 1 max 500
+O option name PerPVCounters type check default false
+O option name ScoreType type combo default WDL_mu var centipawn var centipawn_with_drawscore var centipawn_2019 var centipawn_2018 var win_percentage var Q var W-L var WDL_mu
+O option name MovesLeftMaxEffect type string default 0.034500
+O option name MovesLeftThreshold type string default 0.800000
+O option name MovesLeftSlope type string default 0.002700
+O option name MovesLeftConstantFactor type string default 0.000000
+O option name MovesLeftScaledFactor type string default 1.652100
+O option name MovesLeftQuadraticFactor type string default -0.652100
+O option name MaxConcurrentSearchers type spin default 1 min 0 max 128
+O option name DrawScore type string default 0.000000
+O option name ContemptMode type combo default play var play var white_side_analysis var black_side_analysis var disable
+O option name Contempt type string default 
+O option name WDLCalibrationElo type string default 0.000000
+O option name WDLEvalObjectivity type string default 1.000000
+O option name WDLDrawRateReference type string default 0.500000
+O option name NodesPerSecondLimit type string default 0.000000
+O option name TaskWorkers type spin default -1 min -1 max 128
+O option name MinimumProcessingWork type spin default 20 min 2 max 100000
+O option name MinimumPickingWork type spin default 1 min 1 max 100000
+O option name MinimumRemainingPickingWork type spin default 20 min 0 max 100000
+O option name MinimumPerTaskProcessing type spin default 8 min 1 max 100000
+O option name IdlingMinimumWork type spin default 0 min 0 max 10000
+O option name ThreadIdlingThreshold type spin default 1 min 0 max 128
+O option name UCI_Opponent type string default 
+O option name UCI_RatingAdv type string default 0.000000
+O option name SearchSpinBackoff type check default false
+O option name GarbageCollectionDelay type string default 10.000000
+O option name MaxPrefetch type spin default 32 min 0 max 1024
+O option name SolidTreeThreshold type spin default 100 min 1 max 2000000000
+O option name SmartPruningFactor type string default 1.330000
+O option name SmartPruningMinimumBatches type spin default 0 min 0 max 10000
+O option name RamLimitMb type spin default 0 min 0 max 100000000
+O option name MoveOverheadMs type spin default 200 min 0 max 100000000
+O option name TimeManager type string default legacy
+O option name UCI_Chess960 type check default false
+O option name UCI_ShowWDL type check default false
+O option name UCI_ShowEPS type check default false
+O option name UCI_ShowMovesLeft type check default false
+O option name PolicyTemperature type string default 1.359000
+O option name HistoryFill type combo default fen_only var no var fen_only var always
+O option name WeightsFile type string default C:\Users\HP\AppData\Local\LC0-BT3-Evaluator\backup-20261031T210343Z\extracted\CS6886_Group10_CourseProject\models\s1.pb.gz
+O option name Backend type combo default onnx-trt var onnx-trt var onnx-dml var onnx-cpu var onnx-cuda var onnx-coreml var trivial var random var check var roundrobin var recordreplay var multiplexing var demux
+O option name BackendOptions type string default optimize=8
+O option name NNCacheSize type spin default 2000000 min 0 max 999999999
+O uciok
+O readyok
+E Loading weights file from: C:\Users\HP\AppData\Local\LC0-BT3-Evaluator\backup-20261031T210343Z\extracted\CS6886_Group10_CourseProject\models\s1.pb.gz
+E CUDA runtime version: 12.9.0
+E Latest version of CUDA supported by the driver: 13.1.0
+E GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+E GPU memory: 7.99561 Gb
+E GPU clock frequency: 2250 MHz
+E GPU device ID: 10de:28a0
+E GPU subsystem ID: 103c:8bcd
+O readyok
+O info depth 1 seldepth 1 time 49 nodes 1 score cp 12800 tbhits 0 pv f7e6
+O info string a1a7  (1600) N:       0 (+ 0) (P:  0.26%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00450) (S:  1.00450) (V:  -.----) 
+O info string a1a8  (1598) N:       0 (+ 0) (P:  0.29%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00503) (S:  1.00503) (V:  -.----) 
+O info string f7g8  (335 ) N:       0 (+ 0) (P:  2.04%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.03566) (S:  1.03566) (V:  -.----) 
+O info string f7g7  (342 ) N:       0 (+ 0) (P:  2.06%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.03603) (S:  1.03603) (V:  -.----) 
+O info string f7g6  (347 ) N:       0 (+ 0) (P:  2.47%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.04319) (S:  1.04319) (V:  -.----) 
+O info string a1h8  (1599) N:       0 (+ 0) (P:  2.58%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.04495) (S:  1.04495) (V:  -.----) 
+O info string a1g7  (1601) N:       0 (+ 0) (P:  2.66%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.04641) (S:  1.04641) (V:  -.----) 
+O info string a1d1  (1616) N:       0 (+ 0) (P:  2.91%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05071) (S:  1.05071) (V:  -.----) 
+O info string f7f8  (334 ) N:       0 (+ 0) (P:  3.19%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05563) (S:  1.05563) (V:  -.----) 
+O info string a1a2  (1611) N:       0 (+ 0) (P:  3.22%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05624) (S:  1.05624) (V:  -.----) 
+O info string a1h1  (1620) N:       0 (+ 0) (P:  3.26%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05693) (S:  1.05693) (V:  -.----) 
+O info string a1g1  (1619) N:       0 (+ 0) (P:  3.27%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05698) (S:  1.05698) (V:  -.----) 
+O info string a1d4  (1607) N:       0 (+ 0) (P:  3.31%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05768) (S:  1.05768) (V:  -.----) 
+O info string a1f1  (1618) N:       0 (+ 0) (P:  3.40%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05941) (S:  1.05941) (V:  -.----) 
+O info string a1f6  (1603) N:       0 (+ 0) (P:  3.41%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05951) (S:  1.05951) (V:  -.----) 
+O info string a1e1  (1617) N:       0 (+ 0) (P:  3.47%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06058) (S:  1.06058) (V:  -.----) 
+O info string a1e5  (1605) N:       0 (+ 0) (P:  3.50%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06114) (S:  1.06114) (V:  -.----) 
+O info string f7f6  (346 ) N:       0 (+ 0) (P:  3.59%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06274) (S:  1.06274) (V:  -.----) 
+O info string a1c3  (1610) N:       0 (+ 0) (P:  3.72%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06489) (S:  1.06489) (V:  -.----) 
+O info string a1c1  (1615) N:       0 (+ 0) (P:  3.76%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06561) (S:  1.06561) (V:  -.----) 
+O info string a1a3  (1608) N:       0 (+ 0) (P:  3.76%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06567) (S:  1.06567) (V:  -.----) 
+O info string a1a6  (1602) N:       0 (+ 0) (P:  3.87%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06750) (S:  1.06750) (V:  -.----) 
+O info string a1a4  (1606) N:       0 (+ 0) (P:  3.90%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06809) (S:  1.06809) (V:  -.----) 
+O info string f7e8  (333 ) N:       0 (+ 0) (P:  4.50%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07861) (S:  1.07861) (V:  -.----) 
+O info string a1b1  (1614) N:       0 (+ 0) (P:  4.77%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08327) (S:  1.08327) (V:  -.----) 
+O info string a1a5  (1604) N:       0 (+ 0) (P:  4.81%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08393) (S:  1.08393) (V:  -.----) 
+O info string a1b2  (1612) N:       0 (+ 0) (P:  5.01%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08747) (S:  1.08747) (V:  -.----) 
+O info string f7e7  (341 ) N:       0 (+ 0) (P:  5.89%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.10270) (S:  1.10270) (V:  -.----) 
+O info string f7e6  (345 ) N:       0 (+ 0) (P:  7.11%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.12403) (S:  1.12403) (V:  -.----) 
+O info string node  (  29) N:       1 (+ 0) (P:  0.00%) (WL:  1.00000) (D: 0.000) (M: 19.2) (Q:  1.00000) (V:  1.0000) 
+O bestmove f7e6
+O readyok
+O info depth 1 seldepth 1 time 5 nodes 1 score cp 12800 tbhits 0 pv g7g5
+O info string g7e5  (1555) N:       0 (+ 0) (P:  0.29%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00500) (S:  1.00500) (V:  -.----) 
+O info string g7e7  (1567) N:       0 (+ 0) (P:  0.30%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00523) (S:  1.00523) (V:  -.----) 
+O info string g7d7  (1566) N:       0 (+ 0) (P:  0.30%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00527) (S:  1.00527) (V:  -.----) 
+O info string g7h6  (1562) N:       0 (+ 0) (P:  3.07%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05350) (S:  1.05350) (V:  -.----) 
+O info string g7g2  (1550) N:       0 (+ 0) (P:  3.12%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05452) (S:  1.05452) (V:  -.----) 
+O info string g7a7  (1563) N:       0 (+ 0) (P:  3.26%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05685) (S:  1.05685) (V:  -.----) 
+O info string g7g8  (1572) N:       0 (+ 0) (P:  3.32%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05800) (S:  1.05800) (V:  -.----) 
+O info string g7b7  (1564) N:       0 (+ 0) (P:  3.33%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05805) (S:  1.05805) (V:  -.----) 
+O info string g7h7  (1569) N:       0 (+ 0) (P:  3.34%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05824) (S:  1.05824) (V:  -.----) 
+O info string g7f8  (1571) N:       0 (+ 0) (P:  3.45%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06021) (S:  1.06021) (V:  -.----) 
+O info string b8a8  (1638) N:       0 (+ 0) (P:  3.59%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06258) (S:  1.06258) (V:  -.----) 
+O info string g7g1  (1548) N:       0 (+ 0) (P:  3.67%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06396) (S:  1.06396) (V:  -.----) 
+O info string g7f7  (1568) N:       0 (+ 0) (P:  3.71%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06481) (S:  1.06481) (V:  -.----) 
+O info string g7g4  (1554) N:       0 (+ 0) (P:  3.90%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06801) (S:  1.06801) (V:  -.----) 
+O info string g7g6  (1561) N:       0 (+ 0) (P:  3.93%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06851) (S:  1.06851) (V:  -.----) 
+O info string g7g3  (1552) N:       0 (+ 0) (P:  4.07%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07096) (S:  1.07096) (V:  -.----) 
+O info string g7c7  (1565) N:       0 (+ 0) (P:  4.09%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07131) (S:  1.07131) (V:  -.----) 
+O info string g7a1  (1547) N:       0 (+ 0) (P:  4.14%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07216) (S:  1.07216) (V:  -.----) 
+O info string g7b2  (1549) N:       0 (+ 0) (P:  4.17%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07283) (S:  1.07283) (V:  -.----) 
+O info string b8a7  (1634) N:       0 (+ 0) (P:  4.20%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07328) (S:  1.07328) (V:  -.----) 
+O info string g7h8  (1573) N:       0 (+ 0) (P:  4.27%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07453) (S:  1.07453) (V:  -.----) 
+O info string b8c8  (1639) N:       0 (+ 0) (P:  4.31%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07514) (S:  1.07514) (V:  -.----) 
+O info string g7c3  (1551) N:       0 (+ 0) (P:  4.31%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07525) (S:  1.07525) (V:  -.----) 
+O info string g7f6  (1560) N:       0 (+ 0) (P:  4.37%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.07632) (S:  1.07632) (V:  -.----) 
+O info string b8b7  (1635) N:       0 (+ 0) (P:  4.84%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08444) (S:  1.08444) (V:  -.----) 
+O info string g7d4  (1553) N:       0 (+ 0) (P:  5.95%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.10385) (S:  1.10385) (V:  -.----) 
+O info string g7g5  (1557) N:       0 (+ 0) (P:  8.73%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.15231) (S:  1.15231) (V:  -.----) 
+O info string node  (  27) N:       1 (+ 0) (P:  0.00%) (WL:  1.00000) (D: 0.000) (M: 21.8) (Q:  1.00000) (V:  1.0000) 
+O bestmove g7g5
+O readyok
+O info depth 1 seldepth 1 time 5 nodes 1 score cp 12797 tbhits 0 pv c5c6
+O info string f7c7  (339 ) N:       0 (+ 0) (P:  0.24%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00416) (S:  1.00416) (V:  -.----) 
+O info string f7b7  (338 ) N:       0 (+ 0) (P:  0.25%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00437) (S:  1.00437) (V:  -.----) 
+O info string f7a7  (337 ) N:       0 (+ 0) (P:  0.25%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.00442) (S:  1.00442) (V:  -.----) 
+O info string f7f8  (334 ) N:       0 (+ 0) (P:  2.88%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05018) (S:  1.05018) (V:  -.----) 
+O info string c5d4  (728 ) N:       0 (+ 0) (P:  3.10%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05416) (S:  1.05416) (V:  -.----) 
+O info string c5b4  (726 ) N:       0 (+ 0) (P:  3.40%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.05938) (S:  1.05938) (V:  -.----) 
+O info string c5c4  (727 ) N:       0 (+ 0) (P:  3.65%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06367) (S:  1.06367) (V:  -.----) 
+O info string f7f1  (360 ) N:       0 (+ 0) (P:  3.70%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06449) (S:  1.06449) (V:  -.----) 
+O info string f7f2  (359 ) N:       0 (+ 0) (P:  3.76%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06569) (S:  1.06569) (V:  -.----) 
+O info string f7f3  (357 ) N:       0 (+ 0) (P:  3.77%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06574) (S:  1.06574) (V:  -.----) 
+O info string f7f6  (346 ) N:       0 (+ 0) (P:  3.96%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.06915) (S:  1.06915) (V:  -.----) 
+O info string f7f4  (355 ) N:       0 (+ 0) (P:  4.63%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08087) (S:  1.08087) (V:  -.----) 
+O info string f7f5  (351 ) N:       0 (+ 0) (P:  4.72%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08233) (S:  1.08233) (V:  -.----) 
+O info string f7e7  (341 ) N:       0 (+ 0) (P:  4.93%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.08604) (S:  1.08604) (V:  -.----) 
+O info string f7g7  (342 ) N:       0 (+ 0) (P:  5.19%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.09054) (S:  1.09054) (V:  -.----) 
+O info string f7h7  (343 ) N:       0 (+ 0) (P:  5.26%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.09184) (S:  1.09184) (V:  -.----) 
+O info string c5b5  (719 ) N:       0 (+ 0) (P:  5.99%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.10452) (S:  1.10452) (V:  -.----) 
+O info string f7d7  (340 ) N:       0 (+ 0) (P:  6.28%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.10965) (S:  1.10965) (V:  -.----) 
+O info string c5d5  (720 ) N:       0 (+ 0) (P:  6.45%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.11258) (S:  1.11258) (V:  -.----) 
+O info string c5d6  (716 ) N:       0 (+ 0) (P:  6.73%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.11738) (S:  1.11738) (V:  -.----) 
+O info string c5b6  (714 ) N:       0 (+ 0) (P:  7.35%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.12829) (S:  1.12829) (V:  -.----) 
+O info string c5c6  (715 ) N:       0 (+ 0) (P: 13.50%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  1.00000) (U: 0.23561) (S:  1.23561) (V:  -.----) 
+O info string node  (  22) N:       1 (+ 0) (P:  0.00%) (WL:  1.00000) (D: 0.000) (M: 10.1) (Q:  1.00000) (V:  1.0000) 
+O bestmove c5c6
+O readyok
+O info depth 1 seldepth 1 time 4 nodes 1 score cp 0 tbhits 0 pv f6f5
+O info string f6e7  (571 ) N:       0 (+ 0) (P:  0.53%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  0.00002) (U: 0.00924) (S:  0.00925) (V:  -.----) 
+O info string f6g7  (573 ) N:       0 (+ 0) (P:  0.55%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  0.00002) (U: 0.00967) (S:  0.00969) (V:  -.----) 
+O info string f6g6  (580 ) N:       0 (+ 0) (P:  0.58%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  0.00002) (U: 0.01012) (S:  0.01014) (V:  -.----) 
+O info string f6e6  (579 ) N:       0 (+ 0) (P:  0.60%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  0.00002) (U: 0.01044) (S:  0.01046) (V:  -.----) 
+O info string f6f5  (584 ) N:       0 (+ 0) (P: 97.73%) (WL:  -.-----) (D: -.---) (M:  -.-) (Q:  0.00002) (U: 1.70548) (S:  1.70550) (V:  -.----) 
+O info string node  (   5) N:       1 (+ 0) (P:  0.00%) (WL:  0.00002) (D: 1.000) (M:  3.7) (Q:  0.00002) (V:  0.0000) 
+O bestmove f6f5

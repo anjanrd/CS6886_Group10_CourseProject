@@ -1,0 +1,31 @@
+{
+  "model": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\models\\s1sp.onnx",
+    "bytes": 105829506,
+    "sha256": "6cee555e1c6199bf2960e6862ffe24c45d346fe88ad4321277a6da055dce348a"
+  },
+  "engine": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s1sp-sparse\\attempt-001\\work\\build_b256.engine",
+    "bytes": 79734412,
+    "sha256": "d08d71d17b55b1033fd74855e05c87f6eaabfa8b436cdee76cf48c9155ef2cd6"
+  },
+  "int8_permission": true,
+  "sparse_permission": true,
+  "profiles": {
+    "256": {
+      "layers": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s1sp-sparse\\attempt-001\\work\\build_b256_layers.json",
+        "bytes": 279299,
+        "sha256": "ad792d9825f6e563cc81023eb45c4d86b1844654141215c199a145481c1de6a7"
+      },
+      "profile": {
+        "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\profile-s1sp-sparse\\attempt-001\\work\\build_b256_profile.json",
+        "bytes": 58307,
+        "sha256": "6a3bd3f1d41bfb05707247d809031c310cc4b450c62f75eea38216a3dfc48bdd"
+      }
+    }
+  },
+  "same_engine_both_batches": false,
+  "layer_norm_constraint": "prefer FP32 by name glob",
+  "scope": "Standalone TensorRT profiles; inspect actual formats/tactics. Not asserted identical to lc0/ORT partitioning."
+}

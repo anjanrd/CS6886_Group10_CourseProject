@@ -1,0 +1,218 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v101200] [b36] # C:\Users\HP\Desktop\LC0\.runtime\tools\TensorRT-10.12.0.36\bin\trtexec.exe --onnx=C:\Users\HP\Desktop\LC0\models\s0.onnx --fp16 --builderOptimizationLevel=5 --minShapes=/input/planes:4x112x8x8 --optShapes=/input/planes:256x112x8x8 --maxShapes=/input/planes:1024x112x8x8 --shapes=/input/planes:256x112x8x8 --profilingVerbosity=detailed --exportLayerInfo=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_layers.json --exportProfile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_profile.json --exportTimes=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_times.json --separateProfileRun --saveEngine=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256.engine --timingCacheFile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache --useCudaGraph --noDataTransfers --int8 --sparsity=enable --layerPrecisions=*/ln*:fp32 --precisionConstraints=prefer
+[10/30/2026-11:30:33] [I] === Model Options ===
+[10/30/2026-11:30:33] [I] Format: ONNX
+[10/30/2026-11:30:33] [I] Model: C:\Users\HP\Desktop\LC0\models\s0.onnx
+[10/30/2026-11:30:33] [I] Output:
+[10/30/2026-11:30:33] [I] === Build Options ===
+[10/30/2026-11:30:33] [I] Memory Pools: workspace: default, dlaSRAM: default, dlaLocalDRAM: default, dlaGlobalDRAM: default, tacticSharedMem: default
+[10/30/2026-11:30:33] [I] avgTiming: 8
+[10/30/2026-11:30:33] [I] Precision: FP32+FP16+INT8 (prefer precision constraints)
+[10/30/2026-11:30:33] [I] LayerPrecisions: */ln*:fp32
+[10/30/2026-11:30:33] [I] Layer Device Types: 
+[10/30/2026-11:30:33] [I] Calibration: Dynamic
+[10/30/2026-11:30:33] [I] Refit: Disabled
+[10/30/2026-11:30:33] [I] Strip weights: Disabled
+[10/30/2026-11:30:33] [I] Version Compatible: Disabled
+[10/30/2026-11:30:33] [I] ONNX Plugin InstanceNorm: Disabled
+[10/30/2026-11:30:33] [I] ONNX kENABLE_UINT8_AND_ASYMMETRIC_QUANTIZATION_DLA flag: Disabled
+[10/30/2026-11:30:33] [I] TensorRT runtime: full
+[10/30/2026-11:30:33] [I] Lean DLL Path: 
+[10/30/2026-11:30:33] [I] Tempfile Controls: { in_memory: allow, temporary: allow }
+[10/30/2026-11:30:33] [I] Exclude Lean Runtime: Disabled
+[10/30/2026-11:30:33] [I] Sparsity: Enabled
+[10/30/2026-11:30:33] [I] Safe mode: Disabled
+[10/30/2026-11:30:33] [I] Build DLA standalone loadable: Disabled
+[10/30/2026-11:30:33] [I] Allow GPU fallback for DLA: Disabled
+[10/30/2026-11:30:33] [I] DirectIO mode: Disabled
+[10/30/2026-11:30:33] [I] Restricted mode: Disabled
+[10/30/2026-11:30:33] [I] Skip inference: Disabled
+[10/30/2026-11:30:33] [I] Save engine: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256.engine
+[10/30/2026-11:30:33] [I] Load engine: 
+[10/30/2026-11:30:33] [I] Profiling verbosity: 2
+[10/30/2026-11:30:33] [I] Tactic sources: Using default tactic sources
+[10/30/2026-11:30:33] [I] timingCacheMode: global
+[10/30/2026-11:30:33] [I] timingCacheFile: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache
+[10/30/2026-11:30:33] [I] Enable Compilation Cache: Enabled
+[10/30/2026-11:30:33] [I] Enable Monitor Memory: Disabled
+[10/30/2026-11:30:33] [I] errorOnTimingCacheMiss: Disabled
+[10/30/2026-11:30:33] [I] Preview Features: Use default preview flags.
+[10/30/2026-11:30:33] [I] MaxAuxStreams: -1
+[10/30/2026-11:30:33] [I] BuilderOptimizationLevel: 5
+[10/30/2026-11:30:33] [I] MaxTactics: -1
+[10/30/2026-11:30:33] [I] Calibration Profile Index: 0
+[10/30/2026-11:30:33] [I] Weight Streaming: Disabled
+[10/30/2026-11:30:33] [I] Runtime Platform: Same As Build
+[10/30/2026-11:30:33] [I] Debug Tensors: 
+[10/30/2026-11:30:33] [I] Distributive Independence: Disabled
+[10/30/2026-11:30:33] [I] Mark Unfused Tensors As Debug Tensors: Disabled
+[10/30/2026-11:30:33] [I] Input(s)s format: fp32:CHW
+[10/30/2026-11:30:33] [I] Output(s)s format: fp32:CHW
+[10/30/2026-11:30:33] [I] Input build shape (profile 0): /input/planes=4x112x8x8+256x112x8x8+1024x112x8x8
+[10/30/2026-11:30:33] [I] Input calibration shapes: model
+[10/30/2026-11:30:33] [I] === System Options ===
+[10/30/2026-11:30:33] [I] Device: 0
+[10/30/2026-11:30:33] [I] DLACore: 
+[10/30/2026-11:30:33] [I] Plugins:
+[10/30/2026-11:30:33] [I] setPluginsToSerialize:
+[10/30/2026-11:30:33] [I] dynamicPlugins:
+[10/30/2026-11:30:33] [I] ignoreParsedPluginLibs: 0
+[10/30/2026-11:30:33] [I] 
+[10/30/2026-11:30:33] [I] === Inference Options ===
+[10/30/2026-11:30:33] [I] Batch: Explicit
+[10/30/2026-11:30:33] [I] Input inference shape : /input/planes=256x112x8x8
+[10/30/2026-11:30:33] [I] Iterations: 10
+[10/30/2026-11:30:33] [I] Duration: 3s (+ 200ms warm up)
+[10/30/2026-11:30:33] [I] Sleep time: 0ms
+[10/30/2026-11:30:33] [I] Idle time: 0ms
+[10/30/2026-11:30:33] [I] Inference Streams: 1
+[10/30/2026-11:30:33] [I] ExposeDMA: Disabled
+[10/30/2026-11:30:33] [I] Data transfers: Disabled
+[10/30/2026-11:30:33] [I] Spin-wait: Disabled
+[10/30/2026-11:30:33] [I] Multithreading: Disabled
+[10/30/2026-11:30:33] [I] CUDA Graph: Enabled
+[10/30/2026-11:30:33] [I] Separate profiling: Enabled
+[10/30/2026-11:30:33] [I] Time Deserialize: Disabled
+[10/30/2026-11:30:33] [I] Time Refit: Disabled
+[10/30/2026-11:30:33] [I] NVTX verbosity: 2
+[10/30/2026-11:30:33] [I] Persistent Cache Ratio: 0
+[10/30/2026-11:30:33] [I] Optimization Profile Index: 0
+[10/30/2026-11:30:33] [I] Weight Streaming Budget: 100.000000%
+[10/30/2026-11:30:33] [I] Inputs:
+[10/30/2026-11:30:33] [I] Debug Tensor Save Destinations:
+[10/30/2026-11:30:33] [I] Dump All Debug Tensor in Formats: 
+[10/30/2026-11:30:33] [I] === Reporting Options ===
+[10/30/2026-11:30:33] [I] Verbose: Disabled
+[10/30/2026-11:30:33] [I] Averages: 10 inferences
+[10/30/2026-11:30:33] [I] Percentiles: 90,95,99
+[10/30/2026-11:30:33] [I] Dump refittable layers:Disabled
+[10/30/2026-11:30:33] [I] Dump output: Disabled
+[10/30/2026-11:30:33] [I] Profile: Disabled
+[10/30/2026-11:30:33] [I] Export timing to JSON file: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_times.json
+[10/30/2026-11:30:33] [I] Export output to JSON file: 
+[10/30/2026-11:30:33] [I] Export profile to JSON file: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_profile.json
+[10/30/2026-11:30:33] [I] 
+[10/30/2026-11:30:33] [I] === Device Information ===
+[10/30/2026-11:30:33] [I] Available Devices: 
+[10/30/2026-11:30:33] [I]   Device 0: "NVIDIA GeForce RTX 4060 Laptop GPU" UUID: GPU-020e5950-8d4c-173a-fa0e-a2c9b981160d
+[10/30/2026-11:30:33] [I] Selected Device: NVIDIA GeForce RTX 4060 Laptop GPU
+[10/30/2026-11:30:33] [I] Selected Device ID: 0
+[10/30/2026-11:30:33] [I] Selected Device UUID: GPU-020e5950-8d4c-173a-fa0e-a2c9b981160d
+[10/30/2026-11:30:33] [I] Compute Capability: 8.9
+[10/30/2026-11:30:33] [I] SMs: 24
+[10/30/2026-11:30:33] [I] Device Global Memory: 8187 MiB
+[10/30/2026-11:30:33] [I] Shared Memory per SM: 100 KiB
+[10/30/2026-11:30:33] [I] Memory Bus Width: 128 bits (ECC disabled)
+[10/30/2026-11:30:33] [I] Application Compute Clock Rate: 2.25 GHz
+[10/30/2026-11:30:33] [I] Application Memory Clock Rate: 8.001 GHz
+[10/30/2026-11:30:33] [I] 
+[10/30/2026-11:30:33] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[10/30/2026-11:30:33] [I] 
+[10/30/2026-11:30:33] [I] TensorRT version: 10.12.0
+[10/30/2026-11:30:33] [I] Loading standard plugins
+[10/30/2026-11:30:33] [I] [TRT] [MemUsageChange] Init CUDA: CPU +2, GPU +0, now: CPU 11408, GPU 1091 (MiB)
+[10/30/2026-11:30:35] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +2661, GPU +8, now: CPU 14442, GPU 1099 (MiB)
+[10/30/2026-11:30:35] [I] Start parsing network model.
+[10/30/2026-11:30:35] [I] [TRT] ----------------------------------------------------------------
+[10/30/2026-11:30:35] [I] [TRT] Input filename:   C:\Users\HP\Desktop\LC0\models\s0.onnx
+[10/30/2026-11:30:35] [I] [TRT] ONNX IR version:  0.0.8
+[10/30/2026-11:30:35] [I] [TRT] Opset version:    17
+[10/30/2026-11:30:35] [I] [TRT] Producer name:    onnx.quantize
+[10/30/2026-11:30:35] [I] [TRT] Producer version: 0.1.0
+[10/30/2026-11:30:35] [I] [TRT] Domain:           org.lczero.models.*
+[10/30/2026-11:30:35] [I] [TRT] Model version:    0
+[10/30/2026-11:30:35] [I] [TRT] Doc string:       
+[10/30/2026-11:30:35] [I] [TRT] ----------------------------------------------------------------
+[10/30/2026-11:30:35] [I] Finished parsing network model. Parse time: 0.167687
+[10/30/2026-11:30:35] [I] Set shape of input tensor /input/planes for optimization profile 0 to: MIN=4x112x8x8 OPT=256x112x8x8 MAX=1024x112x8x8
+[10/30/2026-11:30:36] [W] [TRT] Could not read timing cache from: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache. A new timing cache will be generated and written.
+[10/30/2026-11:30:36] [W] [TRT] Calibrator won't be used in explicit quantization mode. Please insert Quantize/Dequantize layers to indicate which tensors to quantize/dequantize.
+[10/30/2026-11:30:39] [I] [TRT] Global timing cache in use. Profiling results in this builder pass will be stored.
+[10/30/2026-11:30:43] [I] [TRT] Compiler backend is used during engine build.
+[10/30/2026-11:34:31] [I] [TRT] Detected 1 inputs and 3 output network tensors.
+[10/30/2026-11:34:39] [I] [TRT] Total Host Persistent Memory: 181392 bytes
+[10/30/2026-11:34:39] [I] [TRT] Total Device Persistent Memory: 0 bytes
+[10/30/2026-11:34:39] [I] [TRT] Max Scratch Memory: 318767104 bytes
+[10/30/2026-11:34:39] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 1094 steps to complete.
+[10/30/2026-11:34:39] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 81.068ms to assign 13 blocks to 1094 nodes requiring 1151339520 bytes.
+[10/30/2026-11:34:39] [I] [TRT] Total Activation Memory: 1151338496 bytes
+[10/30/2026-11:34:39] [I] [TRT] Total Weights Memory: 134100232 bytes
+[10/30/2026-11:34:40] [I] [TRT] Compiler backend is used during engine execution.
+[10/30/2026-11:34:40] [I] [TRT] Engine generation completed in 240.789 seconds.
+[10/30/2026-11:34:40] [I] [TRT] [MS] Running engine with multi stream info
+[10/30/2026-11:34:40] [I] [TRT] [MS] Number of aux streams is 2
+[10/30/2026-11:34:40] [I] [TRT] [MS] Number of total worker streams is 3
+[10/30/2026-11:34:40] [I] [TRT] [MS] The main stream provided by execute/enqueue calls is the first worker stream
+[10/30/2026-11:34:41] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +1098, now: CPU 0, GPU 1226 (MiB)
+[10/30/2026-11:34:44] [I] [TRT] Global timing cache in use. Profiling results in this builder pass will be stored.
+[10/30/2026-11:34:44] [I] [TRT] Compiler backend is used during engine build.
+[10/30/2026-11:35:17] [I] [TRT] Detected 1 inputs and 3 output network tensors.
+[10/30/2026-11:35:18] [I] [TRT] Total Host Persistent Memory: 80 bytes
+[10/30/2026-11:35:18] [I] [TRT] Total Device Persistent Memory: 0 bytes
+[10/30/2026-11:35:18] [I] [TRT] Max Scratch Memory: 805306368 bytes
+[10/30/2026-11:35:18] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 5 steps to complete.
+[10/30/2026-11:35:18] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 0.0217ms to assign 5 blocks to 5 nodes requiring 819995136 bytes.
+[10/30/2026-11:35:18] [I] [TRT] Total Activation Memory: 819994624 bytes
+[10/30/2026-11:35:18] [I] [TRT] Total Weights Memory: 73877252 bytes
+[10/30/2026-11:35:18] [I] [TRT] Compiler backend is used during engine execution.
+[10/30/2026-11:35:18] [I] [TRT] Engine generation completed in 34.1126 seconds.
+[10/30/2026-11:35:18] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +782, now: CPU 0, GPU 982 (MiB)
+[10/30/2026-11:35:19] [I] [TRT] Global timing cache in use. Profiling results in this builder pass will be stored.
+[10/30/2026-11:35:19] [I] [TRT] Compiler backend is used during engine build.
+[10/30/2026-11:35:35] [I] [TRT] Detected 1 inputs and 3 output network tensors.
+[10/30/2026-11:35:36] [I] [TRT] Total Host Persistent Memory: 80 bytes
+[10/30/2026-11:35:36] [I] [TRT] Total Device Persistent Memory: 0 bytes
+[10/30/2026-11:35:36] [I] [TRT] Max Scratch Memory: 855638016 bytes
+[10/30/2026-11:35:36] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 5 steps to complete.
+[10/30/2026-11:35:36] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 0.0237ms to assign 5 blocks to 5 nodes requiring 870326784 bytes.
+[10/30/2026-11:35:36] [I] [TRT] Total Activation Memory: 870326272 bytes
+[10/30/2026-11:35:36] [I] [TRT] Total Weights Memory: 73310980 bytes
+[10/30/2026-11:35:36] [I] [TRT] Compiler backend is used during engine execution.
+[10/30/2026-11:35:36] [I] [TRT] Engine generation completed in 17.1808 seconds.
+[10/30/2026-11:35:36] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +830, now: CPU 0, GPU 972 (MiB)
+[10/30/2026-11:35:37] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 1 MiB, GPU 1537 MiB
+[10/30/2026-11:35:37] [I] Engine built in 301.401 sec.
+[10/30/2026-11:35:37] [I] Created engine with size: 76.1759 MiB
+[10/30/2026-11:35:37] [W] [TRT] Could not read timing cache from: C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache. A new timing cache will be generated and written.
+[10/30/2026-11:35:37] [I] [TRT] Serialized 7545 bytes of code generator cache.
+[10/30/2026-11:35:37] [I] [TRT] Serialized 8178311 bytes of compilation cache.
+[10/30/2026-11:35:37] [I] [TRT] Serialized 1848 timing cache entries
+[10/30/2026-11:35:37] [I] [TRT] Saved 8378216 bytes of timing cache to C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache
+[10/30/2026-11:35:42] [I] [TRT] Loaded engine size: 76 MiB
+[10/30/2026-11:35:42] [I] Engine deserialized in 0.116528 sec.
+[10/30/2026-11:35:42] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +782, now: CPU 0, GPU 852 (MiB)
+[10/30/2026-11:35:42] [I] Setting persistentCacheLimit to 0 bytes.
+[10/30/2026-11:35:42] [I] Set shape of input tensor /input/planes to: 256x112x8x8
+[10/30/2026-11:35:42] [I] Created execution context with device memory size: 782.008 MiB
+[10/30/2026-11:35:42] [I] Using random values for input /input/planes
+[10/30/2026-11:35:42] [I] Input binding for /input/planes with dimensions 256x112x8x8 is created.
+[10/30/2026-11:35:42] [I] Output binding for /output/policy with dimensions 256x1858 is created.
+[10/30/2026-11:35:42] [I] Output binding for /output/wdl with dimensions 256x3 is created.
+[10/30/2026-11:35:42] [I] Output binding for /output/mlh with dimensions 256x1 is created.
+[10/30/2026-11:35:42] [I] Starting inference
+[10/30/2026-11:35:42] [I] Capturing CUDA graph for the current execution context
+[10/30/2026-11:35:42] [I] Successfully captured CUDA graph for the current execution context
+[10/30/2026-11:35:45] [I] Warmup completed 3 queries over 200 ms
+[10/30/2026-11:35:45] [I] Timing trace has 57 queries over 3.06762 s
+[10/30/2026-11:35:45] [I] 
+[10/30/2026-11:35:45] [I] === Trace details ===
+[10/30/2026-11:35:45] [I] Trace averages of 10 runs:
+[10/30/2026-11:35:45] [I] Average on 10 runs - GPU latency: 54.0953 ms - Host latency: 54.0953 ms (enqueue 0.123395 ms)
+[10/30/2026-11:35:45] [I] Average on 10 runs - GPU latency: 53.7493 ms - Host latency: 53.7493 ms (enqueue 0.113416 ms)
+[10/30/2026-11:35:45] [I] Average on 10 runs - GPU latency: 53.7468 ms - Host latency: 53.7468 ms (enqueue 0.137964 ms)
+[10/30/2026-11:35:45] [I] Average on 10 runs - GPU latency: 53.7591 ms - Host latency: 53.7591 ms (enqueue 0.121228 ms)
+[10/30/2026-11:35:45] [I] Average on 10 runs - GPU latency: 53.7702 ms - Host latency: 53.7702 ms (enqueue 0.113696 ms)
+[10/30/2026-11:35:45] [I] 
+[10/30/2026-11:35:45] [I] === Performance summary ===
+[10/30/2026-11:35:45] [I] Throughput: 18.5812 qps
+[10/30/2026-11:35:45] [I] Latency: min = 53.7047 ms, max = 55.7998 ms, mean = 53.8161 ms, median = 53.7568 ms, percentile(90%) = 53.7837 ms, percentile(95%) = 53.7897 ms, percentile(99%) = 55.7998 ms
+[10/30/2026-11:35:45] [I] Enqueue Time: min = 0.0802002 ms, max = 0.174927 ms, mean = 0.121309 ms, median = 0.114746 ms, percentile(90%) = 0.1604 ms, percentile(95%) = 0.163086 ms, percentile(99%) = 0.174927 ms
+[10/30/2026-11:35:45] [I] H2D Latency: min = 0 ms, max = 0 ms, mean = 0 ms, median = 0 ms, percentile(90%) = 0 ms, percentile(95%) = 0 ms, percentile(99%) = 0 ms
+[10/30/2026-11:35:45] [I] GPU Compute Time: min = 53.7047 ms, max = 55.7998 ms, mean = 53.8161 ms, median = 53.7568 ms, percentile(90%) = 53.7837 ms, percentile(95%) = 53.7897 ms, percentile(99%) = 55.7998 ms
+[10/30/2026-11:35:45] [I] D2H Latency: min = 0 ms, max = 0 ms, mean = 0 ms, median = 0 ms, percentile(90%) = 0 ms, percentile(95%) = 0 ms, percentile(99%) = 0 ms
+[10/30/2026-11:35:45] [I] Total Host Walltime: 3.06762 s
+[10/30/2026-11:35:45] [I] Total GPU Compute Time: 3.06752 s
+[10/30/2026-11:35:45] [I] Explanations of the performance metrics are printed in the verbose logs.
+[10/30/2026-11:35:45] [I] 
+[10/30/2026-11:35:45] [I] Capturing CUDA graph for the current execution context
+[10/30/2026-11:35:45] [I] Successfully captured CUDA graph for the current execution context
+&&&& PASSED TensorRT.trtexec [TensorRT v101200] [b36] # C:\Users\HP\Desktop\LC0\.runtime\tools\TensorRT-10.12.0.36\bin\trtexec.exe --onnx=C:\Users\HP\Desktop\LC0\models\s0.onnx --fp16 --builderOptimizationLevel=5 --minShapes=/input/planes:4x112x8x8 --optShapes=/input/planes:256x112x8x8 --maxShapes=/input/planes:1024x112x8x8 --shapes=/input/planes:256x112x8x8 --profilingVerbosity=detailed --exportLayerInfo=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_layers.json --exportProfile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_profile.json --exportTimes=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256_times.json --separateProfileRun --saveEngine=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\build_b256.engine --timingCacheFile=C:\Users\HP\Desktop\LC0\reports\takeover\run2\profile-s0-sparse\attempt-001\work\timing.cache --useCudaGraph --noDataTransfers --int8 --sparsity=enable --layerPrecisions=*/ln*:fp32 --precisionConstraints=prefer

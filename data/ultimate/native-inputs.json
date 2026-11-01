@@ -1,0 +1,115 @@
+{
+  "tested_paths": {
+    "lc0": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\lc0.exe",
+    "trtexec": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\TensorRT-10.12.0.36\\bin\\trtexec.exe",
+    "nsys": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\nsys\\nsight_systems-windows-x86_64-2025.1.3.140-archive\\nsight-systems\\2025.1.3\\target-windows-x64\\nsys.exe",
+    "syzygy": "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\syzygy"
+  },
+  "files": [
+    {
+      "path": ".runtime/tools/lc0/lc0.exe",
+      "bytes": 1796096,
+      "sha256": "3a437bdcb353fc264df317b9308ba589d29294695521909b459fbb72e918af50"
+    },
+    {
+      "path": ".runtime/tools/TensorRT-10.12.0.36/bin/trtexec.exe",
+      "bytes": 1066016,
+      "sha256": "3365b7638aa9046ac19fe9fe917d092d69561368f2ee3d045f8da86e000caf93"
+    },
+    {
+      "path": ".runtime/tools/nsys/nsight_systems-windows-x86_64-2025.1.3.140-archive/nsight-systems/2025.1.3/target-windows-x64/nsys.exe",
+      "bytes": 46842432,
+      "sha256": "e6111cf28f0e001caded782c4bc189ec58dc6cb75c7923fa5606eb3bd550e825"
+    }
+  ],
+  "lc0_dependencies": [
+    {
+      "path": ".runtime/tools/lc0/cublas64_12.dll",
+      "bytes": 102518272,
+      "sha256": "90052a83efd1b57a8e3616a6590b335855f81b814a4f16eecb7b5bf6d1b1d4eb"
+    },
+    {
+      "path": ".runtime/tools/lc0/cublasLt64_12.dll",
+      "bytes": 668669952,
+      "sha256": "c3a05ea244c937314afec09f87b91f814c7e27977681f6c67eb51bb06ced3a4a"
+    },
+    {
+      "path": ".runtime/tools/lc0/cudart64_12.dll",
+      "bytes": 583680,
+      "sha256": "760c38928bbe5759f7b31ed6692599eb7ec83cedd5702e84c2b72028a89837e1"
+    },
+    {
+      "path": ".runtime/tools/lc0/cudnn64_9.dll",
+      "bytes": 266352,
+      "sha256": "98461c2e24270b75c6d4767ff469c244d7f7c91cb3d9c9ac76d497510d7d9c5f"
+    },
+    {
+      "path": ".runtime/tools/lc0/cudnn_graph64_9.dll",
+      "bytes": 2441248,
+      "sha256": "41f57d2b475bbe5bd10095c9529bbd58711c71cca984bf13bfe813ee89d9b949"
+    },
+    {
+      "path": ".runtime/tools/lc0/cufft64_11.dll",
+      "bytes": 287136768,
+      "sha256": "5b90655ca9cdf5d91cbdf2c72b995ec937eed0aef2d6954370c711b45c929b35"
+    },
+    {
+      "path": ".runtime/tools/lc0/mimalloc-override.dll",
+      "bytes": 108032,
+      "sha256": "c3538d9e1804c6d9a8780360f3d68e062d6151166fbfb65c4cdd76004fc40bb3"
+    },
+    {
+      "path": ".runtime/tools/lc0/mimalloc-redirect.dll",
+      "bytes": 68096,
+      "sha256": "63dc4f158fd76940ec018b42f83d92d8ceec70043b1ac2a8455fb0d67e1feebf"
+    },
+    {
+      "path": ".runtime/tools/lc0/nvinfer_10.dll",
+      "bytes": 471953952,
+      "sha256": "324727055c3698c875de5462f0a3bb2f45a739903ae65ab4480c92e98935587f"
+    },
+    {
+      "path": ".runtime/tools/lc0/nvinfer_builder_resource_10.dll",
+      "bytes": 1791236128,
+      "sha256": "1afb85570dc76408b08dbaf774243e0d8d90558fa302242ccbfb714c23348b92"
+    },
+    {
+      "path": ".runtime/tools/lc0/nvinfer_plugin_10.dll",
+      "bytes": 52735520,
+      "sha256": "db63b4f6be909c27929f36f93eae91a999ddacea4fba761e70d4465a4d8d87a5"
+    },
+    {
+      "path": ".runtime/tools/lc0/nvonnxparser_10.dll",
+      "bytes": 2960928,
+      "sha256": "ba0f2387e2ffa2a54d609161ddd676bb9ded97ca498798dfc311abfb89b9889e"
+    },
+    {
+      "path": ".runtime/tools/lc0/onnxruntime.dll",
+      "bytes": 16468024,
+      "sha256": "f722dd91a311b9fa4b7f2341d22c379a72fb7bc5b639df18b64821f23cdde14b"
+    },
+    {
+      "path": ".runtime/tools/lc0/onnxruntime_providers_cuda.dll",
+      "bytes": 322615840,
+      "sha256": "2baf389c51fb3996bee2eb94126a7b0f36a6871053501fe8b38222504560c0f8"
+    },
+    {
+      "path": ".runtime/tools/lc0/onnxruntime_providers_shared.dll",
+      "bytes": 22048,
+      "sha256": "7de6659e55a0e02a8e7ca94ab2864d0e6ea59add87c3e947e8990229ae7f5e3a"
+    },
+    {
+      "path": ".runtime/tools/lc0/onnxruntime_providers_tensorrt.dll",
+      "bytes": 799792,
+      "sha256": "eef5eb5fd81a0397dc09281623fc8c77906e8d6dd6d6a9bcb2db5d1afd7042c7"
+    }
+  ],
+  "runtime": {
+    "GPU_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "GPU_uuid": "GPU-020e5950-8d4c-173a-fa0e-a2c9b981160d",
+    "driver": "592.82",
+    "memory_MiB": "8188",
+    "power_scheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "python": "3.11.9"
+  }
+}

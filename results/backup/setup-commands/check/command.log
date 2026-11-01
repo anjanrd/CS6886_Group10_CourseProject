@@ -1,0 +1,72 @@
+{
+  "status": "checked_inputs_only",
+  "packages": {
+    "numpy": "2.4.6",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.1",
+    "python-chess": "1.999",
+    "nvidia-ml-py": "13.615.71"
+  },
+  "preparation_available_providers": [
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "models": [
+    {
+      "path": "models/fp16.pb.gz",
+      "bytes": 294605128,
+      "sha256": "83d01b5bff0891e6e7be18b23ef16193a90c5d7969ddcd053fd11cb3a4542135"
+    },
+    {
+      "path": "models/s1.pb.gz",
+      "bytes": 71716055,
+      "sha256": "9d714319f799ae8a19b0809d6380f3ec819e02704af52587dbbdc1fdc3e08b1f"
+    },
+    {
+      "path": "models/s2.pb.gz",
+      "bytes": 95037093,
+      "sha256": "b99af74303433a86d15ae39b6a805a2b8f156e2c59edf906bed70e7ad6bc97ab"
+    },
+    {
+      "path": "models/s3.pb.gz",
+      "bytes": 95037368,
+      "sha256": "d43dba92a9ac11da200b823ac8eb8ba9fb9ce3ecb31ada99d5561b100bd78364"
+    },
+    {
+      "path": "models/s4.pb.gz",
+      "bytes": 90915493,
+      "sha256": "b556b45cab302ecf893c4afcd932c3df51358004a14f6e1ec9ef99fb21f75abb"
+    },
+    {
+      "path": "models/s4aa.pb.gz",
+      "bytes": 90921041,
+      "sha256": "6445a8bdf4fde85121c2c1dcef3babd9e62b23858444be3ac9c9d6b36b9bb284"
+    },
+    {
+      "path": "models/s0.pb.gz",
+      "bytes": 69978207,
+      "sha256": "01976840b4de5de2a9299ecfda97fc9c56c626eb7e6a79c48f64aaf526d3afd4"
+    },
+    {
+      "path": "models/s1sp.pb.gz",
+      "bytes": 69089577,
+      "sha256": "b3a020e0fda20925744f35b2540872f54deeec31dcb9f7229c67db80399d5ec9"
+    },
+    {
+      "path": "models/swap_pol8.pb.gz",
+      "bytes": 381896136,
+      "sha256": "82d2f082d33c41fd3bd06280d99a6f35850e94f3fd4dc314d7fe234c60c24319"
+    },
+    {
+      "path": "models/swap_val8.pb.gz",
+      "bytes": 384327326,
+      "sha256": "f59515059aa106615ba0cfc188cff8317a7ca6b1e6eebbfa2a2367a41f210fe5"
+    }
+  ],
+  "bt3": {
+    "path": "nets/BT3.pb.gz",
+    "bytes": 190937780,
+    "sha256": "e3067757d1fc2dfc66947b21d15ace0cedf4c54254fc1de83d77c378a3e8b8e1"
+  },
+  "protocol": "e53783a4c237a1f33819c665fcc48efc34d632541247aac32b7ae4f4fd24d829"
+}

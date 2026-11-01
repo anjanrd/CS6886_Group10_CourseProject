@@ -1,0 +1,9 @@
+{
+  "samples": 17,
+  "period_seconds": 2,
+  "flags": [],
+  "monitor_errors": [],
+  "gpu_process_visibility": "NVML compute process query; WDDM graphics activity may not be fully visible",
+  "rules": "5% total-machine CPU for 3 consecutive samples; nonessential app presence; external compute PID; AC disconnect",
+  "raw_log": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\capture-s1sp\\attempt-001\\activity.log"
+}

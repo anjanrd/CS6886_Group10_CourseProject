@@ -1,0 +1,66 @@
+{"Layers": [{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[node_of_Y]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "X",
+    "Location": "Device",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to {ForeignNode[node_of_Y]}",
+    "Location": "Device",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003ea",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "node_of_Y_myl1_0",
+  "LayerType": "gemm",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to {ForeignNode[node_of_Y]}",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Half"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[node_of_Y]}",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Half"
+  }],
+  "TacticName": "sm80_xmma_gemm_f16f16_f16f16_f16_nn_n_tilesize128x256x32_stage3_warpsize2x4x1_tensor16x8x16",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: node_of_Y]"
+},{
+  "Name": "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[node_of_Y]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[node_of_Y]}",
+    "Location": "Device",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Y",
+    "Location": "Device",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003ea",
+  "StreamId": 0,
+  "Metadata": ""
+}],
+"Bindings": ["X"
+,"Y"
+]}

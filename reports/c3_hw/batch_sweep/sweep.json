@@ -1,0 +1,122 @@
+{
+ "env": {
+  "nvml": true,
+  "nvml_energy_counter": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "rapl": false,
+  "platform": "win32",
+  "pid": 20564
+ },
+ "idle": {
+  "seconds": 10.023290872573853,
+  "gpu_w": 4.593002496412467,
+  "sm_mhz_mean": 679.2964824120603,
+  "temp_c_mean": 58.60301507537689
+ },
+ "rows": [
+  {
+   "model": "fp16",
+   "minibatch": 32,
+   "fixed_batch": false,
+   "nps": 5449,
+   "nodes": 182877,
+   "seconds": 33.662681102752686,
+   "gpu_j_above_idle": 2770.2542216591205,
+   "mj_per_node": 15.148182776724905,
+   "sm_mhz_mean": 2342.046476761619,
+   "power_w_mean": 87.04051574212906,
+   "temp_c_max": 87
+  },
+  {
+   "model": "fp16",
+   "minibatch": 64,
+   "fixed_batch": false,
+   "nps": 5577,
+   "nodes": 188914,
+   "seconds": 34.00705862045288,
+   "gpu_j_above_idle": 2767.555494860615,
+   "mj_per_node": 14.649816820672978,
+   "sm_mhz_mean": 2238.6498516320476,
+   "power_w_mean": 86.35635014836824,
+   "temp_c_max": 87
+  },
+  {
+   "model": "fp16",
+   "minibatch": 128,
+   "fixed_batch": false,
+   "nps": 5417,
+   "nodes": 185224,
+   "seconds": 34.46150064468384,
+   "gpu_j_above_idle": 2838.206241508847,
+   "mj_per_node": 15.323101981972354,
+   "sm_mhz_mean": 2259.948755490483,
+   "power_w_mean": 87.40522840409952,
+   "temp_c_max": 88
+  },
+  {
+   "model": "fp16",
+   "minibatch": 256,
+   "fixed_batch": false,
+   "nps": 5140,
+   "nodes": 180415,
+   "seconds": 35.72630715370178,
+   "gpu_j_above_idle": 3068.414982055449,
+   "mj_per_node": 17.007538076409663,
+   "sm_mhz_mean": 2272.2881355932204,
+   "power_w_mean": 90.25234887005664,
+   "temp_c_max": 88
+  },
+  {
+   "model": "s4",
+   "minibatch": 32,
+   "fixed_batch": false,
+   "nps": 7241,
+   "nodes": 222965,
+   "seconds": 30.888872861862183,
+   "gpu_j_above_idle": 2503.2543298340997,
+   "mj_per_node": 11.227117842863677,
+   "sm_mhz_mean": 2358.014705882353,
+   "power_w_mean": 85.79988235294161,
+   "temp_c_max": 88
+  },
+  {
+   "model": "s4",
+   "minibatch": 64,
+   "fixed_batch": false,
+   "nps": 7820,
+   "nodes": 238155,
+   "seconds": 30.571012258529663,
+   "gpu_j_above_idle": 2536.681264378717,
+   "mj_per_node": 10.651387812049787,
+   "sm_mhz_mean": 2285.841584158416,
+   "power_w_mean": 87.90747359735992,
+   "temp_c_max": 89
+  },
+  {
+   "model": "s4",
+   "minibatch": 128,
+   "fixed_batch": false,
+   "nps": 7283,
+   "nodes": 222913,
+   "seconds": 30.8264582157135,
+   "gpu_j_above_idle": 2630.6420004596735,
+   "mj_per_node": 11.80120495646137,
+   "sm_mhz_mean": 2290.3600654664483,
+   "power_w_mean": 89.68200654664467,
+   "temp_c_max": 88
+  },
+  {
+   "model": "s4",
+   "minibatch": 256,
+   "fixed_batch": false,
+   "nps": 6757,
+   "nodes": 212952,
+   "seconds": 31.93690586090088,
+   "gpu_j_above_idle": 2782.9897116531924,
+   "mj_per_node": 13.068624439560052,
+   "sm_mhz_mean": 2325.142180094787,
+   "power_w_mean": 91.74912796208535,
+   "temp_c_max": 87
+  }
+ ]
+}

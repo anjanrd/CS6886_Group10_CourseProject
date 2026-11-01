@@ -1,0 +1,30 @@
+{
+  "current_sources": [
+    {
+      "path": "tb/build_tbset.py",
+      "bytes": 7473,
+      "sha256": "e3317bdb519917ebf8c53ab9b360610918730ba0a310d44d3e544054b5677477"
+    },
+    {
+      "path": "execution/ultimate_data.py",
+      "bytes": 9863,
+      "sha256": "5e12c1fdcf8ff115654262d360077fe8572e3ef5c081390c628dcc46404050e7"
+    },
+    {
+      "path": "execution/ultimate_contract.py",
+      "bytes": 9513,
+      "sha256": "d7da82a3942c14af0d0867a7486efcbe2980f8dcab1a6b7c3f967f0d18ba6cb5"
+    }
+  ],
+  "seed": 20261030,
+  "class_seed_rule": "Random(str(seed)+\"-\"+class)",
+  "scheduling": "Four CPU class workers; unique unordered per-side materials prove class symmetry disjointness; final global audit retained",
+  "checkpoint_reuse": "Completed serial classes and partial RNG checkpoints preserved; only unfinished classes scheduled",
+  "tablebase_inventory": {
+    "path": "data/ultimate/tablebases.json",
+    "bytes": 43077,
+    "sha256": "62b67748ab50827eac90bc8cd20835ec809bdf4e0da7e650cc66c3270a3535ef"
+  },
+  "initial_implementation_snapshot": "reports/ultimate/U0-verification.json",
+  "recovery_history": "reports/ultimate/state.json"
+}

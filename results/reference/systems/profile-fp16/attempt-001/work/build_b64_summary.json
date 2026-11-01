@@ -1,0 +1,10 @@
+{
+ "onnx": "C:\\Users\\HP\\Desktop\\LC0\\models\\bt3_fp32.onnx",
+ "int8": false,
+ "sparsity": false,
+ "batch": 64,
+ "returncode": 0,
+ "qps": 61.7543,
+ "gpu_ms_mean": 16.1914,
+ "positions_per_s": 3952.2752
+}

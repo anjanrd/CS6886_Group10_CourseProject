@@ -1,0 +1,9 @@
+{
+  "samples": 4,
+  "period_seconds": 2,
+  "flags": [],
+  "monitor_errors": [],
+  "gpu_process_visibility": "NVML compute process query; WDDM graphics activity may not be fully visible",
+  "rules": "5% total-machine CPU for 3 consecutive samples; nonessential app presence; external compute PID; AC disconnect",
+  "raw_log": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z\\smoke\\s0\\A\\activity.log"
+}

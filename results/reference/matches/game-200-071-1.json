@@ -1,0 +1,162 @@
+{
+  "contract": "e31c7c99cd89ed1a4bdf586d0849dc2cbbde4dd5fd0faea8a61ca269b99d2bd3",
+  "record": {
+    "budget_ms": 200,
+    "pair": 71,
+    "color": 1,
+    "white": "s4",
+    "black": "fp16",
+    "result": "1/2-1/2",
+    "reason": "threefold_repetition",
+    "plies": 18,
+    "seconds": 2.2477887000422925,
+    "score_fp16": 0.5,
+    "moves": [
+      {
+        "ply": 6,
+        "side": "white",
+        "wall_ms": 184.41410001832992,
+        "engine_ms": 183,
+        "nodes": 568,
+        "printed_nps": 3191,
+        "best": "g1f3",
+        "score_cp": 4,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 7,
+        "side": "black",
+        "wall_ms": 187.84829997457564,
+        "engine_ms": 186,
+        "nodes": 367,
+        "printed_nps": 2073,
+        "best": "b8c6",
+        "score_cp": 0,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 8,
+        "side": "white",
+        "wall_ms": 181.2328000087291,
+        "engine_ms": 180,
+        "nodes": 1067,
+        "printed_nps": 5641,
+        "best": "c1g5",
+        "score_cp": 10,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 9,
+        "side": "black",
+        "wall_ms": 181.99140002252534,
+        "engine_ms": 180,
+        "nodes": 475,
+        "printed_nps": 2872,
+        "best": "f6g6",
+        "score_cp": 0,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 10,
+        "side": "white",
+        "wall_ms": 183.13309998484328,
+        "engine_ms": 182,
+        "nodes": 1288,
+        "printed_nps": 5093,
+        "best": "f3h4",
+        "score_cp": 6,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 11,
+        "side": "black",
+        "wall_ms": 186.48440000833943,
+        "engine_ms": 185,
+        "nodes": 997,
+        "printed_nps": 3987,
+        "best": "g6e6",
+        "score_cp": -2,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 12,
+        "side": "white",
+        "wall_ms": 181.2256000121124,
+        "engine_ms": 180,
+        "nodes": 2349,
+        "printed_nps": 10518,
+        "best": "h4f5",
+        "score_cp": 9,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 13,
+        "side": "black",
+        "wall_ms": 183.2488999934867,
+        "engine_ms": 181,
+        "nodes": 1619,
+        "printed_nps": 8519,
+        "best": "e6g6",
+        "score_cp": 0,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 14,
+        "side": "white",
+        "wall_ms": 183.65930003346875,
+        "engine_ms": 182,
+        "nodes": 4185,
+        "printed_nps": 20856,
+        "best": "f5h4",
+        "score_cp": 7,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 15,
+        "side": "black",
+        "wall_ms": 193.6822000425309,
+        "engine_ms": 192,
+        "nodes": 2924,
+        "printed_nps": 10703,
+        "best": "g6e6",
+        "score_cp": -1,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 16,
+        "side": "white",
+        "wall_ms": 183.7581999716349,
+        "engine_ms": 182,
+        "nodes": 4134,
+        "printed_nps": 18027,
+        "best": "h4f5",
+        "score_cp": 4,
+        "mate": null,
+        "zero_new_visits": false
+      },
+      {
+        "ply": 17,
+        "side": "black",
+        "wall_ms": 184.59259998053312,
+        "engine_ms": 183,
+        "nodes": 3082,
+        "printed_nps": 10830,
+        "best": "e6g6",
+        "score_cp": 2,
+        "mate": null,
+        "zero_new_visits": false
+      }
+    ]
+  },
+  "pgn": "[Event \"BT3 fixed-movetime\"]\n[Site \"?\"]\n[Date \"????.??.??\"]\n[Round \"72\"]\n[White \"s4\"]\n[Black \"fp16\"]\n[Result \"1/2-1/2\"]\n[Termination \"threefold_repetition\"]\n[TimeControl \"-\"]\n[MoveTimeMs \"200\"]\n\n1. e4 e5 2. d3 Bc5 3. Qg4 Qf6 4. Nf3 Nc6 5. Bg5 Qg6 6. Nh4 Qe6 7. Nf5 Qg6 8. Nh4 Qe6 9. Nf5 Qg6 1/2-1/2"
+}

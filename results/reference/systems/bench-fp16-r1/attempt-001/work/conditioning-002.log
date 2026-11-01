@@ -1,0 +1,14 @@
+{"argv": ["C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\lc0.exe", "backendbench", "--weights=C:\\Users\\HP\\Desktop\\LC0\\models\\fp16.pb.gz", "--backend=onnx-trt", "--backend-opts=optimize=6", "--batches=200", "--start-batch-size=64", "--max-batch-size=64"], "cwd": "C:\\Users\\HP\\Desktop\\LC0"}
+       _
+|   _ | |
+|_ |_ |_| v0.33.0-rc0 built Sep  5 2026
+Loading weights file from: C:\Users\HP\Desktop\LC0\models\fp16.pb.gz
+CUDA runtime version: 12.9.0
+Latest version of CUDA supported by the driver: 13.1.0
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+GPU memory: 7.99561 Gb
+GPU clock frequency: 2250 MHz
+GPU device ID: 10de:28a0
+GPU subsystem ID: 103c:8bcd
+size, mean nps, mean ms,   sdev,     cv, max nps,  median, min nps, first max, first mean
+  64,     3615,    17.7, 0.7791, 0.0440,    3790,    3676,    3064,   18.4470,    18.4470

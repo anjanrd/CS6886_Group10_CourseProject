@@ -1,0 +1,7 @@
+3360 positions from C:\Users\HP\Desktop\LC0-B\leela-int8\data\dev.npz (ORT, not TensorRT)
+model                               KL   top1    |dV|  tb_acc
+ref bt3_fp32.onnx             0.00e+00  1.000  0.0000   0.998
+s3_p999.onnx                  2.16e-01  0.707  0.1532   0.984
+s3_p9999.onnx                 4.03e-02  0.839  0.0217   0.996
+s3_p99999.onnx                2.20e-02  0.844  0.0128   0.997
+s3_entropy.onnx               1.01e+00  0.214  0.5925   0.552

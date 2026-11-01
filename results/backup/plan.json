@@ -1,0 +1,515 @@
+{
+  "started_unix": 1793480623.438376,
+  "end_unix": 1793487823.438376,
+  "checks_end_unix": 1793486623.438376,
+  "target_minutes": 60,
+  "maximum_minutes": 120,
+  "publication_reserve_minutes": 20,
+  "workspace": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\backup-20261031T210343Z",
+  "plan_path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\ultimate\\backup\\plan.json",
+  "roots": [
+    {
+      "fen": "1K6/5k2/8/8/8/8/8/q7 b - - 0 1",
+      "cls": "KQvK",
+      "root": 1,
+      "moves": {
+        "f7g8": {
+          "res": 1,
+          "dtz": 15
+        },
+        "f7f8": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7e8": {
+          "res": 1,
+          "dtz": 11
+        },
+        "f7g7": {
+          "res": 1,
+          "dtz": 15
+        },
+        "f7e7": {
+          "res": 1,
+          "dtz": 11
+        },
+        "f7g6": {
+          "res": 1,
+          "dtz": 15
+        },
+        "f7f6": {
+          "res": 1,
+          "dtz": 11
+        },
+        "f7e6": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1h8": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1a8": {
+          "res": 0
+        },
+        "a1g7": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1a7": {
+          "res": 0
+        },
+        "a1f6": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1a6": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1e5": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1a5": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1d4": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1a4": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1c3": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1a3": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1b2": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1a2": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1h1": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1g1": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1f1": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1e1": {
+          "res": 1,
+          "dtz": 11
+        },
+        "a1d1": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1c1": {
+          "res": 1,
+          "dtz": 13
+        },
+        "a1b1": {
+          "res": 1,
+          "dtz": 11
+        }
+      },
+      "correct": [
+        "a1a2",
+        "a1a3",
+        "a1a4",
+        "a1a5",
+        "a1a6",
+        "a1b1",
+        "a1b2",
+        "a1c1",
+        "a1c3",
+        "a1d1",
+        "a1d4",
+        "a1e1",
+        "a1e5",
+        "a1f1",
+        "a1f6",
+        "a1g1",
+        "a1g7",
+        "a1h1",
+        "a1h8",
+        "f7e6",
+        "f7e7",
+        "f7e8",
+        "f7f6",
+        "f7f8",
+        "f7g6",
+        "f7g7",
+        "f7g8"
+      ],
+      "dtz_opt": [
+        "a1a2",
+        "a1a3",
+        "a1a4",
+        "a1a5",
+        "a1a6",
+        "a1b1",
+        "a1b2",
+        "a1c3",
+        "a1e1",
+        "a1e5",
+        "a1f1",
+        "f7e6",
+        "f7e7",
+        "f7e8",
+        "f7f6"
+      ],
+      "split": "test",
+      "id": 160
+    },
+    {
+      "fen": "1K6/6Q1/3k4/8/8/8/8/8 w - - 0 1",
+      "cls": "KQvK",
+      "root": 1,
+      "moves": {
+        "b8c8": {
+          "res": 1,
+          "dtz": 15
+        },
+        "b8a8": {
+          "res": 1,
+          "dtz": 17
+        },
+        "b8b7": {
+          "res": 1,
+          "dtz": 15
+        },
+        "b8a7": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7h8": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7g8": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7f8": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7h7": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7f7": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7e7": {
+          "res": 0
+        },
+        "g7d7": {
+          "res": 0
+        },
+        "g7c7": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7b7": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7a7": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7h6": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7g6": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7f6": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7g5": {
+          "res": 1,
+          "dtz": 11
+        },
+        "g7e5": {
+          "res": 0
+        },
+        "g7g4": {
+          "res": 1,
+          "dtz": 13
+        },
+        "g7d4": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7g3": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7c3": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7g2": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7b2": {
+          "res": 1,
+          "dtz": 17
+        },
+        "g7g1": {
+          "res": 1,
+          "dtz": 15
+        },
+        "g7a1": {
+          "res": 1,
+          "dtz": 17
+        }
+      },
+      "correct": [
+        "b8a7",
+        "b8a8",
+        "b8b7",
+        "b8c8",
+        "g7a1",
+        "g7a7",
+        "g7b2",
+        "g7b7",
+        "g7c3",
+        "g7c7",
+        "g7d4",
+        "g7f6",
+        "g7f7",
+        "g7f8",
+        "g7g1",
+        "g7g2",
+        "g7g3",
+        "g7g4",
+        "g7g5",
+        "g7g6",
+        "g7g8",
+        "g7h6",
+        "g7h7",
+        "g7h8"
+      ],
+      "dtz_opt": [
+        "g7g5"
+      ],
+      "split": "test",
+      "id": 161
+    },
+    {
+      "fen": "1K6/5r2/8/2k5/8/8/8/8 b - - 0 1",
+      "cls": "KRvK",
+      "root": 1,
+      "moves": {
+        "f7f8": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7h7": {
+          "res": 1,
+          "dtz": 9
+        },
+        "f7g7": {
+          "res": 1,
+          "dtz": 9
+        },
+        "f7e7": {
+          "res": 1,
+          "dtz": 9
+        },
+        "f7d7": {
+          "res": 1,
+          "dtz": 9
+        },
+        "f7c7": {
+          "res": 0
+        },
+        "f7b7": {
+          "res": 0
+        },
+        "f7a7": {
+          "res": 0
+        },
+        "f7f6": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7f5": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7f4": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7f3": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7f2": {
+          "res": 1,
+          "dtz": 13
+        },
+        "f7f1": {
+          "res": 1,
+          "dtz": 13
+        },
+        "c5d6": {
+          "res": 1,
+          "dtz": 9
+        },
+        "c5c6": {
+          "res": 1,
+          "dtz": 5
+        },
+        "c5b6": {
+          "res": 1,
+          "dtz": 13
+        },
+        "c5d5": {
+          "res": 1,
+          "dtz": 9
+        },
+        "c5b5": {
+          "res": 1,
+          "dtz": 13
+        },
+        "c5d4": {
+          "res": 1,
+          "dtz": 13
+        },
+        "c5c4": {
+          "res": 1,
+          "dtz": 13
+        },
+        "c5b4": {
+          "res": 1,
+          "dtz": 13
+        }
+      },
+      "correct": [
+        "c5b4",
+        "c5b5",
+        "c5b6",
+        "c5c4",
+        "c5c6",
+        "c5d4",
+        "c5d5",
+        "c5d6",
+        "f7d7",
+        "f7e7",
+        "f7f1",
+        "f7f2",
+        "f7f3",
+        "f7f4",
+        "f7f5",
+        "f7f6",
+        "f7f8",
+        "f7g7",
+        "f7h7"
+      ],
+      "dtz_opt": [
+        "c5c6"
+      ],
+      "split": "test",
+      "id": 560
+    },
+    {
+      "fen": "1K6/8/5k2/5R2/8/8/8/8 b - - 0 1",
+      "cls": "KRvK",
+      "root": 0,
+      "moves": {
+        "f6g7": {
+          "res": -1
+        },
+        "f6e7": {
+          "res": -1
+        },
+        "f6g6": {
+          "res": -1
+        },
+        "f6e6": {
+          "res": -1
+        },
+        "f6f5": {
+          "res": 0
+        }
+      },
+      "correct": [
+        "f6f5"
+      ],
+      "dtz_opt": [
+        "f6f5"
+      ],
+      "split": "test",
+      "id": 561
+    }
+  ],
+  "models": [
+    "fp16",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s4aa",
+    "s0",
+    "s1sp",
+    "swap_pol8",
+    "swap_val8"
+  ],
+  "pilot_openings": [
+    [
+      "e2e4",
+      "c7c5",
+      "f2f4",
+      "d7d6",
+      "g1f3",
+      "g8f6"
+    ],
+    [
+      "c2c4",
+      "b7b6",
+      "e2e4",
+      "c8b7",
+      "f2f3",
+      "e7e6"
+    ]
+  ],
+  "candidate_archive": {
+    "path": "C:\\Users\\HP\\AppData\\Local\\LC0-BT3-Evaluator\\candidate-20261031T205958Z\\CS6886_Group10_CourseProject.zip",
+    "bytes": 4115380985,
+    "sha256": "b2e5b4aa635cc5a077d0a2ae5684261ce9e6804b1d49f8fada22001ded357ab4"
+  },
+  "matrix": "A10 raw x4; fp16/s4 B100 x4, C100/C200 x4; match options x2 openings x2 budgets x2 models",
+  "exclusions": [
+    "full derivation/selection",
+    "fresh-cache builds",
+    "full studies/matches",
+    "all44 systems tasks",
+    "full U11/U12/D8"
+  ]
+}

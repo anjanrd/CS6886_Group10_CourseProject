@@ -1,0 +1,20 @@
+{
+  "shape": [
+    16,
+    16,
+    16
+  ],
+  "latency_ms": 0.0143613,
+  "arithmetic_ops": 8192,
+  "model": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe.onnx",
+    "bytes": 1117,
+    "sha256": "3d378b7c2446a7f55c12fb8c4292b301e6c1f9ce71f90b546866dd437d3b5ac2"
+  },
+  "layer_info": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\trt-probe\\attempt-001\\work\\probe_layers.json",
+    "bytes": 483,
+    "sha256": "6a43c620fe1432147e69fde392811fd49b157e02d472b9f9e80a4d343a980970"
+  },
+  "precision_requires_review": "Inspect real tactic/operand formats before assigning a compute roof"
+}

@@ -1,0 +1,38 @@
+test_agent_review_resume_needs_no_failure_recovery_override (test_ultimate.UltimateTests.test_agent_review_resume_needs_no_failure_recovery_override) ... ok
+test_atomic_checkpoint_survives_transient_windows_reader (test_ultimate.UltimateTests.test_atomic_checkpoint_survives_transient_windows_reader) ... {"atomic_replace_retry": 1, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmp12jwunsc\\checkpoint.json"}
+{"atomic_replace_retry": 2, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmp12jwunsc\\checkpoint.json"}
+{"atomic_replace_retry": 3, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmp12jwunsc\\checkpoint.json"}
+ok
+test_background_flags_informational_but_real_failures_block (test_ultimate.UltimateTests.test_background_flags_informational_but_real_failures_block) ... ok
+test_backup_gate_requires_U10_and_full_replay_requires_backup (test_ultimate.UltimateTests.test_backup_gate_requires_U10_and_full_replay_requires_backup) ... ok
+test_book_terminal_uniqueness (test_ultimate.UltimateTests.test_book_terminal_uniqueness) ... ok
+test_bootstrap_clusters_and_flat_reference_intervals (test_ultimate.UltimateTests.test_bootstrap_clusters_and_flat_reference_intervals) ... ok
+test_deadline_protects_buffer (test_ultimate.UltimateTests.test_deadline_protects_buffer) ... ok
+test_exact_budget_and_legal_output (test_ultimate.UltimateTests.test_exact_budget_and_legal_output) ... ok
+test_extracted_protocol_json_roundtrip_preserves_contract (test_ultimate.UltimateTests.test_extracted_protocol_json_roundtrip_preserves_contract) ... ok
+test_fixed_movetime_no_fischer_clock_and_envelope (test_ultimate.UltimateTests.test_fixed_movetime_no_fischer_clock_and_envelope) ... ok
+test_fresh_native_copy_excludes_old_caches_and_binds_actual_bytes (test_ultimate.UltimateTests.test_fresh_native_copy_excludes_old_caches_and_binds_actual_bytes) ... ok
+test_frozen_challenge_rule_and_denominator (test_ultimate.UltimateTests.test_frozen_challenge_rule_and_denominator) ... ok
+test_illegal_match_move_is_pipeline_failure (test_ultimate.UltimateTests.test_illegal_match_move_is_pipeline_failure) ... ok
+test_legal_symmetry_and_color_mirror (test_ultimate.UltimateTests.test_legal_symmetry_and_color_mirror) ... ok
+test_match_counters_keep_zero_work_but_reject_missing_negative (test_ultimate.UltimateTests.test_match_counters_keep_zero_work_but_reject_missing_negative) ... ok
+test_missing_or_corrupt_resume_output_is_not_accuracy_zero (test_ultimate.UltimateTests.test_missing_or_corrupt_resume_output_is_not_accuracy_zero) ... ok
+test_no_input_or_final_output_collision (test_ultimate.UltimateTests.test_no_input_or_final_output_collision) ... ok
+test_package_manifest_detects_changed_input_and_zip_traversal (test_ultimate.UltimateTests.test_package_manifest_detects_changed_input_and_zip_traversal) ... ok
+test_pair_order_counts_and_interleaving (test_ultimate.UltimateTests.test_pair_order_counts_and_interleaving) ... ok
+test_persistent_atomic_error_keeps_last_good_and_complete_candidate (test_ultimate.UltimateTests.test_persistent_atomic_error_keeps_last_good_and_complete_candidate) ... {"atomic_replace_retry": 1, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+{"atomic_replace_retry": 2, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+{"atomic_replace_retry": 3, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+{"atomic_replace_retry": 4, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+{"atomic_replace_retry": 5, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+{"atomic_replace_retry": 6, "winerror": 5, "destination": "C:\\Users\\HP\\AppData\\Local\\Temp\\tmpr0t_wnl8\\checkpoint.json"}
+Uncommitted atomic candidate preserved: C:\Users\HP\AppData\Local\Temp\lc0-ultimate-x0qef2oy.json
+ok
+test_pilot_timing_gate_checks_both_models_budgets (test_ultimate.UltimateTests.test_pilot_timing_gate_checks_both_models_budgets) ... ok
+test_raw_keeps_imported_best_not_policy_argmax (test_ultimate.UltimateTests.test_raw_keeps_imported_best_not_policy_argmax) ... ok
+test_resume_contract_change_rejected (test_ultimate.UltimateTests.test_resume_contract_change_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.771s
+
+OK

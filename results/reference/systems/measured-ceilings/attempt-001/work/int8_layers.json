@@ -1,0 +1,40 @@
+{"Layers": [{
+  "Name": "__myl_MulMinMaxRounCast_myl0_0",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "X",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Float"
+  }],
+  "Outputs": [
+  {
+    "Name": "Y.1_2_myl0",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Int8"
+  }],
+  "TacticName": "__myl_MulMinMaxRounCast_0x4d0fcd1e3eff8fd612d85249975bc0c5",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: node_of_Xq]"
+},{
+  "Name": "node_of_Y_myl0_1",
+  "LayerType": "gemm",
+  "Inputs": [
+  {
+    "Name": "Y.1_2_myl0",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Int8"
+  }],
+  "Outputs": [
+  {
+    "Name": "Y",
+    "Dimensions": [8192,4096],
+    "Format/Datatype": "Float"
+  }],
+  "TacticName": "sm80_xmma_gemm_i8f32_i8i32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x32",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: node_of_Y]\u001f[ONNX Layer: node_of_Xd]\u001f[ONNX Layer: node_of_Wd]\u001f[ONNX Layer: node_of_Wq]"
+}],
+"Bindings": ["X"
+,"Y"
+]}

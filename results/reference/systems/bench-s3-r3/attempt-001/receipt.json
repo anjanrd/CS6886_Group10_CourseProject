@@ -1,0 +1,135 @@
+{
+  "status": "verified",
+  "manifest": "4b2d21fb34b37646dd46fc411aad06e807f7a7dc66948aa25957f8ca7766b246",
+  "job": "c8f7a1db2c886a0653db684c16d611aaa6c5eb278fb7175025edebd1171cd96c",
+  "runtime": "3e66d867667cac116a9c9082fa3f824fac6a6e74d0367f3d50eacf8503f14ff3",
+  "session": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\session.json",
+    "bytes": 1532,
+    "sha256": "4eafc48fef9a66607b677eec5a352f179846284b694b641059190c3bd84d9ccf"
+  },
+  "policy": {
+    "version": "run2-background-monitor-only-v2",
+    "authorization": "User explicitly disabled interference blocking and resumed Codex orchestration",
+    "background_interference_blocks": false,
+    "activity_logging": true,
+    "AC_loss_blocks": true,
+    "monitor_error_blocks": true,
+    "command_and_output_validation": true,
+    "single_GPU_workload": true,
+    "limits": "Codex spikes are not assumed equal across trials; review session/thermal variability"
+  },
+  "attempt": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001",
+  "command": [
+    "C:\\Users\\HP\\Desktop\\LC0\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "execution.benchmark",
+    "--name",
+    "s3",
+    "--lc0",
+    "C:\\Users\\HP\\Desktop\\LC0\\.runtime\\tools\\lc0\\lc0.exe",
+    "--weights",
+    "C:\\Users\\HP\\Desktop\\LC0\\models\\s3.pb.gz",
+    "--backend-opts",
+    "optimize=8",
+    "--session",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\session.json",
+    "--out",
+    "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001/work",
+    "--positions",
+    "10",
+    "--movetime",
+    "10000",
+    "--threads",
+    "0",
+    "--minibatch",
+    "64",
+    "--batches",
+    "200",
+    "--conditioning-seconds",
+    "30"
+  ],
+  "started_unix": 1793354014.9565141,
+  "conditions": {
+    "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\conditions.json",
+    "bytes": 957,
+    "sha256": "93848c7f430e66d4f91b817dc8252b3e50543c0aecb3011e628e429005948abf"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 156.99091720581055,
+  "outputs": [
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\activity.log",
+      "bytes": 1652323,
+      "sha256": "5ed4d6d28a6372e9c955cb1cbd4d4b30cedaf350b2db42bab4a90646f8d4147d"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\command.log",
+      "bytes": 731,
+      "sha256": "b556f7acd4514e52d90a5a399dc4ab255391f10ba97b015d02d75d180ae6a773"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\conditions.json",
+      "bytes": 957,
+      "sha256": "93848c7f430e66d4f91b817dc8252b3e50543c0aecb3011e628e429005948abf"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\backend-b128.log",
+      "bytes": 873,
+      "sha256": "fea9c0d76eeb7540287c9b240de7cdac3b9324170f7bc8a9b8d2992e92751466"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\backend-b256.log",
+      "bytes": 873,
+      "sha256": "5e1cffe408142bc502de9fd08cc84e1bd93036475eb193b3dded6c89b99eb63c"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\backend-b32.log",
+      "bytes": 871,
+      "sha256": "443e089871e4a29317b8f5dd559c4d77eaad0b6633cdd8b3e26460d9fb9652f4"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\backend-b64.log",
+      "bytes": 871,
+      "sha256": "dd62d32913c948dd4fac27fb4a893be64c6c4f439b9dfc5dd4ea73759953b581"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\conditioning-000.log",
+      "bytes": 852,
+      "sha256": "8cb13e3c4b96d8002ca69128332d083541a4936604cfd3ffc808446887f4b05d"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\conditioning-001.log",
+      "bytes": 852,
+      "sha256": "545730b1d4f33940fdf39efa668c97278c94e0eb846c7c15fdc9e888d4a225c1"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\conditioning-002.log",
+      "bytes": 852,
+      "sha256": "6ece6b4c6aaa7b7b98e8b7193395f1c4a3d4802b8a2d9ffbaccf059c67671b46"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\conditioning-003.log",
+      "bytes": 852,
+      "sha256": "7cb70389d4ddebf94e1320e9b81cf9d1f9d134a0cb2704386c387c1d32d821ea"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\result.json",
+      "bytes": 5132,
+      "sha256": "b0778b6de56fc697c716d86e006d5eff5cc51019dd6e671ac8bd68ff0bc1c39f"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\search.lc0.log",
+      "bytes": 72017,
+      "sha256": "e79ff694da926bcd4ceeed62f2bc8fcab0d47f0cdd77fefa6073e40271a60704"
+    },
+    {
+      "path": "C:\\Users\\HP\\Desktop\\LC0\\reports\\takeover\\run2\\codex-continuation-v2\\bench-s3-r3\\attempt-001\\work\\warmup.log",
+      "bytes": 850,
+      "sha256": "0caabaa4c7b38b17309d7a1bfc9b22679b0df421ce58179d2f7a771be74a8ac3"
+    }
+  ],
+  "background_flags_observed": [],
+  "verification_scope": "Exit/output/identity/telemetry checks; background flags recorded under approved v2 policy"
+}
